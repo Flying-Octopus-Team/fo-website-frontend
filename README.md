@@ -1,4 +1,4 @@
-# fo-website
+# Flying Octopus Main Website
 
 ## Build Setup
 
