@@ -2,7 +2,6 @@ backend:
   name: github
   repo: Flying-Octopus-Team/fo-website-frontend
   branch: main
-  base_url: https://netlify-oauth-provider.herokuapp.com/
 
 publish_mode: editorial_workflow
 
