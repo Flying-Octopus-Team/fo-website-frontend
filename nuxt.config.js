@@ -51,7 +51,7 @@ export default {
   build: {
   },
 
-  router: {
-    base: '/fo-website-frontend/'
+  generate: {
+    fallback: true
   }
 }
