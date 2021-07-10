@@ -23,14 +23,15 @@ collections:
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Thumbnail', name: 'thumbnail', widget: 'image', allow_multiple: false }
       - { label: 'Description', name: 'description', widget: 'string' }
-      - { label: 'Author', name: 'author', widget: 'relation', collection: 'member', value_field: '{{slug}}', search_fields: ['name'], display_fields: ['{{name}}'] }
+      - { label: 'Author', name: 'author', widget: 'relation', collection: 'member', value_field: '{{slug}}', search_fields: [ 'name' ], display_fields: [ '{{name}}' ] }
       - { label: 'Content', name: 'content', widget: 'markdown', required: true }
   - name: 'member'
     label: 'Member'
     folder: 'content/member'
     format: 'yml'
     create: true
-    slug: '{{name}}-{{slug}}'
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    identifier_field: '{{name}}'
     editor:
       preview: false
     fields:
@@ -44,7 +45,8 @@ collections:
     folder: 'content/tag'
     format: 'yml'
     create: true
-    slug: '{{name}}-{{slug}}'
+    slug: '{{name}}-{{color}}'
+    identifier_field: '{{name}}'
     editor:
       preview: false
     fields:
@@ -60,8 +62,13 @@ collections:
       preview: false
     fields:
       - { label: 'Title', name: 'title', widget: 'string', required: true }
-      - { label: 'Images', name: 'images', widget: 'image', allow_multiple: true}
-      - { label: 'Tags', name: 'tags', widget: 'relation', collection: 'tag', value_field: '{{slug}}', search_fields: ['name'], display_fields: ['{{name}}'], multiple: true }
+      - { label: 'Images',
+          name: 'images',
+          widget: list,
+          summary: '{{fields.image}}',
+          field: { label: 'Image', name: 'image', widget: 'image', allow_multiple: false }
+      }
+      - { label: 'Tags', name: 'tags', widget: 'relation', collection: 'tag', value_field: '{{slug}}', search_fields: [ 'name' ], display_fields: [ '{{name}}' ], multiple: true }
       - { label: 'Play game link', name: 'link', widget: 'string', required: false }
       - { label: 'Description', name: 'description', widget: 'markdown' }
 
