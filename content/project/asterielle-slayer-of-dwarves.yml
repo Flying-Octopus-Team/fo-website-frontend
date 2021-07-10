@@ -1,5 +1,6 @@
 title: "Asterielle: Slayer of Dwarves"
-images: /img/asterielle.png
+images:
+  - /img/asterielle.png
 tags:
   - 2d-ed7edf
   - idle-clicker-ed7edf

@@ -1,5 +1,6 @@
 title: Magical Fighter
-images: /img/magicalfighter.png
+images:
+  - /img/magicalfighter.png
 tags:
   - 3d-ed7edf
   - visual-novel-ed7edf

@@ -1,5 +1,6 @@
 title: Komiksy
-images: /img/komiksy.jpg
+images:
+  - /img/komiksy.jpg
 tags:
   - 3d-ed7edf
 description: >-

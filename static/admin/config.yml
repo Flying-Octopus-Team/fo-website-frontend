@@ -31,7 +31,7 @@ collections:
     format: 'yml'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
-    identifier_field: '{{name}}'
+    identifier_field: 'name'
     editor:
       preview: false
     fields:
@@ -46,7 +46,7 @@ collections:
     format: 'yml'
     create: true
     slug: '{{name}}-{{color}}'
-    identifier_field: '{{name}}'
+    identifier_field: 'name'
     editor:
       preview: false
     fields:
@@ -57,7 +57,7 @@ collections:
     folder: 'content/project'
     format: 'yml'
     create: true
-    slug: '{{title}}-{{slug}}'
+    slug: '{{title}}'
     editor:
       preview: false
     fields:

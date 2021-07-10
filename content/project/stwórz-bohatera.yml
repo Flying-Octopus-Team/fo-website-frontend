@@ -1,5 +1,6 @@
 title: Stwórz Bohatera
-images: /img/stworzbohatera.png
+images:
+  - /img/stworzbohatera.png
 tags:
   - 2d-ed7edf
 description: "Stwórz Bohatera to tworzony przez nas dodatek do gier typu Icewind

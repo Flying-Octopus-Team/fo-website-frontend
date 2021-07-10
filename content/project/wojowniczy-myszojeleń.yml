@@ -1,5 +1,6 @@
 title: Wojowniczy Myszojeleń
-images: /img/myszojelen.png
+images:
+  - /img/myszojelen.png
 tags:
   - 2d-ed7edf
   - rzut-izometryczny-ed7edf
