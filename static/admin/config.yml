@@ -11,14 +11,56 @@ public_folder: /img
 collections:
   - name: 'blog'
     label: 'Blog'
+    label_singular: 'Post'
     folder: 'content/blog'
-    format: 'frontmatter'
+    format: 'yml'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
       preview: false
     fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Title', name: 'title', widget: 'string', required: true }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Thumbnail', name: 'thumbnail', widget: 'image', allow_multiple: false }
       - { label: 'Description', name: 'description', widget: 'string' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: 'Author', name: 'author', widget: 'relation', collection: 'member', value_field: '{{slug}}', search_fields: ['name'], display_fields: ['{{name}}'] }
+      - { label: 'Content', name: 'content', widget: 'markdown', required: true }
+  - name: 'member'
+    label: 'Member'
+    folder: 'content/member'
+    format: 'yml'
+    create: true
+    slug: '{{name}}-{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Name', name: 'name', widget: 'string', required: true }
+      - { label: 'Avatar', name: 'avatar', widget: 'image', allow_multiple: false }
+      - { label: 'Is an active member', name: 'active', widget: 'boolean', deafult: true, required: true }
+      - { label: 'Description', name: 'description', widget: 'markdown' }
+  - name: 'tag'
+    label: 'Project tags'
+    label_singular: 'Tag'
+    folder: 'content/tag'
+    format: 'yml'
+    create: true
+    slug: '{{name}}-{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Name', name: 'name', widget: 'string', required: true }
+      - { label: 'Tag Color', name: 'color', widget: 'color', allowInput: true }
+  - name: 'project'
+    label: 'Project'
+    folder: 'content/project'
+    format: 'yml'
+    create: true
+    slug: '{{title}}-{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string', required: true }
+      - { label: 'Images', name: 'images', widget: 'image', allow_multiple: true}
+      - { label: 'Tags', name: 'tags', widget: 'relation', collection: 'tag', value_field: '{{slug}}', search_fields: ['name'], display_fields: ['{{name}}'], multiple: true }
+      - { label: 'Play game link', name: 'link', widget: 'string', required: false }
+
