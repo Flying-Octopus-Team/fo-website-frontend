@@ -63,4 +63,5 @@ collections:
       - { label: 'Images', name: 'images', widget: 'image', allow_multiple: true}
       - { label: 'Tags', name: 'tags', widget: 'relation', collection: 'tag', value_field: '{{slug}}', search_fields: ['name'], display_fields: ['{{name}}'], multiple: true }
       - { label: 'Play game link', name: 'link', widget: 'string', required: false }
+      - { label: 'Description', name: 'description', widget: 'markdown' }
 
