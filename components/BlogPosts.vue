@@ -14,8 +14,8 @@
   </div>
 </template>
 
-<script>
-import BlogPost from '../components/BlogPost'
+<script lang="ts">
+import BlogPost from '../components/BlogPost.vue'
 
 export default {
   components: {

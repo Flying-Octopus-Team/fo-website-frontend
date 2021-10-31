@@ -1,4 +1,4 @@
-.<template>
+<template>
   <div class="post">
     <div class="grad"></div>
     <div class="post-right-con">
@@ -17,7 +17,7 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 export default {
   props: {
     index: Number,
@@ -29,7 +29,7 @@ export default {
     content: String,
   },
   methods: {
-    formatDate(date) {
+    formatDate(date: string) {
       const ms = new Date(date)
       const formatObject = {
         minimumIntegerDigits: 2,

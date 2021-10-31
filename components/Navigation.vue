@@ -1,4 +1,4 @@
-.<template>
+<template>
   <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
     <nuxt-link to="/" class="navbar-brand"
       ><img src="../assets/img/biały sygnet 2.png" alt="logo"
