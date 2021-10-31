@@ -10,7 +10,9 @@
         komputerowych oraz wspólnie pracować nad kilkoma kreatywnymi projektami.
       </p>
       <div class="contSec">
-        <div class="left"></div>
+        <div class="left">
+          <BlogPosts :posts="recentBlogPosts" />
+        </div>
         <div class="right">
           <img src="../assets/img/maskotka_FO2.png" alt="maskotka" />
         </div>
@@ -21,8 +23,15 @@
 
 <script>
 import NavigationButtons from '../components/NavigationButtons'
+import BlogPosts from '../components/BlogPosts'
 
 export default {
+  async asyncData({ $content }) {
+    let blogPosts = await $content('blog').fetch()
+    blogPosts.sort((a, b) => new Date(b.date) - new Date(a.date))
+    const recentBlogPosts = blogPosts.slice(0, 2)
+    return { recentBlogPosts }
+  },
   head() {
     return {
       script: [
@@ -32,6 +41,7 @@ export default {
   },
   components: {
     NavigationButtons,
+    BlogPosts,
   },
 }
 </script>
