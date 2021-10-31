@@ -25,27 +25,11 @@
 import NavigationButtons from '../components/NavigationButtons.vue'
 import BlogPosts from '../components/BlogPosts.vue'
 
-interface blogPost {
-  slug: string
-  title: string
-  date: string
-  thumbnail: string
-  description: string
-  author: string
-  content: string
-  dir: string
-  path: string
-  extension: string
-  createdAt: string
-  updatedAt: string
-}
-
 export default {
   async asyncData({ $content }) {
     let blogPosts = await $content('blog').fetch()
     blogPosts.sort(
-      (a: blogPost, b: blogPost) =>
-        new Date(b.date).getTime() - new Date(a.date).getTime()
+      (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
     )
     const recentBlogPosts = blogPosts.slice(0, 2)
     return { recentBlogPosts }
