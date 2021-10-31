@@ -1,14 +1,21 @@
 .<template>
-  <body data-spy="scroll" data-target="#navbar">
+  <div>
     <Navigation />
     <Nuxt />
-  </body>
+  </div>
 </template>
 
 <script>
 import Navigation from '../components/Navigation'
 export default {
-  head() {},
+  head() {
+    return {
+      bodyAttrs: {
+        'data-spy': 'scroll',
+        'data-target': '#navbar',
+      },
+    }
+  },
   components: {
     Navigation,
   },
