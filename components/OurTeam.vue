@@ -1,5 +1,5 @@
 <template>
-  <Fragment>
+  <div>
     <h2>Nasz Zespół</h2>
     <div class="firstLa">
       <div class="contTeam">
@@ -11,7 +11,7 @@
         />
       </div>
     </div>
-  </Fragment>
+  </div>
 </template>
 
 <script>
