@@ -1,5 +1,5 @@
 <template>
-  <section class="kontaktUs" id="ourTeam">
+  <Fragment>
     <h2>Nasz Zespół</h2>
     <div class="firstLa">
       <div class="contTeam">
@@ -11,16 +11,7 @@
         />
       </div>
     </div>
-    <div class="secondLa">
-      <img
-        src="../assets/img/octopus_pictorial_transparent.png"
-        alt="octopus"
-      />
-      <h2>Dołącz do nas</h2>
-      <p class="textSecKon">Stań się częścią zespołu i twórzmy wspólnie!</p>
-      <a href>Czytaj więcej</a>
-    </div>
-  </section>
+  </Fragment>
 </template>
 
 <script>

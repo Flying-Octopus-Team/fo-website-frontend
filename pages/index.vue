@@ -21,7 +21,10 @@
     <section class="projects">
       <ProjectsCarousel :projectImages="projectImages" />
     </section>
-    <OurTeam :members="members" />
+    <section class="kontaktUs" id="ourTeam">
+      <OurTeam :members="members" />
+      <JoinUs />
+    </section>
   </main>
 </template>
 
