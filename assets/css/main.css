@@ -68,6 +68,12 @@ nav .navbar-brand {
   border-radius: 8px;
 }
 
+.rounded-image {
+  border-radius: 50%;
+  max-width: 100%;
+  max-height: 100%;
+}
+
 .shadow-bg {
   background: linear-gradient(270deg, #001720 0%, #110B14 100%);
 }
