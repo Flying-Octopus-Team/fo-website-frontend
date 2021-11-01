@@ -28,11 +28,13 @@
   </main>
 </template>
 
-<script lang="ts">
+<script>
 import NavigationButtons from '../components/NavigationButtons.vue'
 import BlogPosts from '../components/BlogPosts.vue'
 import ProjectsCarousel from '../components/ProjectsCarousel.vue'
 import OurTeam from '../components/OurTeam.vue'
+import '../assets/css/main.css'
+import '../assets/css/animate.css'
 
 export default {
   async asyncData({ $content }) {
