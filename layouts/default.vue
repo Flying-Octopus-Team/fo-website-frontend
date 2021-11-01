@@ -1,12 +1,15 @@
 <template>
   <div>
     <Navigation />
-    <Nuxt />
+    <Nuxt />'
+    <AppFooter />
   </div>
 </template>
 
 <script lang="ts">
 import Navigation from '../components/Navigation.vue'
+import AppFooter from '../components/AppFooter.vue'
+
 export default {
   head() {
     return {
@@ -18,6 +21,7 @@ export default {
   },
   components: {
     Navigation,
+    AppFooter,
   },
 }
 </script>
