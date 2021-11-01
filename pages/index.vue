@@ -18,12 +18,16 @@
         </div>
       </div>
     </section>
+    <section class="projects">
+      <ProjectsCarousel :projectImages="projectImages" />
+    </section>
   </main>
 </template>
 
 <script lang="ts">
 import NavigationButtons from '../components/NavigationButtons.vue'
 import BlogPosts from '../components/BlogPosts.vue'
+import ProjectsCarousel from '../components/ProjectsCarousel.vue'
 
 export default {
   async asyncData({ $content }) {
@@ -32,7 +36,13 @@ export default {
       (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
     )
     const recentBlogPosts = blogPosts.slice(0, 2)
-    return { recentBlogPosts }
+
+    let projects = await $content('project').fetch()
+    let projectImages = []
+    projects.forEach((project) => {
+      projectImages = projectImages.concat(project.images)
+    })
+    return { recentBlogPosts, projectImages }
   },
   head() {
     return {
@@ -44,6 +54,7 @@ export default {
   components: {
     NavigationButtons,
     BlogPosts,
+    ProjectsCarousel,
   },
 }
 </script>
