@@ -1,5 +1,9 @@
 <template>
-  <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+  <nav
+    class="navbar navbar-expand-lg"
+    :class="{ 'fixed-top': fixedTop }"
+    id="navbar"
+  >
     <nuxt-link to="/" class="navbar-brand"
       ><img src="../assets/img/biały sygnet 2.png" alt="logo"
     /></nuxt-link>
@@ -19,7 +23,7 @@
         <nuxt-link to="/aboutus" class="nav-item nav-link font-bold">
           o nas</nuxt-link
         >
-        <nuxt-link to="/news" class="nav-item nav-link font-bold"
+        <nuxt-link to="/blog-list" class="nav-item nav-link font-bold"
           >Aktualności</nuxt-link
         >
         <nuxt-link to="/projects" class="nav-item nav-link font-bold"
@@ -38,3 +42,13 @@
     </div>
   </nav>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      fixedTop: ['/'].includes(this.$route.path),
+    }
+  },
+}
+</script>
