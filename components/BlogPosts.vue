@@ -11,6 +11,9 @@
       :author="post.author"
       :content="post.content"
     />
+    <div class="post">
+      <div class="grad"></div>
+    </div>
   </div>
 </template>
 
