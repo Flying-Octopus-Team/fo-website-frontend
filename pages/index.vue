@@ -21,6 +21,7 @@
     <section class="projects">
       <ProjectsCarousel :projectImages="projectImages" />
     </section>
+    <OurTeam :members="members" />
   </main>
 </template>
 
@@ -28,6 +29,7 @@
 import NavigationButtons from '../components/NavigationButtons.vue'
 import BlogPosts from '../components/BlogPosts.vue'
 import ProjectsCarousel from '../components/ProjectsCarousel.vue'
+import OurTeam from '../components/OurTeam.vue'
 
 export default {
   async asyncData({ $content }) {
@@ -42,7 +44,10 @@ export default {
     projects.forEach((project) => {
       projectImages = projectImages.concat(project.images)
     })
-    return { recentBlogPosts, projectImages }
+
+    const members = await $content('member').fetch()
+
+    return { recentBlogPosts, projectImages, members }
   },
   head() {
     return {
@@ -55,6 +60,7 @@ export default {
     NavigationButtons,
     BlogPosts,
     ProjectsCarousel,
+    OurTeam,
   },
 }
 </script>
