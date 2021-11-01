@@ -7,8 +7,12 @@
 <script>
 export default {
   props: {
-    index: Number,
-    image: String,
+    index: {
+      type: Number,
+    },
+    image: {
+      type: String,
+    },
   },
   data() {
     return {

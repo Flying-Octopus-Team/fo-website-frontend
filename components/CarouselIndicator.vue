@@ -9,7 +9,9 @@
 <script>
 export default {
   props: {
-    index: Number,
+    index: {
+      type: Number,
+    },
   },
   data() {
     return {
