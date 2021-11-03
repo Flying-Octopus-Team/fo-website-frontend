@@ -11,9 +11,6 @@ import Navigation from '../components/Navigation.vue'
 import AppFooter from '../components/AppFooter.vue'
 
 export default {
-  updated() {
-    console.log(this.$route.path)
-  },
   head() {
     return {
       bodyAttrs: {
