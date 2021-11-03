@@ -19,7 +19,10 @@
       </div>
     </section>
     <section class="projects">
-      <ProjectsCarousel :projectImages="projectImages" />
+      <h2>Nasze Projekty</h2>
+      <div class="center">
+        <ProjectsCarousel :projectImages="projectImages" />
+      </div>
     </section>
     <section class="kontaktUs" id="ourTeam">
       <OurTeam :members="members" />
