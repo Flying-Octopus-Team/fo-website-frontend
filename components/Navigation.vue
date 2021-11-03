@@ -20,7 +20,7 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav ml-auto">
-        <nuxt-link to="/aboutus" class="nav-item nav-link font-bold">
+        <nuxt-link to="/about-us" class="nav-item nav-link font-bold">
           o nas</nuxt-link
         >
         <nuxt-link to="/blog-list" class="nav-item nav-link font-bold"
