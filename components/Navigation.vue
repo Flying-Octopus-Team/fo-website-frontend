@@ -1,9 +1,5 @@
 <template>
-  <nav
-    class="navbar navbar-expand-lg"
-    :class="{ 'fixed-top': fixedTop }"
-    id="navbar"
-  >
+  <nav class="navbar navbar-expand-lg" id="navbar">
     <nuxt-link to="/" class="navbar-brand"
       ><img src="../assets/img/biały sygnet 2.png" alt="logo"
     /></nuxt-link>
@@ -42,13 +38,3 @@
     </div>
   </nav>
 </template>
-
-<script>
-export default {
-  data() {
-    return {
-      fixedTop: ['/'].includes(this.$route.path),
-    }
-  },
-}
-</script>

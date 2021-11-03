@@ -13,6 +13,10 @@ export default {
   components: {
     DetailedJoinUs,
   },
+  mounted() {
+    const navbar = document.querySelector('#navbar')!
+    navbar.classList.remove('fixed-top')
+  },
 }
 </script>
 

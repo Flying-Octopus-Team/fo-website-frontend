@@ -31,7 +31,7 @@
   </main>
 </template>
 
-<script>
+<script lang="ts">
 import NavigationButtons from '../components/NavigationButtons.vue'
 import BlogPosts from '../components/BlogPosts.vue'
 import ProjectsCarousel from '../components/ProjectsCarousel.vue'
@@ -63,6 +63,10 @@ export default {
         { src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' },
       ],
     }
+  },
+  mounted() {
+    const navbar = document.querySelector('#navbar')!
+    navbar.classList.add('fixed-top')
   },
   components: {
     NavigationButtons,
