@@ -10,7 +10,7 @@
         nas i przywitaj się!
       </li>
       <li>Zrób wyznaczone <span>zadanie wstępne</span></li>
-      <li><span>Twórz</span> z nami wspaniałe projekty</li>
+      <li><span>Twórz</span> z nami wspaniałe projekty!</li>
     </ol>
   </section>
 </template> 
