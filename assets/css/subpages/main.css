@@ -176,14 +176,17 @@
     width: 100%;
     position: relative; 
   }
-  main .naszeWartosci .naszeContain2 .mission .title h3, main .naszeWartosci .naszeContain2 .wizja .title h3{
+  main .naszeWartosci .naszeContain2 .mission .title h3, main .naszeWartosci .naszeContain2 .wizja .title h3, main .dolacz .first-cont-dolacz .line-dolacz h3, main .dolacz .cont-dolacz-row .second-cont-dolacz .line-dolacz h3 , main .dolacz .cont-dolacz-row .three-cont-dolacz .line-dolacz h3{
     color: #ED7EDF;
     width: 150px;
     background-color: black;
     text-align: center;
     margin: 0 auto;
   }
-  main .naszeWartosci .naszeContain2 .mission .title .line,main .naszeWartosci .naszeContain2 .wizja .title .line{
+  main .dolacz .cont-dolacz-row .second-cont-dolacz .line-dolacz h3 {
+    width: 200px;
+  }
+  main .naszeWartosci .naszeContain2 .mission .title .line,main .naszeWartosci .naszeContain2 .wizja .title .line f, main .dolacz .first-cont-dolacz .line-dolacz .line, main .dolacz .cont-dolacz-row .second-cont-dolacz .line-dolacz .line, main .dolacz .cont-dolacz-row .three-cont-dolacz .line-dolacz .line {
     position: absolute;
     top:50%;
     left: 0;
@@ -317,13 +320,20 @@
     width: 100%;
   }
   main .dolacz h2{
-    margin: 4rem 0 2rem 0;
+    margin: 3rem 0 7rem 0;
     text-align: center;
   }
-  main .dolacz .first-cont-dolacz{
+  main .dolacz .first-cont-dolacz, main .dolacz .cont-dolacz-row .second-cont-dolacz, main .dolacz .cont-dolacz-row .three-cont-dolacz {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-bottom: 2.5rem;
   }
-  main .dolacz .first-cont-dolacz .cont-dolacz{
+  main .dolacz .cont-dolacz-row .second-cont-dolacz, main .dolacz .cont-dolacz-row .three-cont-dolacz {
+    gap: 1.5rem;
+  }
+  main .dolacz .first-cont-dolacz .cont-dolacz, main .dolacz .cont-dolacz-row .second-cont-dolacz .cont-dolacz, main .dolacz .cont-dolacz-row .second-cont-dolacz .cont-dolacz {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -333,12 +343,28 @@
     font-size: 36px;
     line-height: 50px;
   }
+  main .dolacz .second-cont-dolacz .cont-dolacz .center-dolacz, main .dolacz .three-cont-dolacz .cont-dolacz .center-dolacz {
+    width: 100%;
+    font-size: 24px;
+    line-height: 50px;
+  }
   main .dolacz .first-cont-dolacz .cont-dolacz .right-dolacz{
     width: 50%;
     font-size: 24px;
     line-height: 40px;
   }
-  
+  main .dolacz .first-cont-dolacz .line-dolacz, main .dolacz .cont-dolacz-row .second-cont-dolacz .line-dolacz, main .dolacz .cont-dolacz-row .three-cont-dolacz .line-dolacz {
+    position: relative;
+    width: 100%;
+  }
+  main .dolacz .cont-dolacz-row .second-cont-dolacz, main .dolacz .cont-dolacz-row .three-cont-dolacz {
+    width: 40%;
+  }
+  main .dolacz .cont-dolacz-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
   footer {
     width: 100%;
     height: 50vh;
