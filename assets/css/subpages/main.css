@@ -365,6 +365,31 @@
     flex-direction: row;
     justify-content: space-between;
   }
+  main .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+  main .contact h2 {
+    color: #ED7EDF;
+  }
+  main .contact h3 {
+    color: white;
+  }
+  main .contact ol {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  main .contact ol li {
+    font-size: 1.5rem;
+    color: white;
+  }
+  main .contact ol li span {
+    color: #ED7EDF;
+  }
   footer {
     width: 100%;
     height: 50vh;
