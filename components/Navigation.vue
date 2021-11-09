@@ -31,7 +31,9 @@
         <nuxt-link to="/join-us" class="nav-item nav-link font-bold"
           >Dołącz do nas</nuxt-link
         >
-        <nuxt-link to="/contact" class="nav-item nav-link font-bold link-last"
+        <nuxt-link
+          to="/join-us#contact"
+          class="nav-item nav-link font-bold link-last"
           >kontakt</nuxt-link
         >
       </div>
