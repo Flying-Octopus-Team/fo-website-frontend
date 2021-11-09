@@ -1,6 +1,7 @@
 <template>
   <main>
     <DetailedJoinUs />
+    <Contact />
   </main>
 </template>
 
