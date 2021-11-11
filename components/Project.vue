@@ -18,7 +18,7 @@
               v-for="(tag, index) in tags"
               class="tagP"
               :key="index"
-              :style="{ backgroundColor: tag.color }"
+              :style="{ background: tag.color }"
             >
               {{ tag.name }}
             </div>
