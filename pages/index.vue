@@ -41,11 +41,10 @@ import '../assets/css/animate.css'
 
 export default {
   async asyncData({ $content }) {
-    let blogPosts = await $content('blog').fetch()
-    blogPosts.sort(
-      (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
-    )
-    const recentBlogPosts = blogPosts.slice(0, 2)
+    const recentBlogPosts = await $content('blog')
+      .sortBy('date', 'desc')
+      .limit(3)
+      .fetch()
 
     let projects = await $content('project').fetch()
     let projectImages = []
