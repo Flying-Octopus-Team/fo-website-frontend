@@ -20,9 +20,11 @@
     </section>
     <section class="projects">
       <h2>Nasze Projekty</h2>
+      <div class="grad"></div>
       <div class="center">
         <ProjectsCarousel :projectImages="projectImages" />
       </div>
+      <div class="grad"></div>
     </section>
     <section class="kontaktUs" id="ourTeam">
       <OurTeam :members="members" />

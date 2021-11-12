@@ -14,6 +14,7 @@
       :link="project.link"
       :description="project.description"
     />
+    <div class="grand"></div>
   </section>
 </template>
 

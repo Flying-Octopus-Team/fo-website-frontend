@@ -129,7 +129,7 @@ main .second .contSec .left .post{
   color: white;
   font-size: 1rem;
 }
-main .second .contSec .left .post .grad{
+main .second .contSec .left .post .grad, .projects .grad {
     height: 2px;
     background: linear-gradient(270deg, #51BBEB 0%, #ED7EDF 49.48%, #9563BF 100%);
 }
