@@ -46,7 +46,7 @@ export default {
       .limit(3)
       .fetch()
 
-    let projects = await $content('project').fetch()
+    const projects = await $content('project').fetch()
     let projectImages = []
     projects.forEach((project) => {
       projectImages = projectImages.concat(project.images)
