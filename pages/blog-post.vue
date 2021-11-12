@@ -14,7 +14,7 @@
         {{ description }}
       </p>
       <div
-        class="image-cont-first"
+        class="image-cont-first fit-bg"
         :style="{ backgroundImage: 'url(' + thumbnail + ')' }"
       ></div>
       <p class="informationTwo"></p>

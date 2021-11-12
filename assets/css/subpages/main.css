@@ -215,6 +215,9 @@
     height: auto;
     color: white;
   }
+  .fit-bg {
+    background-size: 100% 100%;
+  }
   main .this-post .image-con-log{
     width: 100%;
     margin: 1rem 0;

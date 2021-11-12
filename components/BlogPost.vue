@@ -4,7 +4,7 @@
     <div class="post-right-con">
       <div
         @click="onClick"
-        class="post-img"
+        class="post-img fit-bg"
         :style="{ backgroundImage: 'url(' + thumbnail + ')' }"
       ></div>
       <div class="post-text">
