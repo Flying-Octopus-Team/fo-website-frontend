@@ -3,11 +3,12 @@
     <div class="grad"></div>
     <div class="post-right-con">
       <div
+        @click="onClick"
         class="post-img"
         :style="{ backgroundImage: 'url(' + thumbnail + ')' }"
       ></div>
       <div class="post-text">
-        <h4>Aktualności #{{ index + 1 }} - {{ title }}</h4>
+        <h4 @click="onClick">Aktualności #{{ index + 1 }} - {{ title }}</h4>
         <p class="opublikowanie">Opublikowany {{ this.formatDate(date) }}</p>
         <p>
           {{ description }}
@@ -29,6 +30,20 @@ export default {
     content: String,
   },
   methods: {
+    onClick() {
+      this.$router.push({
+        name: 'blog-post',
+        params: {
+          id: (this.index + 1).toString(),
+          title: this.title,
+          date: this.formatDate(this.date),
+          thumbnail: this.thumbnail,
+          description: this.description,
+          author: this.author,
+          content: this.content,
+        },
+      })
+    },
     formatDate(date: string) {
       const ms = new Date(date)
       const formatObject = {
