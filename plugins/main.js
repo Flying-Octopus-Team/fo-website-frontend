@@ -14,8 +14,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // skrypt naprawiający nawigację (zamyka się po kliknięciu w cokolwiek na mobilce)
     $(document).click(function (event) {
-        var clickover = $(event.target);
-        var _opened = $(".navbar-collapse").hasClass("show");
+        const clickover = $(event.target);
+        const _opened = $(".navbar-collapse").hasClass("show");
         if (_opened === true && !clickover.hasClass("navbar-toggler")) {
             $(".navbar-toggler").click();
         }

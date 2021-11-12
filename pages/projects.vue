@@ -16,11 +16,11 @@ export default {
     const tagsData = await $content('tag').fetch()
 
     projects.forEach((project) => {
-      project['tagData'] = []
+      project.tagData = []
       project.tags.forEach((tag) => {
         tagsData.forEach((tagData) => {
           if (tagData.slug === tag) {
-            project['tagData'].push({
+            project.tagData.push({
               name: tagData.name,
               color: tagData.color,
             })
