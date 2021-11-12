@@ -23,7 +23,7 @@
   </main>
 </template>
 
-<script>
+<script lang="ts">
 import { markdown } from 'markdown'
 
 export default {
@@ -51,11 +51,11 @@ export default {
     this.content = this.$route.params.content
   },
   mounted() {
-    const navbar = document.querySelector('#navbar')
+    const navbar = document.querySelector('#navbar')!
     navbar.classList.remove('fixed-top')
 
     const html = markdown.toHTML(this.content)
-    const container = document.querySelector('.informationTwo')
+    const container = document.querySelector('.informationTwo')!
     container.innerHTML = html
 
     const images = document.querySelectorAll('img')
@@ -72,6 +72,3 @@ export default {
   },
 }
 </script>
-
-<style>
-</style>

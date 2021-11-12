@@ -29,7 +29,7 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 export default {
   props: {
     title: String,
@@ -40,6 +40,3 @@ export default {
   },
 }
 </script>
-
-<style>
-</style>
