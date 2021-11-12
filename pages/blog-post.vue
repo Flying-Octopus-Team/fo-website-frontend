@@ -39,6 +39,9 @@ export default {
     }
   },
   created() {
+    if (Object.keys(this.$route.params).length === 0) {
+      this.$router.push('/blog-list')
+    }
     this.id = parseInt(this.$route.params.id)
     this.title = this.$route.params.title
     this.date = this.$route.params.date
