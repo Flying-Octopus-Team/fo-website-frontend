@@ -51,9 +51,8 @@
           <h3>Poczucie wspólnoty</h3>
           <p>
             Dążymy do bycia grupą, w której każdy czuje się dobrze. Pracujemy w
-            przyjaznej atmosfe rze. Wspieramy się i rozmawiamy ze sobą,
-            stawiając na komunikację oraz konstruktywną, wrażliwą wymianę
-            poglądów.
+            przyjaznej atmosferze. Wspieramy się i rozmawiamy ze sobą, stawiając
+            na komunikację oraz konstruktywną, wrażliwą wymianę poglądów.
           </p>
         </div>
       </div>
