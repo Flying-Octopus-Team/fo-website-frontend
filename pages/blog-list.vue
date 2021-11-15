@@ -11,7 +11,7 @@ import '../assets/css/animate.css'
 
 export default {
   async asyncData({ $content }) {
-    const blogPosts = await $content('blog').fetch()
+    const blogPosts = await $content('blog').sortBy('date', 'desc').fetch()
     return { blogPosts }
   },
   mounted() {
