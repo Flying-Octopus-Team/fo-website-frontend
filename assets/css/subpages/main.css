@@ -34,6 +34,9 @@
   .visibility {
     visibility: hidden;
   }
+  .rounded-img {
+    border-radius: .5rem;
+  }
   nav {
     text-transform: uppercase;
     -webkit-transition: background-color .6s;

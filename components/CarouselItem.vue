@@ -1,6 +1,6 @@
 .<template>
   <div class="carousel-item" :class="{ active: isFirst }">
-    <img class="d-block w-100" :src="image" alt="First slide" />
+    <img class="d-block w-100 rounded-img" :src="image" alt="First slide" />
   </div>
 </template>
 
