@@ -107,7 +107,7 @@
   main .post .post-right-con .post-img{
     cursor: pointer;
     background-color: aqua;
-    width: 30%;
+    width: 15%;
   }
   main .oNas{
     height: 100vh;
@@ -441,7 +441,7 @@
       width: 80%;
     }
     main .post .post-right-con .post-img{
-      width: 50%;
+      width: 30%;
     }
     main .projekty .projekt{
       flex-direction: column;
@@ -485,8 +485,9 @@
       padding-top: 10px;
     }
     main .post .post-right-con .post-img{
-      width: 50%;
+      width: 100%;
       height: 20%;
+      margin-bottom: 1rem;
     }
     main .naszeWartosci .naszeContain{
       flex-direction: column;

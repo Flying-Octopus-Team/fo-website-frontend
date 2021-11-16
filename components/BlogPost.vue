@@ -2,11 +2,7 @@
   <div class="post">
     <div class="grad"></div>
     <div class="post-right-con">
-      <div
-        @click="onClick"
-        class="post-img fit-bg"
-        :style="{ backgroundImage: 'url(' + thumbnail + ')' }"
-      ></div>
+      <img class="post-img" :src="thumbnail" @click="onClick" />
       <div class="post-text">
         <h4 @click="onClick">Aktualności #{{ index + 1 }} - {{ title }}</h4>
         <p class="opublikowanie">Opublikowany {{ this.formatDate(date) }}</p>
