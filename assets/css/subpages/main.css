@@ -235,7 +235,7 @@
     background-color: #ED7EDF;
   }
   main .this-post .image-cont-second{
-    width: 60%;
+    width: 40%;
     margin: 3rem auto;
     background-color: #ED7EDF;
   }
@@ -453,6 +453,9 @@
       width: 90%;
       margin: 0 auto;
     }
+    main .this-post .image-cont-second{
+      width: 75%;
+    }
   }
   @media (max-width: 1032px) {
     .font-bold{
@@ -504,6 +507,9 @@
     }
     main .this-post{
       padding: 60px 30px;
+    }
+    main .this-post .image-cont-second{
+      width: 90%;
     }
   }
   @media (max-width: 600px) {
