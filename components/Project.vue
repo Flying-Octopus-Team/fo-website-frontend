@@ -8,7 +8,7 @@
       <div class="projekt-right">
         <h3>{{ title }}</h3>
         <p>{{ description }}</p>
-        <a :href="link">Zagraj</a>
+        <a :href="link">ZAGRAJ</a>
         <div class="tagi">
           <div class="tagElementrny">
             <div class="tagE">itch.io</div>

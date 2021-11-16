@@ -261,9 +261,9 @@
   main .projekty .projekt .projekt-right{
     width: 50%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-direction: column;
-    padding: 1rem 1rem 0 1rem;
+    padding: 1rem 1rem 0 3rem;
   }
   main .projekty .projekt .projekt-right h3{
     text-align: center;
@@ -307,7 +307,7 @@
     margin: 0 auto;
     background: linear-gradient(270deg, #ED7EDF 0%, #9563BF 102.99%);
     color: white;
-    padding: 1.5rem 3rem;
+    padding: 1.5rem 4.5rem;
     margin-top: 2rem;
     font-size: 1.8rem;
     border-radius: .3rem;
