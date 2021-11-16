@@ -10,14 +10,7 @@
       <div class="grad"></div>
       <h4>Aktualność #{{ id }} - {{ title }}</h4>
       <p class="opublikowanie">Opublikowano {{ date }}</p>
-      <p class="informationOne">
-        {{ description }}
-      </p>
-      <div
-        class="image-cont-first fit-bg"
-        :style="{ backgroundImage: 'url(' + thumbnail + ')' }"
-      ></div>
-      <p class="informationTwo"></p>
+      <p class="informationOne"></p>
       <div class="grad"></div>
     </section>
   </main>
@@ -55,16 +48,13 @@ export default {
     navbar.classList.remove('fixed-top')
 
     const html = markdown.toHTML(this.content)
-    const container = document.querySelector('.informationTwo')!
+    const container = document.querySelector('.informationOne')!
     container.innerHTML = html
 
     const images = document.querySelectorAll('img')
 
     images.forEach((image) => {
-      if (
-        !image.classList.contains('image-cont-first') &&
-        image.alt !== 'flying logo'
-      ) {
+      if (image.alt !== 'flying logo') {
         image.classList.add('image-cont-second')
         image.style.display = 'block'
       }
