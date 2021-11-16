@@ -151,7 +151,7 @@ main .second .contSec .left .post .post-right-con .post-text .opublikowanie {
 }
 main .second .contSec .left .post .post-right-con .post-img{
   background-color: aqua;
-  width: 500px;
+  width: 30%;
 }
 main .second .contSec .right{
   width: 50%;
@@ -293,13 +293,14 @@ footer .joinNewsletter a{
   main .kontaktUs .secondLa img{
     width: 50%;
   }
+  main .second .contSec .left .post .post-right-con .post-img{
+    background-color: aqua;
+    width: 50%;
+  }
 }
 @media (max-width: 1032px) {
   .font-bold{
     font-size: 1rem;
-  }
-  main .second .contSec .right{
-    width: 70%;
   }
   main .second{
     height: auto;
@@ -327,6 +328,12 @@ footer .joinNewsletter a{
   main .kontaktUs .firstLa .contTeam .contPerson .singlePer{
     width: 70px;
     height: 70px;
+  }
+}
+@media (max-width: 880px) {
+  main .second .contSec .left .post .post-right-con .post-img{
+    background-color: aqua;
+    width: 100%;
   }
 }
 @media (max-width: 782px) {
