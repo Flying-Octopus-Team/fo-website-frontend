@@ -45,7 +45,7 @@ export default {
   async asyncData({ $content }) {
     const recentBlogPosts = await $content('blog')
       .sortBy('date', 'desc')
-      .limit(3)
+      .limit(2)
       .fetch()
 
     const projects = await $content('project').fetch()
