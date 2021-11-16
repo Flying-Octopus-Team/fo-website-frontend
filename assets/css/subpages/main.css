@@ -286,8 +286,8 @@
     justify-content: flex-end;
   }
   main .projekty .projekt .projekt-right .tagi .tagElementrny .tagE{
-    border-radius: .5rem;
-    padding: 0 .2rem;
+    border-radius: .3rem;
+    padding: .05rem .4rem;
     margin-left: 1rem;
     background: linear-gradient(275.29deg, #51BBEB 5.92%, #51BBEB 95.76%);
   }
@@ -297,10 +297,10 @@
     justify-content: flex-end;
   }
   main .projekty .projekt .projekt-right .tagi .tagPomocniczy .tagP{
-    border-radius: .5rem;
-    padding: 0 .2rem;
-    margin-top: .5rem;
-    margin-left: 1rem;
+    border-radius: .3rem;
+    padding: .05rem .4rem;
+    margin-top: .3rem;
+    margin-left: .3rem;
     background: linear-gradient(275.29deg, #9563BF 5.92%, #ED7EDF 95.76%);
   }
   main .projekty .projekt .projekt-right a{
@@ -310,7 +310,7 @@
     padding: 1.5rem 3rem;
     margin-top: 2rem;
     font-size: 1.8rem;
-    border-radius: 1rem;
+    border-radius: .3rem;
     text-decoration: none;
   }
   main .dolacz{
