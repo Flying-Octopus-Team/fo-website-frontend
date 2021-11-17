@@ -74,6 +74,19 @@ nav .navbar-brand {
   max-height: 100%;
 }
 
+.all-blog-posts {
+  position: relative;
+}
+
+.all-blog-posts a {
+  position: absolute;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  right: 0;
+  top: -0.7rem;
+}
+
 .shadow-bg {
   background: linear-gradient(270deg, #001720 0%, #110B14 100%);
 }

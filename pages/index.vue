@@ -12,6 +12,9 @@
       <div class="contSec">
         <div class="left">
           <BlogPosts :posts="recentBlogPosts" />
+          <div class="all-blog-posts">
+            <a href="/blog-list">Zobacz wszystkie posty</a>
+          </div>
         </div>
         <div class="right">
           <img src="../assets/img/maskotka_FO2.png" alt="maskotka" />
