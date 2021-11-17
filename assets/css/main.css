@@ -250,7 +250,7 @@ main .kontaktUs .secondLa a{
   color: white;
   background: linear-gradient(270deg, #ED7EDF 0%, #9563BF 102.99%);
   padding: 1rem 2rem;
-  border-radius: 1rem;
+  border-radius: 0.3rem;
 }
 
 footer {
