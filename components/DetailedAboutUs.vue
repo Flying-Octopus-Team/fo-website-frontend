@@ -79,7 +79,11 @@
           </p>
         </div>
       </div>
-      <a href="">ZASOBY</a>
+      <a
+        href="https://wiki.flyingoctopus.pl/bin/view/Dla%20Cz%C5%82onk%C3%B3w/Zasoby/"
+        target="_blank"
+        >ZASOBY</a
+      >
     </div>
   </div>
 </template>
