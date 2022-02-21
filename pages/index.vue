@@ -25,11 +25,11 @@
       <h2>Nasze Projekty</h2>
       <div class="grad"></div>
       <div class="center">
-        <ProjectsCarousel :projectImages="projectImages" />
+        <ProjectsCarousel :project-images="projectImages" />
       </div>
       <div class="grad"></div>
     </section>
-    <section class="kontaktUs" id="ourTeam">
+    <section id="ourTeam" class="kontaktUs">
       <OurTeam :members="members" />
       <JoinUs />
     </section>
@@ -45,6 +45,12 @@ import '../assets/css/main.css'
 import '../assets/css/animate.css'
 
 export default {
+  components: {
+    NavigationButtons,
+    BlogPosts,
+    ProjectsCarousel,
+    OurTeam,
+  },
   async asyncData({ $content }) {
     const recentBlogPosts = await $content('blog')
       .sortBy('date', 'desc')
@@ -71,12 +77,6 @@ export default {
   mounted() {
     const navbar = document.querySelector('#navbar')!
     navbar.classList.add('fixed-top')
-  },
-  components: {
-    NavigationButtons,
-    BlogPosts,
-    ProjectsCarousel,
-    OurTeam,
-  },
+  }
 }
 </script>

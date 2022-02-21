@@ -10,6 +10,9 @@ import '../assets/css/subpages/main.css'
 import '../assets/css/animate.css'
 
 export default {
+  components: {
+    ProjectList,
+  },
   async asyncData({ $content }) {
     const projects = await $content('project').fetch()
 
@@ -34,9 +37,6 @@ export default {
   mounted() {
     const navbar = document.querySelector('#navbar')!
     navbar.classList.remove('fixed-top')
-  },
-  components: {
-    ProjectList,
-  },
+  }
 }
 </script>
