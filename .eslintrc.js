@@ -9,14 +9,13 @@ module.exports = {
     'plugin:nuxt/recommended',
     'prettier'
   ],
-  plugins: [
-  ],
+  plugins: [],
   // add your custom rules here
   rules: {
-    "vue/multi-word-component-names": [
-    "error",
+    'vue/multi-word-component-names': [
+      'error',
       {
-        "ignores": ["index"]
+        'ignores': ['index', 'default']
       }
     ]
   }

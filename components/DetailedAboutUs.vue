@@ -1,8 +1,8 @@
 <template>
   <div>
-    <div class="oNas">
+    <div class='oNas'>
       <h1>Więcej o nas</h1>
-      <p class="content-oNas">
+      <p class='content-oNas'>
         Jesteśmy demokratycznym zespołem gamedevowym, który składa się z
         kilkunastu osób pragnących rozwijać swoje umiejętności w zakresie
         tworzenia gier komputerowych oraz wspólnie pracować nad kilkoma
@@ -24,13 +24,13 @@
         organizacjami. Bierzemy udział w inicjatywach z zewnątrz.
       </p>
     </div>
-    <div class="naszeWartosci">
-      <div class="headerNaszeWartosci">
-        <div class="line"></div>
+    <div class='naszeWartosci'>
+      <div class='headerNaszeWartosci'>
+        <div class='line'></div>
         <h2>NASZE WARTOŚCI</h2>
       </div>
-      <div class="naszeContain">
-        <div class="">
+      <div class='naszeContain'>
+        <div class=''>
           <h3>Samorealizacja</h3>
           <p>
             Flying Octopus pozwala kreatywnie rozwijać się w wielu kierunkach.
@@ -38,7 +38,7 @@
             szkolenia wspólnie doskonalą swoje umiejętności.
           </p>
         </div>
-        <div class="">
+        <div class=''>
           <h3>Autonomia</h3>
           <p>
             Każdy członek indywidualnie decyduje o tym, w czym bierze udział i
@@ -47,7 +47,7 @@
             inicjatywy.
           </p>
         </div>
-        <div class="">
+        <div class=''>
           <h3>Poczucie wspólnoty</h3>
           <p>
             Dążymy do bycia grupą, w której każdy czuje się dobrze. Pracujemy w
@@ -56,10 +56,10 @@
           </p>
         </div>
       </div>
-      <div class="naszeContain2">
-        <div class="mission">
-          <div class="title">
-            <div class="line"></div>
+      <div class='naszeContain2'>
+        <div class='mission'>
+          <div class='title'>
+            <div class='line'></div>
             <h3>MISJA</h3>
           </div>
           <p>
@@ -68,9 +68,9 @@
             płynącej z tworzenia.
           </p>
         </div>
-        <div class="wizja">
-          <div class="title">
-            <div class="line"></div>
+        <div class='wizja'>
+          <div class='title'>
+            <div class='line'></div>
             <h3>WIZJA</h3>
           </div>
           <p>
@@ -80,9 +80,9 @@
         </div>
       </div>
       <a
-        href="https://wiki.flyingoctopus.pl/bin/view/Dla%20Cz%C5%82onk%C3%B3w/Zasoby/"
-        target="_blank"
-        >ZASOBY</a
+        href='https://wiki.flyingoctopus.pl/bin/view/Dla%20Cz%C5%82onk%C3%B3w/Zasoby/'
+        target='_blank'
+      >ZASOBY</a
       >
     </div>
   </div>

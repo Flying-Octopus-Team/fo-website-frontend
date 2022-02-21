@@ -1,28 +1,28 @@
 <template>
   <div>
-    <Navigation />
+    <NavigationBar />
     <Nuxt />
     <AppFooter />
   </div>
 </template>
 
 <script>
-import Navigation from '../components/Navigation.vue'
+import NavigationBar from '../components/NavigationBar.vue'
 import AppFooter from '../components/AppFooter.vue'
 
 export default {
+  components: {
+    NavigationBar,
+    AppFooter
+  },
   head() {
     return {
       bodyAttrs: {
         'data-spy': 'scroll',
-        'data-target': '#navbar',
-      },
+        'data-target': '#navbar'
+      }
     }
-  },
-  components: {
-    Navigation,
-    AppFooter,
-  },
+  }
 }
 </script>
 
