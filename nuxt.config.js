@@ -6,7 +6,7 @@ export default {
   head: {
     title: 'fo-website',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'pl'
     },
     meta: [
       { charset: 'utf-8' },
@@ -16,15 +16,35 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+    ],
+    script: [
+      {
+        src: "https://code.jquery.com/jquery-3.4.1.slim.min.js",
+        integrity: "sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n",
+        crossorigin: "anonymous",
+      },
+      {
+        src: "https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js",
+        integrity: "sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo",
+        crossorigin: "anonymous",
+      },
+      {
+        src: "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js",
+        integrity: "sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6",
+        crossorigin: "anonymous",
+      },
+      {
+        src: "https://kit.fontawesome.com/421d7ccc81.js",
+        crossorigin: "anonymous"
+      }
     ]
   },
 
-  // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [
-  ],
-
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    { src: '~/plugins/animation.js', mode: 'client' },
+    { src: '~/plugins/jquery.waypoints.min', mode: 'client' },
+    { src: '~/plugins/main.js', mode: 'client' },
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
