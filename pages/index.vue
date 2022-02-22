@@ -1,42 +1,42 @@
 <template>
   <main>
-    <section class="first">
+    <section class='first'>
       <NavigationButtons />
     </section>
-    <section class="second">
-      <p class="tresc">
+    <section class='second'>
+      <p class='tresc'>
         Jesteśmy zespołem gamedevowym, który składa się z kilkunastu osób
         pragnących rozwijać swoje umiejętności w zakresie tworzenia gier
         komputerowych oraz wspólnie pracować nad kilkoma kreatywnymi projektami.
       </p>
-      <div class="contSec">
-        <div class="left">
-          <BlogPosts :posts="recentBlogPosts" />
-          <div class="all-blog-posts">
-            <a href="/blog-list">Zobacz wszystkie posty</a>
+      <div class='contSec'>
+        <div class='left'>
+          <BlogPosts :posts='recentBlogPosts' />
+          <div class='all-blog-posts'>
+            <a href='/blog-list'>Zobacz wszystkie posty</a>
           </div>
         </div>
-        <div class="right">
-          <img src="../assets/img/maskotka_FO2.png" alt="maskotka" />
+        <div class='right'>
+          <img src='../assets/img/maskotka_FO2.png' alt='maskotka' />
         </div>
       </div>
     </section>
-    <section class="projects">
+    <section class='projects'>
       <h2>Nasze Projekty</h2>
-      <div class="grad"></div>
-      <div class="center">
-        <ProjectsCarousel :project-images="projectImages" />
+      <div class='grad'></div>
+      <div class='center'>
+        <ProjectsCarousel :project-images='projectImages' />
       </div>
-      <div class="grad"></div>
+      <div class='grad'></div>
     </section>
-    <section id="ourTeam" class="kontaktUs">
-      <OurTeam :members="members" />
+    <section id='ourTeam' class='kontaktUs'>
+      <OurTeam :members='members' />
       <JoinUs />
     </section>
   </main>
 </template>
 
-<script lang="ts">
+<script lang='ts'>
 import NavigationButtons from '../components/NavigationButtons.vue'
 import BlogPosts from '../components/BlogPosts.vue'
 import ProjectsCarousel from '../components/ProjectsCarousel.vue'
@@ -49,7 +49,7 @@ export default {
     NavigationButtons,
     BlogPosts,
     ProjectsCarousel,
-    OurTeam,
+    OurTeam
   },
   async asyncData({ $content }) {
     const recentBlogPosts = await $content('blog')
@@ -63,15 +63,18 @@ export default {
       projectImages = projectImages.concat(project.images)
     })
 
-    const members = await $content('member').fetch()
+    const members = await $content('member')
+      .sortBy('name', 'asc')
+      .where({active: true})
+      .fetch()
 
     return { recentBlogPosts, projectImages, members }
   },
   head() {
     return {
       script: [
-        { src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' },
-      ],
+        { src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }
+      ]
     }
   },
   mounted() {
