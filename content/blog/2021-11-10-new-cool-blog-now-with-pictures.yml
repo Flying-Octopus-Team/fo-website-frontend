@@ -1,0 +1,13 @@
+title: New cool blog - now with pictures!
+date: 2021-11-10T16:03:31.730Z
+thumbnail: /img/myszojelen.png
+description: This new blog is using pictures!
+author: 2021-07-10-przemysław-frankiewicz
+content: |-
+  Hello,
+
+  Finally, we can use images embedded inside our articles. 
+
+  ![Asterielle - alt text](/img/asterielle.png "Asterielle - title")
+
+  Just look at this!
