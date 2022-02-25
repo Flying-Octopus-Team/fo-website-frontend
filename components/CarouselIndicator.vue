@@ -1,24 +1,17 @@
 <template>
-  <li
-    data-target='#carouselExampleIndicators'
-    :data-slide-to='index'
-    :class='{ active: isFirst }'
-  ></li>
+  <li data-target='#carouselExampleIndicators' :data-slide-to='index' :class='{ active: isFirst }'></li>
 </template>
 
 <script lang='ts'>
-export default {
-  props: {
-    index: {
-      type: Number,
-      default: 0
-    }
-  },
-  data() {
-    return {
-      isFirst: this.index === 0
-    }
-  }
+import { Component, Prop, Vue } from 'nuxt-property-decorator'
+
+@Component
+export default class CarouselIndicator extends Vue {
+
+  @Prop({ default: () => 0 })
+  index!: number
+
+  isFirst: boolean = this.index === 0
 }
 </script>
 

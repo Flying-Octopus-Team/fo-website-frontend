@@ -1,9 +1,8 @@
 <template>
-  <div>
+  <div class='fo-blog-posts'>
     <BlogPost
       v-for='(post, index) in posts'
       :key='index'
-      :index='index'
       :title='post.title'
       :date='post.date'
       :thumbnail='post.thumbnail'
@@ -11,25 +10,20 @@
       :author='post.author'
       :content='post.content'
     />
-    <div class='post'>
-      <div class='grad'></div>
-    </div>
+    <div class='fo-line-separator'></div>
   </div>
 </template>
 
 <script lang='ts'>
-import BlogPost from '../components/BlogPost.vue'
+import { Component, Prop, Vue } from 'nuxt-property-decorator'
+import BlogPost from '@/components/BlogPost.vue'
+import Blog from '~/types/Blog'
 
-export default {
-  components: {
-    BlogPost
-  },
-  props: {
-    posts: {
-      type: Array,
-      default: () => []
-    }
-  }
+@Component({ components: { BlogPost } })
+export default class BlogPosts extends Vue {
+
+  @Prop({ default: () => [] })
+  posts!: Blog[]
 }
 </script>
 

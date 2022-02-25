@@ -1,8 +1,5 @@
 backend:
-  name: github
-  repo: Flying-Octopus-Team/fo-website-frontend
-  branch: main
-
+  name: test-repo
 publish_mode: editorial_workflow
 
 media_folder: static/img
@@ -21,7 +18,7 @@ collections:
     fields:
       - { label: 'Title', name: 'title', widget: 'string', required: true }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Thumbnail', name: 'thumbnail', widget: 'image', allow_multiple: false }
+      - { label: 'Thumbnail - Aspect ratio 1:1', name: 'thumbnail', widget: 'image', allow_multiple: false, comment: 'Aspect ratio should be 1:1' }
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Author', name: 'author', widget: 'relation', collection: 'member', value_field: '{{slug}}', search_fields: [ 'name' ], display_fields: [ '{{name}}' ] }
       - { label: 'Content', name: 'content', widget: 'markdown', required: true }
@@ -40,7 +37,7 @@ collections:
       - { label: 'Is an active member', name: 'active', widget: 'boolean', deafult: true, required: true }
       - { label: 'Description', name: 'description', widget: 'markdown' }
   - name: 'tag'
-    label: 'Project tags'
+    label: 'FOTypes tags'
     label_singular: 'Tag'
     folder: 'content/tag'
     format: 'yml'
@@ -53,7 +50,7 @@ collections:
       - { label: 'Name', name: 'name', widget: 'string', required: true }
       - { label: 'Tag Color', name: 'color', widget: 'color', allowInput: true }
   - name: 'project'
-    label: 'Project'
+    label: 'FOTypes'
     folder: 'content/project'
     format: 'yml'
     create: true

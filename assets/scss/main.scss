@@ -1,0 +1,245 @@
+$fo-white-color: #FFFFFF;
+$fo-blue-color: #51BBEB;
+$fo-pink-color: #ED7EDF;
+$fo-purple-color: #9563BF;
+
+@mixin octi-background {
+  background-image: url("../img/octopus_background.jpg");
+  background-repeat: no-repeat;
+  background-size: 200vh;
+  background-attachment: fixed;
+}
+
+@mixin fo-main-font {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+nav {
+  @include fo-main-font;
+  font-size: 24px;
+  font-weight: bold;
+
+  text-transform: uppercase;
+  -webkit-transition: background-color .6s;
+  transition: background-color .6s;
+  z-index: 1;
+  background: linear-gradient(270deg, #001720 0%, #110B14 100%);
+
+  .navbar-brand {
+    font-weight: bold;
+  }
+
+  a, i {
+    color: $fo-white-color;
+    -webkit-transition: color .3s;
+    transition: color .3s;
+  }
+
+  i {
+    padding: 10px;
+  }
+
+  a:hover {
+    color: $fo-pink-color;
+  }
+
+  .link-last {
+    background: linear-gradient(270deg, #ED7EDF 0%, #9563BF 102.99%);
+    border-radius: 8px;
+  }
+
+  .link-last:hover{
+    color: $fo-white-color;
+  }
+}
+
+.fo-title-img {
+  width: 80%;
+}
+
+.fo-nav-btn {
+  //Add proper icons when assets are ready
+  width: 256px;
+  height: 256px;
+}
+
+.fo-nav-btn:before {
+  content: '';
+  background: url("../img/fo-icon.svg") no-repeat;
+  background-size: contain;
+  position: absolute;
+  margin-top: 60px;
+  margin-left: 8px;
+  width: 240px;
+  height: 240px;
+  z-index: 2;
+}
+
+.fo-nav-btn-bg {
+  width: 256px;
+  height: 256px;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+  border-radius: 5px;
+  position: relative;
+  z-index: 1;
+  background: inherit;
+  overflow: hidden;
+}
+
+.fo-nav-btn-bg:before {
+  content: "";
+  position: absolute;
+  background: inherit;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: inset 0 0 2000px rgba(128, 128, 128, .5);
+  filter: blur(10px);
+  margin: -20px;
+}
+
+.fo-main-container {
+  @include octi-background;
+  @include fo-main-font;
+
+  .fo-main-page-content {
+    background-color: black;
+
+    .fo-main-text {
+      color: $fo-white-color;
+      font-weight: 300;
+      font-size: 36px;
+      line-height: 111%;
+    }
+
+    .fo-main-blog {
+      margin-left: 10%;
+      margin-right: 10%;
+
+      .fo-blog-posts {
+        flex-shrink: 1;
+        margin-right: 1.5rem;
+
+        img {
+          width: 138px;
+          height: 138px;
+        }
+
+        h4 {
+          color: $fo-white-color;
+          font-weight: 600;
+          font-size: 22px;
+          margin-bottom: 0;
+        }
+
+        h6 {
+          color: $fo-pink-color;
+          font-weight: 300;
+          font-size: 15px;
+          margin-bottom: 0.5rem;
+        }
+
+        p {
+          color: $fo-white-color;
+          font-weight: 300;
+          font-size: 14px;
+          text-align: justify;
+          text-wrap: normal;
+          flex-grow: 1;
+        }
+      }
+
+      .fo-mascot-img {
+        margin-left: 1.5rem;
+      }
+    }
+
+    .fo-main-carousel {
+      margin-right: 10%;
+      margin-left: 10%;
+
+      .carousel-item {
+        .fo-carousel-img {
+          max-height: 50vh;
+          width: 100%;
+        }
+      }
+    }
+
+    .fo-members {
+      margin-right: 10%;
+      margin-left: 10%;
+
+      .fo-member-tile {
+        width: 7%;
+        height: 7%;
+        border-radius: 50%;
+        margin-right: 2.5%;
+        margin-left: 2.5%;
+
+        img {
+          border-radius: 50%;
+          max-width: 100%;
+          max-height: 100%;
+        }
+
+        p {
+          color: $fo-white-color;
+          font-weight: 300;
+          font-size: 1rem;
+          text-align: center;
+          margin-top: 1rem;
+        }
+      }
+    }
+
+    .fo-main-join {
+      margin-top: 5vh;
+      margin-right: 30%;
+      margin-left: 30%;
+
+      color: $fo-white-color;
+      font-size: 36px;
+      font-weight: 300;
+      line-height: 111%;
+
+      img {
+        margin-right: 25%;
+        margin-left: 25%;
+      }
+
+      a {
+        margin-right: 25%;
+        margin-left: 25%;
+
+        color: $fo-white-color;
+        text-decoration: none;
+        background: rgb(149, 99, 191);
+        background: linear-gradient(90deg, rgba(149, 99, 191, 1) 0%, rgba(198, 83, 140, 1) 100%);
+        padding: 1rem 2rem;
+        border-radius: 0.3rem;
+      }
+
+      .fo-text-join-bottom {
+        color: $fo-pink-color;
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+.fo-line-separator {
+  height: 2px;
+  background: linear-gradient(270deg, $fo-blue-color 0%, $fo-pink-color 49.48%, $fo-purple-color 100%);
+}
+
+
+

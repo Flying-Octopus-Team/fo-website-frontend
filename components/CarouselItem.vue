@@ -1,27 +1,22 @@
-.
 <template>
   <div class='carousel-item' :class='{ active: isFirst }'>
-    <img class='d-block w-100 rounded-img' :src='image' alt='First slide' />
+    <img class='rounded mx-auto d-block fo-carousel-img' :src='image' alt='Slide'/>
   </div>
 </template>
 
 <script lang='ts'>
-export default {
-  props: {
-    index: {
-      type: Number,
-      default: 0
-    },
-    image: {
-      type: String,
-      default: ''
-    }
-  },
-  data() {
-    return {
-      isFirst: this.index === 0
-    }
-  }
+import { Component, Prop, Vue } from 'nuxt-property-decorator'
+
+@Component
+export default class CarouselItem extends Vue {
+
+  @Prop({ default: () => 0 })
+  index!: number
+
+  @Prop({ default: () => '' })
+  image!: string
+
+  isFirst: boolean = this.index === 0
 }
 </script>
 
