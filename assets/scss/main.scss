@@ -8,7 +8,6 @@ $fo-purple-color: #9563BF;
   background-repeat: repeat;
   background-attachment: fixed;
   background-blend-mode: multiply;
-
   background-color: rgba(0, 0, 0, 0);
   animation-duration: 3s;
   animation-name: slideBackgroundIn;
@@ -38,7 +37,7 @@ body {
 
 nav {
   @include fo-main-font;
-  font-size: 24px;
+  font-size: 1rem;
   font-weight: bold;
 
   text-transform: uppercase;
@@ -75,53 +74,6 @@ nav {
   }
 }
 
-.fo-title-img {
-  width: 80%;
-}
-
-.fo-nav-btn {
-  //Add proper icons when assets are ready
-  width: 256px;
-  height: 256px;
-}
-
-.fo-nav-btn:before {
-  content: '';
-  background: url("../img/fo-icon.svg") no-repeat;
-  background-size: contain;
-  position: absolute;
-  margin-top: 60px;
-  margin-left: 8px;
-  width: 240px;
-  height: 240px;
-  z-index: 2;
-}
-
-.fo-nav-btn-bg {
-  width: 256px;
-  height: 256px;
-  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
-  border-radius: 5px;
-  position: relative;
-  z-index: 1;
-  background: inherit;
-  overflow: hidden;
-}
-
-.fo-nav-btn-bg:before {
-  content: "";
-  position: absolute;
-  background: inherit;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  box-shadow: inset 0 0 2000px rgba(128, 128, 128, .5);
-  filter: blur(10px);
-  margin: -20px;
-}
-
 .fo-main-container::before {
   background-color: black;
   width: 100vw;
@@ -131,6 +83,15 @@ nav {
 .fo-main-container {
   @include octi-background;
   @include fo-main-font;
+
+  .fo-title-img {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .fo-main-nav-btn {
+    max-width: 40%;
+  }
 
   .fo-main-page-content {
     background-color: black;

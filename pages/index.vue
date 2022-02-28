@@ -1,28 +1,30 @@
 <template>
   <div class='d-flex flex-column fo-main-container'>
-
-    <div class='text-center my-5 py-5'>
+    <div class='text-center fo-title-img mt-5 mb-2'>
       <img class='img-fluid' src='../assets/img/fo-title.svg' alt='Flying Octopus'>
     </div>
-    <div class='d-flex flex-row justify-content-center align-content-center my-5 py-5'>
-      <a href='' class='fo-nav-btn m-3'>
-        <div class='fo-nav-btn-bg'></div>
+    <div class='d-flex flex-row flex-wrap justify-content-center align-content-center my-2'>
+      <a href='' class='m-3 fo-main-nav-btn'>
+        <img class='img-fluid' src='../assets/img/fo-icon.svg' alt='icon'>
       </a>
-      <a href='' class='fo-nav-btn m-3'>
-        <div class='fo-nav-btn-bg'></div>
+      <a href='' class='m-3 fo-main-nav-btn'>
+        <img class='img-fluid' src='../assets/img/fo-icon.svg' alt='icon'>
       </a>
-      <a href='' class='fo-nav-btn m-3'>
-        <div class='fo-nav-btn-bg'></div>
+      <a href='' class='m-3 fo-main-nav-btn'>
+        <img class='img-fluid' src='../assets/img/fo-icon.svg' alt='icon'>
       </a>
-      <a href='' class='fo-nav-btn m-3'>
-        <div class='fo-nav-btn-bg'></div>
+      <a href='' class='m-3 fo-main-nav-btn'>
+        <img class='img-fluid' src='../assets/img/fo-icon.svg' alt='icon'>
       </a>
-      <a href='' class='fo-nav-btn m-3'>
-        <div class='fo-nav-btn-bg'></div>
+      <a href='' class='m-3 fo-main-nav-btn'>
+        <img class='img-fluid' src='../assets/img/fo-icon.svg' alt='icon'>
+      </a>
+      <a href='' class='m-3  fo-main-nav-btn'>
+        <img class='img-fluid' src='../assets/img/fo-icon.svg' alt='icon'>
       </a>
     </div>
 
-    <div class='fo-main-page-content'>
+    <div class='fo-main-page-content my-5 py-5'>
       <p class='container text-center fo-main-text'>
         Jesteśmy zespołem gamedevowym, który składa się z kilkunastu osób
         pragnących rozwijać swoje umiejętności w zakresie tworzenia gier
