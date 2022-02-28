@@ -2,10 +2,12 @@
   <div class='my-2'>
     <div class='fo-line-separator my-2'></div>
     <div class='d-flex align-content-center'>
-      <img class='mr-2' :src='thumbnail' alt='Post thumbnail' />
-      <div class='d-inline-flex flex-column justify-content-around flex-wrap'>
-        <h4>Aktualności - {{ title }}</h4>
-        <h6>Opublikowany {{ formatDate(date) }}</h6>
+      <div class='d-flex justify-content-around align-items-center mr-2'>
+        <img :src='thumbnail' alt='Post thumbnail' />
+      </div>
+      <div class='d-flex flex-column justify-content-around flex-wrap'>
+        <h6 class='font-weight-bold'>{{ title }}</h6>
+        <p class='font-weight-light'>{{ formatDate(date) }}</p>
         <p>{{ description }}</p>
       </div>
     </div>

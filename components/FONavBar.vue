@@ -1,28 +1,37 @@
 <template>
-  <nav id='navbar' class='navbar navbar-expand-lg sticky-top'>
-    <nuxt-link to='/' class='navbar-brand ml-2 pt-1'>
-      <img src='../assets/img/biały sygnet 2.png' alt='logo' />
-    </nuxt-link>
-    <button
-      class='navbar-toggler'
-      type='button'
-      data-toggle='collapse'
-      data-target='#navbarSupportedContent'
-      aria-controls='navbarSupportedContent'
-      aria-expanded='false'
-      aria-label='Toggle navigation'>
-      <i class='fas fa-bars'></i>
-    </button>
+  <b-navbar class='fo-navbar' toggleable='lg' type='dark' variant='info'>
+    <b-navbar-brand to='/'><img src='../assets/img/biały sygnet 2.png' alt='logo' /></b-navbar-brand>
 
-    <div id='navbarSupportedContent' class='collapse navbar-collapse mr-2'>
-      <div class='navbar-nav ml-auto'>
-        <nuxt-link to='/about-us' class='nav-item nav-link font-bold mr-4'>o nas</nuxt-link>
-        <nuxt-link to='/blog-list' class='nav-item nav-link font-bold mr-4'>Aktualności</nuxt-link>
-        <nuxt-link to='/projects-list' class='nav-item nav-link font-bold mr-4'>Projekty</nuxt-link>
-        <nuxt-link to='/#ourTeam' class='nav-item nav-link font-bold mr-4'>Zespół</nuxt-link>
-        <nuxt-link to='/join-us' class='nav-item nav-link font-bold mr-4'>Dołącz do nas</nuxt-link>
-        <nuxt-link to='/join-us#contact' class='nav-item nav-link font-bold mr-4 link-last'>kontakt</nuxt-link>
-      </div>
-    </div>
-  </nav>
+    <b-navbar-toggle target='nav-collapse'></b-navbar-toggle>
+    <b-collapse id='nav-collapse' is-nav>
+      <b-navbar-nav class='ml-auto'>
+        <b-nav-item to='/about-us'>
+          <div class='fo-nav-item'>o nas</div>
+        </b-nav-item>
+        <b-nav-item to='/blog-list'>
+          <div class='fo-nav-item'>Aktualności</div>
+        </b-nav-item>
+        <b-nav-item to='/projects-list'>
+          <div class='fo-nav-item'>Projekty</div>
+        </b-nav-item>
+        <b-nav-item to='/#ourTeam'>
+          <div class='fo-nav-item'>Zespół</div>
+        </b-nav-item>
+        <b-nav-item to='/join-us'>
+          <div class='fo-nav-item'>Dołącz do nas</div>
+        </b-nav-item>
+        <b-nav-item to='/join-us#contact'>
+          <div class='fo-last-nav-item'>kontakt</div>
+        </b-nav-item>
+      </b-navbar-nav>
+    </b-collapse>
+  </b-navbar>
 </template>
+<script lang='ts'>
+import { Component, Vue } from 'nuxt-property-decorator'
+
+
+@Component
+export default class FONavBar extends Vue {
+}
+</script>

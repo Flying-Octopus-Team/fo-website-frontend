@@ -30,10 +30,10 @@
         pragnących rozwijać swoje umiejętności w zakresie tworzenia gier
         komputerowych oraz wspólnie pracować nad kilkoma kreatywnymi projektami.
       </p>
-      <div class='d-flex justify-content-center align-content-center flex-wrap fo-main-blog'>
+      <div class='d-flex justify-content-center align-content-center fo-main-blog row'>
         <BlogPosts :posts='recentBlogPosts' />
-        <div class='fo-mascot-img'>
-          <img src='../assets/img/smolocti.png' alt='Flying Octopus Mascot'>
+        <div class='d-flex align-items-center fo-mascot-img'>
+          <img class='img-fluid' src='../assets/img/smolocti.png' alt='Flying Octopus Mascot'>
         </div>
       </div>
       <p class='container text-center fo-main-text'>Nasze projekty</p>
@@ -73,7 +73,7 @@ export default class Index extends Vue {
     this.recentBlogPosts = Index.handleFetchedDataAsArray<Blog>(
       await this.$content('blog')
         .sortBy('date', 'desc')
-        .limit(2)
+        .limit(10)
         .fetch<Blog>()
     )
 
