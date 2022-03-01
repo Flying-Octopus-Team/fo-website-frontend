@@ -1,5 +1,5 @@
 <template>
-  <div class='d-flex flex-wrap fo-members justify-content-center'>
+  <div class='d-flex flex-wrap fo-members justify-content-around'>
     <TeamMember
       v-for='(member, index) in members' :key='index'
       :name='member.name'

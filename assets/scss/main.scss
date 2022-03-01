@@ -8,6 +8,8 @@ $fo-blue-color: #51BBEB;
 $fo-pink-color: #ED7EDF;
 $fo-purple-color: #9563BF;
 
+$bootstrap-sm-breakpoint: 768px;
+
 @mixin octi-background {
   background-image: linear-gradient(170deg, rgba(237, 126, 223, 1) 0%, rgba(149, 99, 191, 1) 50%, rgba(81, 187, 235, 1) 100%), url("../img/octi_ptrn.jpg");
   background-repeat: repeat;
@@ -72,13 +74,16 @@ body {
 .fo-main-container {
   @include octi-background;
 
-  .fo-title-img {
-    margin-right: auto;
-    margin-left: auto;
-  }
+  .fo-main-title {
+    height: 100vh;
 
-  .fo-main-nav-btn {
-    max-width: 40%;
+    .fo-title-img {
+      margin: 5% auto 10%;
+    }
+
+    .fo-main-nav-btn {
+      max-width: 40%;
+    }
   }
 
   .fo-main-page-content {
@@ -89,90 +94,68 @@ body {
     }
 
     .fo-main-blog {
-      margin-left: 10%;
-      margin-right: 10%;
 
       .fo-blog-posts {
-        margin-right: 1.5rem;
+        .fo-line-separator {
+          margin-top: 5%;
+          margin-bottom: 5%;
+        }
 
         img {
           aspect-ratio: 1 / 1;
-          //width: 200px;
-          max-width: 25vw;
-          //max-height: 200px;
+          max-width: 30vw;
           height: auto;
         }
 
         h6 {
           color: $fo-white-color;
-          margin-bottom: 0;
         }
 
         small {
           color: $fo-pink-color;
-          margin-bottom: 0.5rem;
         }
 
         p {
           color: $fo-white-color;
-          text-align: justify;
-          text-wrap: normal;
-          flex-grow: 1;
         }
-      }
-
-      .fo-mascot-img {
-        margin-left: 1.5rem;
       }
     }
 
-    .fo-main-carousel {
-      margin-right: 5rem;
-      margin-left: 5rem;
+    .fo-main-projects {
 
-      .carousel-item {
-        .fo-carousel-img {
-          max-height: 50vh;
-          width: auto;
+      .fo-line-separator {
+        margin-top: 5%;
+        margin-bottom: 5%;
+      }
+
+      .fo-main-carousel {
+        img {
+          aspect-ratio: 16 / 10;
         }
       }
     }
 
     .fo-members {
-      margin-right: 10%;
-      margin-left: 10%;
 
       .fo-member-tile {
-        width: 7%;
-        height: 7%;
-        border-radius: 50%;
-        margin-right: 2.5%;
-        margin-left: 2.5%;
+        color: $fo-white-color;
+        max-width: 35vw;
 
         img {
           border-radius: 50%;
-          max-width: 100%;
-          max-height: 100%;
-        }
-
-        p {
-          color: $fo-white-color;
-          text-align: center;
-          margin-top: 1rem;
+          aspect-ratio: 1 / 1;
+          max-width: 25vw;
+          height: auto;
         }
       }
     }
 
     .fo-main-join {
-      margin-top: 5vh;
-      margin-right: 30%;
-      margin-left: 30%;
-
       color: $fo-white-color;
 
       img {
-        margin-right: 25%;
-        margin-left: 25%;
+        margin-right: 20vw;
+        margin-left: 20vw;
       }
 
       a {
@@ -183,7 +166,6 @@ body {
         text-decoration: none;
         background: rgb(149, 99, 191);
         background: linear-gradient(90deg, rgba(149, 99, 191, 1) 0%, rgba(198, 83, 140, 1) 100%);
-        padding: 1rem 2rem;
         border-radius: 0.3rem;
       }
 
@@ -192,6 +174,10 @@ body {
       }
     }
   }
+}
+
+@media (min-width: $bootstrap-sm-breakpoint) {
+
 }
 
 .fo-line-separator {

@@ -1,50 +1,57 @@
 <template>
   <div class='d-flex flex-column fo-main-container'>
-    <div class='text-center fo-title-img mt-5 mb-2'>
-      <img class='img-fluid' src='../assets/img/fo-title.svg' alt='Flying Octopus'>
+    <div class='fo-main-title mt-5 mx-2'>
+      <div class='text-center fo-title-img'>
+        <img class='img-fluid' src='../assets/img/fo-title.svg' alt='Flying Octopus'>
+      </div>
+      <div class='d-flex flex-row flex-wrap justify-content-center align-content-center my-2'>
+        <a href='' class='m-lg-5 mx-2 my-5 fo-main-nav-btn'>
+          <img class='img-fluid' src='../assets/img/fo-icon.svg' alt='icon'>
+        </a>
+        <a href='' class='m-lg-5 mx-2 my-5 fo-main-nav-btn'>
+          <img class='img-fluid' src='../assets/img/fo-icon.svg' alt='icon'>
+        </a>
+        <a href='' class='m-lg-5 mx-2 my-5 fo-main-nav-btn'>
+          <img class='img-fluid' src='../assets/img/fo-icon.svg' alt='icon'>
+        </a>
+        <a href='' class='m-lg-5 mx-2 my-5 fo-main-nav-btn'>
+          <img class='img-fluid' src='../assets/img/fo-icon.svg' alt='icon'>
+        </a>
+        <a href='' class='m-lg-5 mx-2 my-5 fo-main-nav-btn'>
+          <img class='img-fluid' src='../assets/img/fo-icon.svg' alt='icon'>
+        </a>
+        <a href='' class='m-lg-5 mx-2 my-5 fo-main-nav-btn'>
+          <img class='img-fluid' src='../assets/img/fo-icon.svg' alt='icon'>
+        </a>
+      </div>
     </div>
-    <div class='d-flex flex-row flex-wrap justify-content-center align-content-center my-2'>
-      <a href='' class='m-3 fo-main-nav-btn'>
-        <img class='img-fluid' src='../assets/img/fo-icon.svg' alt='icon'>
-      </a>
-      <a href='' class='m-3 fo-main-nav-btn'>
-        <img class='img-fluid' src='../assets/img/fo-icon.svg' alt='icon'>
-      </a>
-      <a href='' class='m-3 fo-main-nav-btn'>
-        <img class='img-fluid' src='../assets/img/fo-icon.svg' alt='icon'>
-      </a>
-      <a href='' class='m-3 fo-main-nav-btn'>
-        <img class='img-fluid' src='../assets/img/fo-icon.svg' alt='icon'>
-      </a>
-      <a href='' class='m-3 fo-main-nav-btn'>
-        <img class='img-fluid' src='../assets/img/fo-icon.svg' alt='icon'>
-      </a>
-      <a href='' class='m-3  fo-main-nav-btn'>
-        <img class='img-fluid' src='../assets/img/fo-icon.svg' alt='icon'>
-      </a>
-    </div>
-
-    <div class='fo-main-page-content my-5 py-5'>
-      <p class='container text-center fo-main-text'>
+    <div class='fo-main-page-content px-4 pt-3'>
+      <h4 class='fo-main-text font-weight-light text-wrap'>  <!--TODO: adjust margins to screen size -->
         Jesteśmy zespołem gamedevowym, który składa się z kilkunastu osób
         pragnących rozwijać swoje umiejętności w zakresie tworzenia gier
         komputerowych oraz wspólnie pracować nad kilkoma kreatywnymi projektami.
-      </p>
-      <div class='d-flex justify-content-center align-content-center fo-main-blog row'>
-        <BlogPosts :posts='recentBlogPosts' />
-        <div class='d-flex align-items-center fo-mascot-img'>
+      </h4>
+      <div class='d-flex flex-wrap fo-main-blog'>
+        <BlogPosts :posts='recentBlogPosts'/>
+        <div class='d-flex align-items-center'>
           <img class='img-fluid' src='../assets/img/smolocti.png' alt='Flying Octopus Mascot'>
         </div>
       </div>
-      <p class='container text-center fo-main-text'>Nasze projekty</p>
-      <ProjectsCarousel :project-images='projectImages' />
-      <p class='container text-center fo-main-text'>Nasz zespół</p>
-      <OurTeam :members='activeTeamMembers' />
-      <div class='d-flex flex-column fo-main-join'>
-        <img class='img-fluid my-4' src='../assets/img/fo-icon.svg' alt='Flying Octopus Logo'>
-        <p class='container text-center fo-text-join-top my-4'>Dołącz do nas</p>
-        <p class='container text-center fo-text-join-bottom my-4'>Stań się częścią zespołu i twórzmy wspólnie!</p>
-        <a href='' class='text-center my-4 py-4'>Czytaj więcej</a>
+      <div class='fo-main-projects'>
+        <h1 class='text-center fo-main-text m-5'>Nasze projekty</h1>
+        <div class='fo-line-separator my-4'></div>
+        <ProjectsCarousel :project-images='projectImages' />
+        <div class='fo-line-separator my-4'></div>
+      </div>
+      <div class='fo-main-members'>
+        <h1 class='text-center fo-main-text m-4'>Nasz zespół</h1>
+        <OurTeam :members='activeTeamMembers' />
+      </div>
+      <div class='d-flex flex-column fo-main-join my-4 pt-4'>
+        <img class='img-fluid' src='../assets/img/fo-icon.svg' alt='Flying Octopus Logo'>
+        <h3 class='text-center mt-4'>Dołącz do nas</h3>
+        <h5 class='text-center fo-text-join-bottom mb-4'>Stań się częścią zespołu i twórzmy wspólnie!</h5>
+        <a href='' class='text-center my-4 py-2'>Czytaj więcej</a>
       </div>
     </div>
   </div>
