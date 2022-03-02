@@ -16,7 +16,7 @@
       W ramach Flying Octopus tworzymy wspólnotę, angażując się w swoje projekty oraz chętnie nawiązując współpracę z
       innymi twórcami i organizacjami. Bierzemy udział w inicjatywach z zewnątrz.
     </p>
-    <FOSectionTitle class='my-5' content='Nasze Wartości' />
+    <FOSectionTitle class='my-5' content='NASZE WARTOŚCI' />
     <div class='d-flex flex-row flex-wrap'>
       <div>
         <h1 class='font-weight-light fo-pink-text'>Samorealizacja</h1>
@@ -46,14 +46,14 @@
     </div>
     <div class='d-flex flex-row flex-wrap'>
       <div class='d-flex flex-column my-2'>
-        <FOSectionTitle content='Misja' />
+        <FOSectionTitle content='MISJA' />
         <p>
           Rozwijamy swoje umiejętności w kreatywnym, zaangażowanym zespole, w którym jesteśmy równi. Nie zapominamy
           przy tym o przyjemności płynącej z tworzenia.
         </p>
       </div>
       <div class='d-flex flex-column my-2'>
-        <FOSectionTitle content='Wizja' />
+        <FOSectionTitle content='WIZJA' />
         <p>
           Chcemy w kreatywnym i egalitarnym zespole rozwijać inspirujące projekty, które staną się dla nas źródłem
           zarobku.
