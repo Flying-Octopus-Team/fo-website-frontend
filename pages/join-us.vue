@@ -48,11 +48,9 @@
     </div>
     <h3 class='font-weight-light fo-pink-text text-center'>Jeśli chcesz zostać członkiem Flying Octopus, skontaktuj się
       z nami!</h3>
-    <h3 class='font-weight-light'>Wystarczą trzy proste kroki:</h3>
-    <ol>
-      <li><span class='fo-pink-text'>Napisz do nas</span> - prężnie pracujemy na discordzie, dołącz do nas i przywitaj
-        się!
-      </li>
+    <h3 class='font-weight-light mb-3'>Wystarczą trzy proste kroki:</h3>
+    <ol style='line-height: 2rem'>
+      <li><a href='' class='fo-pink-text'>Napisz do nas!</a></li>
       <li>Zrób wyznaczone <span class='fo-pink-text'>zadanie wstępne</span></li>
       <li><span class='fo-pink-text'>Twórz</span> z nami wspaniałe projekty!</li>
     </ol>

@@ -181,6 +181,7 @@ body {
 
   .fo-section-title {
     color: $fo-pink-color;
+
     .hr-left {
       height: 2px;
       background: linear-gradient(90deg, $fo-purple-color 0%, $fo-pink-color 100%);
@@ -209,6 +210,15 @@ body {
     background: rgb(149, 99, 191);
     background: linear-gradient(90deg, rgba(149, 99, 191, 1) 0%, rgba(198, 83, 140, 1) 100%);
     border-radius: 0.3rem;
+  }
+
+  .fo-inline-button {
+    display: inline;
+    color: $fo-white-color;
+    text-decoration: none;
+    background-color: $fo-purple-color;
+    border-radius: 0.3rem;
+    outline: 1.5px solid $fo-white-color;
   }
 }
 
