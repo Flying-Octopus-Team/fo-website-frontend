@@ -80,7 +80,7 @@ export default class Index extends Vue {
     this.recentBlogPosts = Index.handleFetchedDataAsArray<Blog>(
       await this.$content('blog')
         .sortBy('date', 'desc')
-        .limit(10)
+        .limit(2)
         .fetch<Blog>()
     )
 
