@@ -60,6 +60,7 @@
         </p>
       </div>
     </div>
+    <a href='' class='fo-gradient-button text-center my-4 py-3 h4'>ZASOBY</a>
   </div>
 </template>
 

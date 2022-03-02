@@ -191,6 +191,17 @@ body {
       background: linear-gradient(90deg, $fo-pink-color 0%, $fo-blue-color 100%);
     }
   }
+
+  .fo-gradient-button {
+    margin-right: 25%;
+    margin-left: 25%;
+
+    color: $fo-white-color;
+    text-decoration: none;
+    background: rgb(149, 99, 191);
+    background: linear-gradient(90deg, rgba(149, 99, 191, 1) 0%, rgba(198, 83, 140, 1) 100%);
+    border-radius: 0.3rem;
+  }
 }
 
 .fo-line-separator {
