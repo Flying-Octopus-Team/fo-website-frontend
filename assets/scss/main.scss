@@ -176,13 +176,30 @@ body {
   }
 }
 
-@media (min-width: $bootstrap-sm-breakpoint) {
+.fo-subpage-container {
+  color: $fo-white-color !important;
 
+  .fo-section-title {
+    color: $fo-pink-color;
+    .hr-left {
+      height: 2px;
+      background: linear-gradient(90deg, $fo-purple-color 0%, $fo-pink-color 100%);
+    }
+
+    .hr-right {
+      height: 2px;
+      background: linear-gradient(90deg, $fo-pink-color 0%, $fo-blue-color 100%);
+    }
+  }
 }
 
 .fo-line-separator {
   height: 2px;
   background: linear-gradient(270deg, $fo-blue-color 0%, $fo-pink-color 49.48%, $fo-purple-color 100%);
+}
+
+.fo-pink-text {
+  color: $fo-pink-color;
 }
 
 
