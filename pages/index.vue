@@ -70,21 +70,21 @@ import OurTeam from '~/components/OurTeam.vue'
 import Member from '~/types/Member'
 
 @Component({ components: { BlogPosts, ProjectsCarousel, OurTeam } })
-export default class Index extends Vue {
+export default class IndexPage extends Vue {
 
   recentBlogPosts: Blog[] = []
   projectImages: string[] = []
   activeTeamMembers: Member[] = []
 
   async fetch() {
-    this.recentBlogPosts = Index.handleFetchedDataAsArray<Blog>(
+    this.recentBlogPosts = IndexPage.handleFetchedDataAsArray<Blog>(
       await this.$content('blog')
         .sortBy('date', 'desc')
         .limit(2)
         .fetch<Blog>()
     )
 
-    const images = Index.handleFetchedDataAsArray<Project>(
+    const images = IndexPage.handleFetchedDataAsArray<Project>(
       await this.$content('project')
         .only('images')
         .fetch<Project>()
@@ -93,7 +93,7 @@ export default class Index extends Vue {
       this.projectImages = this.projectImages.concat(project.images)
     })
 
-    this.activeTeamMembers = Index.handleFetchedDataAsArray<Member>(
+    this.activeTeamMembers = IndexPage.handleFetchedDataAsArray<Member>(
       await this.$content('member')
         .sortBy('name', 'asc')
         .where({ active: true })

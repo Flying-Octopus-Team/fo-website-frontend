@@ -8,7 +8,7 @@
     </h1>
     <FOSectionTitle content='CZŁONEK' class='my-3' />
     <div class='d-flex flex-row flex-wrap'>
-      <ul class='h3'>
+      <ul class='h3 fo-checkmarks-list'>
         <li>Udział w spotkaniach</li>
         <li>Wpływ na decyzje</li>
         <li>Udział w szkoleniach</li>
