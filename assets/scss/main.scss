@@ -254,17 +254,127 @@ body {
 
       &:first-child {
         span {
-          background: linear-gradient(90deg, $fo-purple-color 0%, $fo-pink-color 100%);
-          border-color: black !important;
-          color: black !important;
+          border-width: 0;
+          background: #202020;
+          color: DarkGrey;
+
+          &:after {
+            position: absolute;
+            top: -1px;
+            bottom: -1px;
+            left: -1px;
+            right: 0;
+            background: linear-gradient(90deg, #9563BF50 0%, #ED7EDF50 100%);
+            border-bottom-left-radius: 0.3rem;
+            border-top-left-radius: 0.3rem;
+            content: '';
+            z-index: -1;
+          }
+        }
+
+        button {
+          &.page-link {
+            border-width: 0;
+            background: black;
+            color: $fo-blue-color;
+
+            &:hover {
+              z-index: auto;
+              border-width: 0;
+              background: black;
+              color: #6dd7ff;
+
+              &:after {
+                background: linear-gradient(90deg, #b17fdb 0%, #ff9afb 100%);
+              }
+            }
+
+            &:focus {
+              z-index: auto;
+              border-width: 0;
+              box-shadow: none;
+
+              &:after {
+                box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+              }
+            }
+
+            &:after {
+              position: absolute;
+              top: -1px;
+              bottom: -1px;
+              left: -1px;
+              right: 0;
+              background: linear-gradient(90deg, $fo-purple-color 0%, $fo-pink-color 100%);
+              border-bottom-left-radius: 0.3rem;
+              border-top-left-radius: 0.3rem;
+              content: '';
+              z-index: -1;
+            }
+          }
         }
       }
 
       &:last-child {
         span {
-          background: linear-gradient(90deg, $fo-pink-color 0%, $fo-blue-color 100%);
-          border-color: black !important;
-          color: black !important;
+          border-width: 0;
+          background: #202020;
+          color: DarkGrey;
+
+          &:after {
+            position: absolute;
+            top: -1px;
+            bottom: -1px;
+            left: 0;
+            right: -1px;
+            background: linear-gradient(90deg, #ED7EDF50 0%, #51BBEB50 100%);
+            border-bottom-right-radius: 0.3rem;
+            border-top-right-radius: 0.3rem;
+            content: '';
+            z-index: -1;
+          }
+        }
+
+        button {
+          &.page-link {
+            border-width: 0;
+            background: black;
+            color: $fo-blue-color;
+
+            &:hover {
+              z-index: auto;
+              border-width: 0;
+              background: black;
+              color: #6dd7ff;
+
+              &:after {
+                background: linear-gradient(90deg, #ff9afb 0%, #6dd7ff 100%);
+              }
+            }
+
+            &:focus {
+              z-index: auto;
+              border-width: 0;
+              box-shadow: none;
+
+              &:after {
+                box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+              }
+            }
+
+            &:after {
+              position: absolute;
+              top: -1px;
+              bottom: -1px;
+              left: 0;
+              right: -1px;
+              background: linear-gradient(90deg, $fo-pink-color 0%, $fo-blue-color 100%);
+              border-bottom-right-radius: 0.3rem;
+              border-top-right-radius: 0.3rem;
+              content: '';
+              z-index: -1;
+            }
+          }
         }
       }
     }
