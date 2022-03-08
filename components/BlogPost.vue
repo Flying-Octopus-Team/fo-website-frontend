@@ -1,14 +1,16 @@
 <template>
-    <div class='d-flex align-content-center'>
-      <div class='d-flex align-items-top mr-2'>
-        <img class='float-left rounded' :src='thumbnail' alt='Post thumbnail' />
-      </div>
-      <div class='d-flex flex-column'>
-        <h6 class='font-weight-bold mb-0'>{{ title }}</h6>
-        <small class='mb-1'>{{ formatDate(date) }}</small>
-        <p class='my-0'>{{ description }}</p>
-      </div>
+  <div class='d-flex align-content-center'>
+    <div class='d-flex align-items-top mr-2'>
+      <img class='float-left rounded' :src='thumbnail' alt='Post thumbnail' />
     </div>
+    <div class='d-flex flex-column'>
+      <h6 class='font-weight-bold mb-0'>
+        <b-link :to="{path: '/blogs/' + slug }">{{ title }}</b-link>
+      </h6>
+      <small class='mb-1'>{{ formatDate(date) }}</small>
+      <p class='my-0'>{{ description }}</p>
+    </div>
+  </div>
 </template>
 
 <script lang='ts'>
@@ -34,6 +36,9 @@ export default class BlogPost extends Vue {
 
   @Prop({ default: () => '' })
   content!: string
+
+  @Prop({ default: () => '' })
+  slug!: string
 
   formatDate(date: string) {
     const ms = new Date(date)

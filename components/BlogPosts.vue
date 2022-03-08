@@ -10,6 +10,7 @@
         :description='post.description'
         :author='post.author'
         :content='post.content'
+        :slug='post.slug'
       />
       <div :key='index' class='fo-line-separator'></div>
     </template>

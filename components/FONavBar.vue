@@ -8,7 +8,7 @@
         <b-nav-item to='/about-us'>
           <div class='fo-nav-item'>o nas</div>
         </b-nav-item>
-        <b-nav-item to='/blog-list'>
+        <b-nav-item to='/blogs'>
           <div class='fo-nav-item'>Aktualności</div>
         </b-nav-item>
         <b-nav-item to='/projects-list'>

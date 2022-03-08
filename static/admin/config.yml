@@ -37,7 +37,7 @@ collections:
       - { label: 'Is an active member', name: 'active', widget: 'boolean', deafult: true, required: true }
       - { label: 'Description', name: 'description', widget: 'markdown' }
   - name: 'tag'
-    label: 'FOTypes tags'
+    label: 'Project tags'
     label_singular: 'Tag'
     folder: 'content/tag'
     format: 'yml'
@@ -50,7 +50,7 @@ collections:
       - { label: 'Name', name: 'name', widget: 'string', required: true }
       - { label: 'Tag Color', name: 'color', widget: 'color', allowInput: true }
   - name: 'project'
-    label: 'FOTypes'
+    label: 'Project'
     folder: 'content/project'
     format: 'yml'
     create: true

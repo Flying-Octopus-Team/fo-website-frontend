@@ -16,7 +16,7 @@
 <script lang='ts'>
 import { Component, Vue, Watch } from 'nuxt-property-decorator'
 import { FetchReturn } from '@nuxt/content/types/query-builder'
-import BlogPosts from '../components/BlogPosts.vue'
+import BlogPosts from '~/components/BlogPosts.vue'
 import Blog from '~/types/Blog'
 
 @Component({ components: { BlogPosts } })
