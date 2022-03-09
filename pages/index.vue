@@ -51,7 +51,7 @@
         <img class='img-fluid' src='~/assets/img/fo-icon.svg' alt='Flying Octopus Logo'>
         <h3 class='text-center mt-4'>Dołącz do nas</h3>
         <h5 class='text-center fo-text-join-bottom mb-4'>Stań się częścią zespołu i twórzmy wspólnie!</h5>
-        <a href='' class='text-center my-4 py-2'>Czytaj więcej</a>
+        <b-link to='/join' class='fo-gradient-button text-center my-4 py-2'>Czytaj więcej</b-link>
       </div>
     </div>
   </div>

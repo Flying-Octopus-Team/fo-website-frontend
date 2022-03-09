@@ -174,17 +174,6 @@ body {
         margin-left: 20vw;
       }
 
-      a {
-        margin-right: 25%;
-        margin-left: 25%;
-
-        color: $fo-white-color;
-        text-decoration: none;
-        background: rgb(149, 99, 191);
-        background: linear-gradient(90deg, rgba(149, 99, 191, 1) 0%, rgba(198, 83, 140, 1) 100%);
-        border-radius: 0.3rem;
-      }
-
       .fo-text-join-bottom {
         color: $fo-pink-color;
       }
@@ -241,17 +230,6 @@ body {
 
   .fo-checkmarks-list li:before {
     content: '✓ ';
-  }
-
-  .fo-gradient-button {
-    margin-right: 25%;
-    margin-left: 25%;
-
-    color: $fo-white-color;
-    text-decoration: none;
-    background: rgb(149, 99, 191);
-    background: linear-gradient(90deg, rgba(149, 99, 191, 1) 0%, rgba(198, 83, 140, 1) 100%);
-    border-radius: 0.3rem;
   }
 
   .fo-inline-button {
@@ -417,6 +395,17 @@ body {
   background: linear-gradient(270deg, $fo-blue-color 0%, $fo-pink-color 49.48%, $fo-purple-color 100%);
 }
 
+.fo-gradient-button {
+  margin-right: 25%;
+  margin-left: 25%;
+
+  color: $fo-white-color !important;
+  text-decoration: none !important;
+  background: rgb(149, 99, 191);
+  background: linear-gradient(90deg, rgba(149, 99, 191, 1) 0%, rgba(198, 83, 140, 1) 100%);
+  border-radius: 0.3rem;
+}
+
 .fo-pink-text {
   color: $fo-pink-color;
 }
@@ -432,12 +421,6 @@ body {
   .fo-gradient-button {
     margin-right: 20%;
     margin-left: 20%;
-
-    color: $fo-white-color;
-    text-decoration: none;
-    background: rgb(149, 99, 191);
-    background: linear-gradient(90deg, rgba(149, 99, 191, 1) 0%, rgba(198, 83, 140, 1) 100%);
-    border-radius: 0.3rem;
   }
 }
 
