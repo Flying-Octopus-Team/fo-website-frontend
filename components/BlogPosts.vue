@@ -1,19 +1,15 @@
 <template>
   <div class='d-flex flex-column fo-blog-posts'>
     <div class='fo-line-separator'></div>
-    <template v-for='(post, index) in posts' >
-      <BlogPost
-        :key='index'
-        :title='post.title'
-        :date='post.date'
-        :thumbnail='post.thumbnail'
-        :description='post.description'
-        :author='post.author'
-        :content='post.content'
-        :slug='post.slug'
-      />
-      <div :key='index' class='fo-line-separator'></div>
-    </template>
+    <BlogPost v-for='(post) in posts' :key='post.slug'
+              :title='post.title'
+              :date='post.date'
+              :thumbnail='post.thumbnail'
+              :description='post.description'
+              :author='post.author'
+              :content='post.content'
+              :slug='post.slug'
+    />
   </div>
 </template>
 

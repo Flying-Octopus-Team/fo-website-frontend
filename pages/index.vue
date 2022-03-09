@@ -2,26 +2,26 @@
   <div class='d-flex flex-column fo-main-container'>
     <div class='fo-main-title mt-5 mx-2'>
       <div class='text-center fo-title-img'>
-        <img class='img-fluid' src='../assets/img/fo-title.svg' alt='Flying Octopus'>
+        <img class='img-fluid' src='~/assets/img/fo-title.svg' alt='Flying Octopus'>
       </div>
       <div class='d-flex flex-row flex-wrap justify-content-center align-content-center my-2'>
         <a href='' class='m-lg-5 mx-2 my-5 fo-main-nav-btn'>
-          <img class='img-fluid' src='../assets/img/fo-icon.svg' alt='icon'>
+          <img class='img-fluid' src='~/assets/img/fo-icon.svg' alt='icon'>
         </a>
         <a href='' class='m-lg-5 mx-2 my-5 fo-main-nav-btn'>
-          <img class='img-fluid' src='../assets/img/fo-icon.svg' alt='icon'>
+          <img class='img-fluid' src='~/assets/img/fo-icon.svg' alt='icon'>
         </a>
         <a href='' class='m-lg-5 mx-2 my-5 fo-main-nav-btn'>
-          <img class='img-fluid' src='../assets/img/fo-icon.svg' alt='icon'>
+          <img class='img-fluid' src='~/assets/img/fo-icon.svg' alt='icon'>
         </a>
         <a href='' class='m-lg-5 mx-2 my-5 fo-main-nav-btn'>
-          <img class='img-fluid' src='../assets/img/fo-icon.svg' alt='icon'>
+          <img class='img-fluid' src='~/assets/img/fo-icon.svg' alt='icon'>
         </a>
         <a href='' class='m-lg-5 mx-2 my-5 fo-main-nav-btn'>
-          <img class='img-fluid' src='../assets/img/fo-icon.svg' alt='icon'>
+          <img class='img-fluid' src='~/assets/img/fo-icon.svg' alt='icon'>
         </a>
         <a href='' class='m-lg-5 mx-2 my-5 fo-main-nav-btn'>
-          <img class='img-fluid' src='../assets/img/fo-icon.svg' alt='icon'>
+          <img class='img-fluid' src='~/assets/img/fo-icon.svg' alt='icon'>
         </a>
       </div>
     </div>
@@ -32,9 +32,9 @@
         komputerowych oraz wspólnie pracować nad kilkoma kreatywnymi projektami.
       </h4>
       <div class='d-flex flex-wrap fo-main-blog'>
-        <BlogPosts :posts='recentBlogPosts'/>
+        <BlogPosts :posts='recentBlogPosts' />
         <div class='d-flex align-items-center'>
-          <img class='img-fluid' src='../assets/img/smolocti.png' alt='Flying Octopus Mascot'>
+          <img class='img-fluid' src='~/assets/img/smolocti.png' alt='Flying Octopus Mascot'>
         </div>
       </div>
       <div class='fo-main-projects'>
@@ -45,10 +45,10 @@
       </div>
       <div class='fo-main-members'>
         <h1 class='text-center fo-main-text m-4'>Nasz zespół</h1>
-        <OurTeam :members='activeTeamMembers' />
+        <OurTeam id='members' :members='activeTeamMembers' />
       </div>
       <div class='d-flex flex-column fo-main-join my-4 pt-4'>
-        <img class='img-fluid' src='../assets/img/fo-icon.svg' alt='Flying Octopus Logo'>
+        <img class='img-fluid' src='~/assets/img/fo-icon.svg' alt='Flying Octopus Logo'>
         <h3 class='text-center mt-4'>Dołącz do nas</h3>
         <h5 class='text-center fo-text-join-bottom mb-4'>Stań się częścią zespołu i twórzmy wspólnie!</h5>
         <a href='' class='text-center my-4 py-2'>Czytaj więcej</a>
@@ -70,30 +70,30 @@ import OurTeam from '~/components/OurTeam.vue'
 import Member from '~/types/Member'
 
 @Component({ components: { BlogPosts, ProjectsCarousel, OurTeam } })
-export default class IndexPage extends Vue {
+export default class MainPage extends Vue {
 
   recentBlogPosts: Blog[] = []
   projectImages: string[] = []
   activeTeamMembers: Member[] = []
 
   async fetch() {
-    this.recentBlogPosts = IndexPage.handleFetchedDataAsArray<Blog>(
+    this.recentBlogPosts = MainPage.handleFetchedDataAsArray<Blog>(
       await this.$content('blog')
         .sortBy('date', 'desc')
         .limit(2)
         .fetch<Blog>()
     )
 
-    const images = IndexPage.handleFetchedDataAsArray<Project>(
+    const images = MainPage.handleFetchedDataAsArray<Project>(
       await this.$content('project')
         .only('images')
         .fetch<Project>()
     )
     images.forEach((project) => {
-      this.projectImages = this.projectImages.concat(project.images)
+      this.projectImages = this.projectImages.concat([project.images[0]])
     })
 
-    this.activeTeamMembers = IndexPage.handleFetchedDataAsArray<Member>(
+    this.activeTeamMembers = MainPage.handleFetchedDataAsArray<Member>(
       await this.$content('member')
         .sortBy('name', 'asc')
         .where({ active: true })
