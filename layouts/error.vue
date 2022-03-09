@@ -18,7 +18,7 @@
 
 <script>
 export default {
-  props: ['error'],
-  layout: 'error'
+  layout: 'error',
+  props: ['error']
 }
 </script>
