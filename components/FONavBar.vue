@@ -11,7 +11,7 @@
         <b-nav-item to='/blogs'>
           <div class='fo-nav-item'>Aktualności</div>
         </b-nav-item>
-        <b-nav-item to='/projects-list'>
+        <b-nav-item to='/projects'>
           <div class='fo-nav-item'>Projekty</div>
         </b-nav-item>
         <b-nav-item to='/#ourTeam'>

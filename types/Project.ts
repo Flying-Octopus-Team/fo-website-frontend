@@ -1,9 +1,9 @@
 class Project {
-  title: string;
-  images: Array<string>;
-  tags: Array<string>;
-  link: string;
-  description: string;
+  title: string
+  images: string[]
+  tags: string[]
+  link: string
+  description: string
 
   constructor(title: string, images: Array<string>, tags: Array<string>, link: string, description: string) {
     this.title = title
@@ -13,4 +13,5 @@ class Project {
     this.description = description
   }
 }
+
 export default Project
