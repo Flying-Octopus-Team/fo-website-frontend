@@ -17,7 +17,7 @@ import Blog from '~/types/Blog'
 @Component({ components: { BlogPosts } })
 export default class BlogPage extends Vue {
 
-  //Not sure how to properly do this, providing dummy object instead
+  // Not sure how to properly do this, providing dummy object instead
   blogPost: Blog = {
     title: '',
     date: '',

@@ -14,7 +14,7 @@ export default class TeamMember extends Vue {
   @Prop({ default: () => 'Name' })
   name!: string
 
-  @Prop({ default: () => '' })  //TODO: Default avatar link
+  @Prop({ default: () => '' }) // TODO: Default avatar link
   avatar!: string
 
 }
