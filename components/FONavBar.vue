@@ -1,6 +1,6 @@
 <template>
   <b-navbar class='fo-navbar' toggleable='lg' type='dark' variant='info'>
-    <b-navbar-brand to='/'><img src='~/assets/img/biały sygnet 2.png' alt='logo' /></b-navbar-brand>
+    <b-navbar-brand to='/'><b-img src='~/assets/img/biały sygnet 2.png' alt='logo' /></b-navbar-brand>
 
     <b-navbar-toggle target='nav-collapse'></b-navbar-toggle>
     <b-collapse id='nav-collapse' is-nav>

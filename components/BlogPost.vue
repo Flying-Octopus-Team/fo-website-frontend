@@ -2,7 +2,7 @@
   <div>
     <div class='d-flex align-content-center'>
       <div class='d-flex align-items-top mr-2'>
-        <img class='float-left rounded' :src='thumbnail' alt='Post thumbnail' />
+        <b-img-lazy class='float-left' rounded :src='thumbnail' alt='Post thumbnail'/>
       </div>
       <div class='d-flex flex-column'>
         <h6 class='font-weight-bold mb-0'>

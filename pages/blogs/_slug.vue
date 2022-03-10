@@ -1,6 +1,6 @@
 <template>
   <div class='fo-subpage-container mx-4'>
-    <img class='img-fluid mt-4 mb-2' src='~/assets/img/fo-title.svg' alt='Flying Octopus'>
+    <b-img fluid class='mt-4 mb-2' src='~/assets/img/fo-title.svg' alt='Flying Octopus'/>
     <div class='fo-line-separator my-2'></div>
     <h4>{{ blogPost.title }}</h4>
     <p>Opublikowano {{ blogPost.date }}</p>

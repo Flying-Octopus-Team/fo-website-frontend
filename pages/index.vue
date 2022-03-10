@@ -2,7 +2,7 @@
   <div class='d-flex flex-column fo-main-container'>
     <div class='fo-main-title mt-5 mx-2'>
       <div class='text-center fo-title-img'>
-        <img class='img-fluid' src='~/assets/img/fo-title.svg' alt='Flying Octopus'>
+        <b-img-lazy fluid src='~/assets/img/fo-title.svg' alt='Flying Octopus'></b-img-lazy>
       </div>
       <div class='d-flex flex-row flex-wrap justify-content-center align-content-center my-2'>
         <a href='' class='m-lg-5 mx-2 my-5 fo-main-nav-btn'>

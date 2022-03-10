@@ -1,7 +1,7 @@
 <template>
   <div class='d-flex flex-column fo-subpage-container mx-3 mt-5'>
     <div class='text-center mb-3'>
-      <img class='img-fluid' src='~/assets/img/fo-icon.svg' alt='Flying Octopus'>
+      <b-img-lazy fluid src='~/assets/img/fo-icon.svg' alt='Flying Octopus' />
     </div>
     <h1 class='text-center mb-5'>
       Co zyskujesz będąc w zespole?
