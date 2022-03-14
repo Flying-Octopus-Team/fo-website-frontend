@@ -34,7 +34,7 @@
       <div class='d-flex flex-wrap fo-main-blog'>
         <BlogPosts :posts='recentBlogPosts' />
         <div class='d-flex align-items-center'>
-          <img class='img-fluid' src='~/assets/img/smolocti.png' alt='Flying Octopus Mascot'>
+          <b-img-lazy class='img-fluid' src='~/assets/img/smolocti.png' alt='Flying Octopus Mascot' />
         </div>
       </div>
       <div class='fo-main-projects'>

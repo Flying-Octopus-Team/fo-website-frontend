@@ -2,12 +2,14 @@
   <div>
     <div class='d-flex align-content-center'>
       <div class='d-flex align-items-top mr-2'>
-        <b-img-lazy class='float-left' rounded :src='thumbnail' alt='Post thumbnail'/>
+        <b-link class='d-flex float-left' :to="{path: '/blogs/' + slug }">
+          <b-img-lazy rounded :src='thumbnail' alt='Post thumbnail' />
+        </b-link>
       </div>
       <div class='d-flex flex-column'>
-        <h6 class='font-weight-bold mb-0'>
-          <b-link :to="{path: '/blogs/' + slug }">{{ title }}</b-link>
-        </h6>
+        <b-link class='font-weight-bold mb-0' :to="{path: '/blogs/' + slug }">
+          <h6>{{ title }}</h6>
+        </b-link>
         <small class='mb-1'>{{ formatDate(date) }}</small>
         <p class='my-0'>{{ description }}</p>
       </div>
