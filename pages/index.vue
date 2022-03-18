@@ -1,6 +1,6 @@
 <template>
   <div class='d-flex flex-column fo-main-container'>
-    <div class='fo-main-title mt-5 mx-2'>
+    <div class='fo-main-title mt-5 mx-5'>
       <div class='text-center fo-title-img'>
         <b-img-lazy fluid src='~/assets/img/fo-title.svg' alt='Flying Octopus'></b-img-lazy>
       </div>
@@ -25,17 +25,15 @@
         </a>
       </div>
     </div>
-    <div class='fo-main-page-content px-4 pt-3'>
-      <h4 class='fo-main-text font-weight-light text-wrap'>  <!--TODO: adjust margins to screen size -->
+    <div class='d-flex flex-column fo-main-page-content px-4 px-md-5 pt-3'>
+      <h4 class='fo-main-text text-center font-weight-light text-wrap'>  <!--TODO: adjust margins to screen size -->
         Jesteśmy zespołem gamedevowym, który składa się z kilkunastu osób
         pragnących rozwijać swoje umiejętności w zakresie tworzenia gier
         komputerowych oraz wspólnie pracować nad kilkoma kreatywnymi projektami.
       </h4>
-      <div class='d-flex flex-wrap fo-main-blog'>
-        <BlogPosts :posts='recentBlogPosts' />
-        <div class='d-flex align-items-center'>
-          <b-img-lazy class='img-fluid' src='~/assets/img/smolocti.png' alt='Flying Octopus Mascot' />
-        </div>
+      <div class='d-flex flex-row align-items-center fo-main-blog'>
+        <BlogPosts class='flex-grow-1 pr-lg-4' :posts='recentBlogPosts' />
+        <b-img-lazy class='img-fluid d-none d-lg-block' src='~/assets/img/smolocti.png' alt='Flying Octopus Mascot' />
       </div>
       <div class='fo-main-projects'>
         <h1 class='text-center fo-main-text m-5'>Nasze projekty</h1>
@@ -48,10 +46,10 @@
         <OurTeam id='members' :members='activeTeamMembers' />
       </div>
       <div class='d-flex flex-column fo-main-join my-4 pt-4'>
-        <img class='img-fluid' src='~/assets/img/fo-icon.svg' alt='Flying Octopus Logo'>
+        <b-img class='mx-auto' src='~/assets/img/fo-icon.svg' alt='Flying Octopus Logo' />
         <h3 class='text-center mt-4'>Dołącz do nas</h3>
         <h5 class='text-center fo-text-join-bottom mb-4'>Stań się częścią zespołu i twórzmy wspólnie!</h5>
-        <b-link to='/join' class='fo-gradient-button text-center my-4 py-2'>Czytaj więcej</b-link>
+        <b-link to='/join' class='fo-gradient-button text-center my-4 py-2 px-4'>Czytaj więcej</b-link>
       </div>
     </div>
   </div>

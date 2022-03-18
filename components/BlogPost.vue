@@ -2,7 +2,7 @@
   <div>
     <div class='d-flex align-content-center'>
       <div class='d-flex align-items-top mr-2'>
-        <b-link class='d-flex float-left' :to="{path: '/blogs/' + slug }">
+        <b-link class='float-left' :to="{path: '/blogs/' + slug }">
           <b-img-lazy rounded :src='thumbnail' alt='Post thumbnail' />
         </b-link>
       </div>
