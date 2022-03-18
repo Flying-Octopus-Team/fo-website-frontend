@@ -1,5 +1,5 @@
 <template>
-  <footer class='fo-footer py-2'>
+  <footer class='py-2'>
     <div class='d-flex justify-content-center my-2'>
       <b-avatar text='ICO' size='3em' class='mx-2'></b-avatar>
       <b-avatar text='ICO' size='3em' class='mx-2'></b-avatar>

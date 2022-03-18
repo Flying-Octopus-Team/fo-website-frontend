@@ -33,6 +33,32 @@ body {
   background-color: black;
 }
 
+.wrapper {
+  min-height: 100vh;
+  margin-bottom: -160px;
+}
+
+.push {
+  height: 160px;
+}
+
+footer {
+  height: 160px;
+  background: linear-gradient(270deg, #001720 0%, #110B14 100%);
+
+  span {
+    background-color: $fo-pink-color;
+  }
+
+  p {
+    color: $fo-white-color;
+  }
+
+  h6 {
+    color: $fo-pink-color;
+  }
+}
+
 .fo-navbar {
   font-weight: bold;
   text-transform: uppercase;
@@ -63,23 +89,6 @@ body {
     text-align: center
   }
 }
-
-.fo-footer {
-  background: linear-gradient(270deg, #001720 0%, #110B14 100%);
-
-  span {
-    background-color: $fo-pink-color;
-  }
-
-  p {
-    color: $fo-white-color;
-  }
-
-  h6 {
-    color: $fo-pink-color;
-  }
-}
-
 
 .fo-main-container {
   @include octi-background;
@@ -114,6 +123,8 @@ body {
         img {
           aspect-ratio: 1 / 1;
           max-width: 138px;
+          max-height: 138px;
+          width: 100%;
           height: auto;
         }
 
@@ -191,7 +202,9 @@ body {
 
     img {
       aspect-ratio: 1 / 1;
-      max-width: 30vw;
+      max-width: 138px;
+      max-height: 138px;
+      width: 100%;
       height: auto;
     }
 

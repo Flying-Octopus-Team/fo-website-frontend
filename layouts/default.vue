@@ -1,7 +1,10 @@
 <template>
-  <div>
-    <FONavBar />
-    <Nuxt />
+  <div class='layout-container'>
+    <div class='wrapper'>
+      <FONavBar />
+      <Nuxt />
+      <div class="push"></div>
+    </div>
     <FOFooter />
   </div>
 </template>
