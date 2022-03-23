@@ -24,7 +24,7 @@ export default class BlogListPage extends Vue {
   posts: Blog[] = []
   currentPage: number = 1
   totalRows: number = 0
-  recordsPerPage: number = 1
+  recordsPerPage: number = 10
   isLoading: boolean = false
   params: string = ''
 

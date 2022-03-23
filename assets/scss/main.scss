@@ -221,6 +221,15 @@ footer {
     }
   }
 
+  .fo-post-title-img {
+    max-width: 60vw;
+    height: auto;
+
+    @include media-breakpoint-up(md) {
+      max-width: 30vw;
+    }
+  }
+
   .fo-checkmarks-list {
     list-style: none;
   }
