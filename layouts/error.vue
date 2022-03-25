@@ -9,6 +9,7 @@
           Spróbuj wrócić do poprzedniej strony lub na stronę
           główną.
         </p>
+        <b-link to='/' class='fo-gradient-button text-center my-4 py-2 px-4 h4'>STRONA GŁÓWNA</b-link>
       </div>
     </div>
     <h1 v-else class='my-4'>Wystąpił błąd - {{ error.statusCode }} </h1>
