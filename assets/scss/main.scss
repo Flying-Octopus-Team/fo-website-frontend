@@ -113,6 +113,13 @@ footer {
 
   .fo-main-page-content {
     background-color: black;
+    padding-right: 5vw;
+    padding-left: 5vw;
+
+    @include media-breakpoint-up(xl) {
+      padding-right: 10vw;
+      padding-left: 10vw;
+    }
 
     .fo-main-text {
       color: $fo-white-color;
@@ -123,6 +130,7 @@ footer {
         img {
           aspect-ratio: 1 / 1;
           max-width: 138px;
+          min-width: 138px;
           max-height: 138px;
           width: 100%;
           height: auto;
@@ -156,7 +164,7 @@ footer {
 
       .fo-member-tile {
         color: $fo-white-color;
-        max-width: 35vw;
+        max-width: 20ch;
 
         img {
           border-radius: 50%;
@@ -183,6 +191,13 @@ footer {
 
 .fo-subpage-container {
   color: $fo-white-color !important;
+  padding-right: 5vw;
+  padding-left: 5vw;
+
+  @include media-breakpoint-up(xl) {
+    padding-right: 10vw;
+    padding-left: 10vw;
+  }
 
   .fo-section-title {
     color: $fo-pink-color;
@@ -203,6 +218,7 @@ footer {
     img {
       aspect-ratio: 1 / 1;
       max-width: 138px;
+      min-width: 138px;
       max-height: 138px;
       width: 100%;
       height: auto;
@@ -410,7 +426,7 @@ footer {
   color: $fo-white-color !important;
   text-decoration: none !important;
   background: rgb(149, 99, 191);
-  background: linear-gradient(90deg, rgba(149, 99, 191, 1) 0%, rgba(198, 83, 140, 1) 100%);
+  background: linear-gradient(90deg, $fo-purple-color 0%, $fo-pink-color 100%);
   border-radius: 0.3rem;
 }
 
@@ -419,16 +435,17 @@ footer {
 }
 
 .fo-error {
-
   color: $fo-pink-color;
+  padding-right: 5vw;
+  padding-left: 5vw;
+
+  @include media-breakpoint-up(xl) {
+    padding-right: 10vw;
+    padding-left: 10vw;
+  }
 
   p {
     color: $fo-white-color;
-  }
-
-  .fo-gradient-button {
-    margin-right: 20%;
-    margin-left: 20%;
   }
 }
 

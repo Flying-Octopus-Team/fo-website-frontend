@@ -1,5 +1,5 @@
 <template>
-  <div class='d-flex flex-column fo-subpage-container mx-4 mx-md-5'>
+  <div class='d-flex flex-column fo-subpage-container'>
     <h1 class='text-center my-5'>Więcej o nas</h1>
     <p class='text-center mx-md-5'>
       Jesteśmy demokratycznym zespołem gamedevowym, który składa się z kilkunastu osób pragnących rozwijać swoje

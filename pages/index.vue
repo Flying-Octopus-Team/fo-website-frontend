@@ -25,7 +25,7 @@
         </a>
       </div>
     </div>
-    <div class='d-flex flex-column fo-main-page-content px-4 px-md-5 pt-3'>
+    <div class='d-flex flex-column fo-main-page-content pt-3'>
       <h4 class='fo-main-text text-center font-weight-light text-wrap'>  <!--TODO: adjust margins to screen size -->
         Jesteśmy zespołem gamedevowym, który składa się z kilkunastu osób
         pragnących rozwijać swoje umiejętności w zakresie tworzenia gier
