@@ -1,29 +1,22 @@
 <template>
-  <div>
-    <h2>Nasz Zespół</h2>
-    <div class='firstLa'>
-      <div class='contTeam'>
-        <TeamMember
-          v-for='(member, index) in members'
-          :key='index'
-          :name='member.name'
-          :avatar='member.avatar'
-        />
-      </div>
-    </div>
+  <div class='d-flex flex-wrap fo-members justify-content-center'>
+    <TeamMember
+      v-for='(member, index) in members' :key='index'
+      :name='member.name'
+      :avatar='member.avatar'
+    />
   </div>
 </template>
 
 <script lang='ts'>
-export default {
-  props: {
-    members: {
-      type: Array,
-      default: () => []
-    }
-  }
+import { Component, Prop, Vue } from 'nuxt-property-decorator'
+import Member from '~/types/Member'
+
+@Component
+export default class OurTeam extends Vue {
+
+  @Prop()
+  members!: Member[]
 }
 </script>
 
-<style>
-</style>

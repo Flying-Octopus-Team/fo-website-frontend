@@ -1,59 +1,24 @@
 <template>
-  <div
-    id='carouselExampleIndicators'
-    class='carousel slide'
-    data-ride='carousel'
-  >
-    <ol class='carousel-indicators'>
-      <CarouselIndicator
-        v-for='(projectImage, index) in projectImages'
-        :key='index'
-        :index='index'
-      />
-    </ol>
-    <div class='carousel-inner'>
-      <CarouselItem
-        v-for='(projectImage, index) in projectImages'
-        :key='index'
-        :index='index'
-        :image='projectImage'
-      />
-    </div>
-    <a
-      class='carousel-control-prev'
-      href='#carouselExampleIndicators'
-      role='button'
-      data-slide='prev'
+  <div class='fo-main-carousel'>
+    <b-carousel
+      id='fo-projects-carousel'
+      :interval='5000'
+      controls
+      indicators
     >
-      <span class='carousel-control-prev-icon' aria-hidden='true'></span>
-      <span class='sr-only'>Previous</span>
-    </a>
-    <a
-      class='carousel-control-next'
-      href='#carouselExampleIndicators'
-      role='button'
-      data-slide='next'
-    >
-      <span class='carousel-control-next-icon' aria-hidden='true'></span>
-      <span class='sr-only'>Next</span>
-    </a>
+      <b-carousel-slide v-for='(image, index) in projectImages' :key='index' :img-src='image'></b-carousel-slide>
+    </b-carousel>
   </div>
 </template>
 
 <script lang='ts'>
-import CarouselItem from '../components/CarouselItem.vue'
-import CarouselIndicator from '../components/CarouselIndicator.vue'
+import { Component, Prop, Vue } from 'nuxt-property-decorator'
 
-export default {
-  components: {
-    CarouselItem,
-    CarouselIndicator
-  },
-  props: {
-    projectImages: {
-      type: Array,
-      default: () => []
-    }
-  }
+@Component
+export default class ProjectsCarousel extends Vue {
+
+  @Prop({ default: () => [] })
+  projectImages!: Array<string>
+
 }
 </script>

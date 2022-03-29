@@ -1,0 +1,65 @@
+<template>
+  <div class='d-flex flex-column fo-subpage-container'>
+    <h1 class='text-center my-5'>Więcej o nas</h1>
+    <p class='text-center mx-md-5'>
+      Jesteśmy demokratycznym zespołem gamedevowym, który składa się z kilkunastu osób pragnących rozwijać swoje
+      umiejętności w zakresie tworzenia gier komputerowych oraz wspólnie pracować nad różnymi projektami. W ramach
+      Flying Octopus tworzymy wspólnotę, angażując się w projekty oraz chętnie nawiązując współpracę z innymi twórcami i
+      organizacjami.
+    </p>
+    <FOSectionTitle class='my-2 my-md-4' content='NASZE WARTOŚCI' />
+    <div class='d-flex flex-row flex-wrap flex-lg-nowrap'>
+      <div class='mr-lg-2'>
+        <h1 class='font-weight-light fo-pink-text text-nowrap'>Samorealizacja</h1>
+        <p class='text-justify'>
+          Flying Octopus pozwala kreatywnie rozwijać
+          się w wielu kierunkach. Członkowie grupy
+          chętnie dzielą się ze sobą wiedzą, organizują szkolenia, wspólnie doskonalą swoje
+          umiejętności.
+        </p>
+      </div>
+      <div class='mx-lg-3'>
+        <h1 class='font-weight-light fo-pink-text text-nowrap'>Autonomia</h1>
+        <p class='text-justify'>
+          Każdy członek indywidualnie decyduje o tym,
+          w czym bierze udział i jakie ma miejsce w grupie. Członkowie zespołu mają wpływ na rozwój projektów, w których
+          biorą udział, a także
+          rozpoczynają nowe inicjatywy.
+        </p>
+      </div>
+      <div class='ml-lg-2'>
+        <h1 class='font-weight-light fo-pink-text text-nowrap'>Poczucie wspólnoty</h1>
+        <p class='text-justify'>
+          Dążymy do bycia grupą, w której każdy czuje się dobrze. Pracujemy w przyjaznej atmosferze. Wspieramy się i
+          rozmawiamy ze sobą, stawiając na komunikację oraz konstruktywną, wrażliwą wymianę poglądów.
+        </p>
+      </div>
+    </div>
+    <div class='d-flex flex-row flex-wrap flex-md-nowrap my-md-4'>
+      <div class='col-md my-2 my-md-0 p-0 pr-md-2'>
+        <FOSectionTitle class='mb-2' content='MISJA' />
+        <p>
+          Rozwijamy swoje umiejętności w kreatywnym, zaangażowanym zespole, w którym jesteśmy równi. Nie zapominamy
+          przy tym o przyjemności płynącej z tworzenia.
+        </p>
+      </div>
+      <div class='col-md my-2 my-md-0 p-0 pl-md-2'>
+        <FOSectionTitle class='mb-2' content='WIZJA' />
+        <p>
+          Chcemy w kreatywnym i egalitarnym zespole rozwijać inspirujące projekty, które staną się dla nas źródłem
+          zarobku.
+        </p>
+      </div>
+    </div>
+    <b-link href='' class='fo-gradient-button text-center my-4 py-2 px-4 h4'>ZASOBY</b-link>
+  </div>
+</template>
+
+<script lang='ts'>
+import { Component, Vue } from 'nuxt-property-decorator'
+import SectionTitle from '~/components/SectionTitle.vue'
+
+@Component({ components: { FOSectionTitle: SectionTitle } })
+export default class AboutUsPage extends Vue {
+}
+</script>

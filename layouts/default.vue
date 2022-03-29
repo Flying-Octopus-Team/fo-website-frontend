@@ -1,28 +1,23 @@
 <template>
-  <div>
-    <NavigationBar />
-    <Nuxt />
-    <AppFooter />
+  <div class='layout-container'>
+    <div class='wrapper'>
+      <FONavBar />
+      <Nuxt />
+      <div class="push"></div>
+    </div>
+    <FOFooter />
   </div>
 </template>
 
 <script>
-import NavigationBar from '../components/NavigationBar.vue'
-import AppFooter from '../components/AppFooter.vue'
 
-export default {
-  components: {
-    NavigationBar,
-    AppFooter
-  },
-  head() {
-    return {
-      bodyAttrs: {
-        'data-spy': 'scroll',
-        'data-target': '#navbar'
-      }
-    }
-  }
+import { Component, Vue } from 'nuxt-property-decorator'
+import FONavBar from '@/components/FONavBar'
+import FOFooter from '@/components/FOFooter'
+
+@Component({ components: { FONavBar, FOFooter } })
+export default class DefaultLayout extends Vue {
+
 }
 </script>
 

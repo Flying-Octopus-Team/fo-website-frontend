@@ -1,85 +1,118 @@
 <template>
-  <main>
-    <section class='first'>
-      <NavigationButtons />
-    </section>
-    <section class='second'>
-      <p class='tresc'>
+  <div class='d-flex flex-column fo-main-container'>
+    <div class='fo-main-title mt-5 mx-5'>
+      <div class='text-center fo-title-img'>
+        <b-img-lazy fluid src='~/assets/img/fo-title.svg' alt='Flying Octopus'></b-img-lazy>
+      </div>
+      <div class='d-flex flex-row flex-wrap justify-content-center align-content-center my-2'>
+        <a href='' class='m-lg-5 mx-2 my-5 fo-main-nav-btn'>
+          <img class='img-fluid' src='~/assets/img/fo-icon.svg' alt='icon'>
+        </a>
+        <a href='' class='m-lg-5 mx-2 my-5 fo-main-nav-btn'>
+          <img class='img-fluid' src='~/assets/img/fo-icon.svg' alt='icon'>
+        </a>
+        <a href='' class='m-lg-5 mx-2 my-5 fo-main-nav-btn'>
+          <img class='img-fluid' src='~/assets/img/fo-icon.svg' alt='icon'>
+        </a>
+        <a href='' class='m-lg-5 mx-2 my-5 fo-main-nav-btn'>
+          <img class='img-fluid' src='~/assets/img/fo-icon.svg' alt='icon'>
+        </a>
+        <a href='' class='m-lg-5 mx-2 my-5 fo-main-nav-btn'>
+          <img class='img-fluid' src='~/assets/img/fo-icon.svg' alt='icon'>
+        </a>
+        <a href='' class='m-lg-5 mx-2 my-5 fo-main-nav-btn'>
+          <img class='img-fluid' src='~/assets/img/fo-icon.svg' alt='icon'>
+        </a>
+      </div>
+    </div>
+    <div class='d-flex flex-column fo-main-page-content pt-3'>
+      <h4 class='fo-main-text text-center font-weight-light text-wrap'>  <!--TODO: adjust margins to screen size -->
         Jesteśmy zespołem gamedevowym, który składa się z kilkunastu osób
         pragnących rozwijać swoje umiejętności w zakresie tworzenia gier
         komputerowych oraz wspólnie pracować nad kilkoma kreatywnymi projektami.
-      </p>
-      <div class='contSec'>
-        <div class='left'>
-          <BlogPosts :posts='recentBlogPosts' />
-          <div class='all-blog-posts'>
-            <a href='/blog-list'>Zobacz wszystkie posty</a>
-          </div>
-        </div>
-        <div class='right'>
-          <img src='../assets/img/maskotka_FO2.png' alt='maskotka' />
-        </div>
+      </h4>
+      <div class='d-flex flex-row align-items-center fo-main-blog'>
+        <BlogPosts class='flex-grow-1 pr-lg-4' :posts='recentBlogPosts' />
+        <b-img-lazy class='img-fluid d-none d-lg-block' src='~/assets/img/smolocti.png' alt='Flying Octopus Mascot' />
       </div>
-    </section>
-    <section class='projects'>
-      <h2>Nasze Projekty</h2>
-      <div class='grad'></div>
-      <div class='center'>
+      <div class='fo-main-projects'>
+        <h1 class='text-center fo-main-text m-5'>Nasze projekty</h1>
+        <div class='fo-line-separator my-4'></div>
         <ProjectsCarousel :project-images='projectImages' />
+        <div class='fo-line-separator my-4'></div>
       </div>
-      <div class='grad'></div>
-    </section>
-    <section id='ourTeam' class='kontaktUs'>
-      <OurTeam :members='members' />
-      <JoinUs />
-    </section>
-  </main>
+      <div class='fo-main-members'>
+        <h1 class='text-center fo-main-text m-4'>Nasz zespół</h1>
+        <OurTeam id='members' :members='activeTeamMembers' />
+      </div>
+      <div class='d-flex flex-column fo-main-join my-4 pt-4'>
+        <b-img class='mx-auto' src='~/assets/img/fo-icon.svg' alt='Flying Octopus Logo' />
+        <h3 class='text-center mt-4'>Dołącz do nas</h3>
+        <h5 class='text-center fo-text-join-bottom mb-4'>Stań się częścią zespołu i twórzmy wspólnie!</h5>
+        <b-link to='/join' class='fo-gradient-button text-center my-4 py-2 px-4'>Czytaj więcej</b-link>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script lang='ts'>
-import NavigationButtons from '../components/NavigationButtons.vue'
-import BlogPosts from '../components/BlogPosts.vue'
-import ProjectsCarousel from '../components/ProjectsCarousel.vue'
-import OurTeam from '../components/OurTeam.vue'
-import '../assets/css/main.css'
-import '../assets/css/animate.css'
+import { Component, Vue } from 'nuxt-property-decorator'
+import { FetchReturn } from '@nuxt/content/types/query-builder'
 
-export default {
-  components: {
-    NavigationButtons,
-    BlogPosts,
-    ProjectsCarousel,
-    OurTeam
-  },
-  async asyncData({ $content }) {
-    const recentBlogPosts = await $content('blog')
-      .sortBy('date', 'desc')
-      .limit(2)
-      .fetch()
+import BlogPosts from '@/components/BlogPosts.vue'
+import ProjectsCarousel from '@/components/ProjectsCarousel.vue'
 
-    const projects = await $content('project').fetch()
-    let projectImages = []
-    projects.forEach((project) => {
-      projectImages = projectImages.concat(project.images)
+import Blog from '~/types/Blog'
+import Project from '~/types/Project'
+import OurTeam from '~/components/OurTeam.vue'
+import Member from '~/types/Member'
+
+@Component({ components: { BlogPosts, ProjectsCarousel, OurTeam } })
+export default class MainPage extends Vue {
+
+  recentBlogPosts: Blog[] = []
+  projectImages: string[] = []
+  activeTeamMembers: Member[] = []
+
+  async fetch() {
+    this.recentBlogPosts = MainPage.handleFetchedDataAsArray<Blog>(
+      await this.$content('blog')
+        .sortBy('date', 'desc')
+        .limit(2)
+        .fetch<Blog>()
+    )
+
+    const images = MainPage.handleFetchedDataAsArray<Project>(
+      await this.$content('project')
+        .only('images')
+        .fetch<Project>()
+    )
+    images.forEach((project) => {
+      this.projectImages = this.projectImages.concat([project.images[0]])
     })
 
-    const members = await $content('member')
-      .sortBy('name', 'asc')
-      .where({active: true})
-      .fetch()
+    this.activeTeamMembers = MainPage.handleFetchedDataAsArray<Member>(
+      await this.$content('member')
+        .sortBy('name', 'asc')
+        .where({ active: true })
+        .fetch<Member>()
+    )
+  }
 
-    return { recentBlogPosts, projectImages, members }
-  },
+  private static handleFetchedDataAsArray<T>(data: (T & FetchReturn) | (T & FetchReturn)[]): T[] {
+    if (Array.isArray(data)) {
+      return data
+    } else {
+      return [data]
+    }
+  }
+
   head() {
     return {
       script: [
         { src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }
       ]
     }
-  },
-  mounted() {
-    const navbar = document.querySelector('#navbar')!
-    navbar.classList.add('fixed-top')
   }
 }
 </script>

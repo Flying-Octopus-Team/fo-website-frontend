@@ -13,8 +13,6 @@
     "sourceMap": true,
     "strict": true,
     "noEmit": true,
-    "noImplicitAny": false,
-    "noImplicitThis": false,
     "experimentalDecorators": true,
     "baseUrl": ".",
     "paths": {
