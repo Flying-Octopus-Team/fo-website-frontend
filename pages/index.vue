@@ -41,9 +41,9 @@
         <ProjectsCarousel :project-images='projectImages' />
         <div class='fo-line-separator my-4'></div>
       </div>
-      <div class='fo-main-members'>
+      <div id='members' class='fo-main-members'>
         <h1 class='text-center fo-main-text m-4'>Nasz zespół</h1>
-        <OurTeam id='members' :members='activeTeamMembers' />
+        <OurTeam :members='activeTeamMembers' />
       </div>
       <div class='d-flex flex-column fo-main-join my-4 pt-4'>
         <b-img class='mx-auto' src='~/assets/img/fo-icon.svg' alt='Flying Octopus Logo' />
@@ -66,12 +66,13 @@ import Blog from '~/types/Blog'
 import Project from '~/types/Project'
 import OurTeam from '~/components/OurTeam.vue'
 import Member from '~/types/Member'
+import ProjectCarouselImage from '~/types/ProjectCarouselImage'
 
 @Component({ components: { BlogPosts, ProjectsCarousel, OurTeam } })
 export default class MainPage extends Vue {
 
   recentBlogPosts: Blog[] = []
-  projectImages: string[] = []
+  projectImages: ProjectCarouselImage[] = []
   activeTeamMembers: Member[] = []
 
   async fetch() {
@@ -84,11 +85,11 @@ export default class MainPage extends Vue {
 
     const images = MainPage.handleFetchedDataAsArray<Project>(
       await this.$content('project')
-        .only('images')
+        .only(['images', 'title'])
         .fetch<Project>()
     )
     images.forEach((project) => {
-      this.projectImages = this.projectImages.concat([project.images[0]])
+      this.projectImages.push(new ProjectCarouselImage(project.images[0], project.title))
     })
 
     this.activeTeamMembers = MainPage.handleFetchedDataAsArray<Member>(

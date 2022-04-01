@@ -4,7 +4,7 @@
       Nasza grupa zajmuje się głównie pracą nad grami komputerowymi, jednak realizujemy też inne projekty i jesteśmy
       otwarci na nowe pomysły. Poniżej znajdziesz spis projektów realizowanych w ramach Flying Octopus.
     </h4>
-    <div v-for='(project) in projects' :key='project.title'>
+    <div v-for='(project) in projects' :id='project.title' :key='project.title'>
       <div class='fo-line-separator my-4'></div>
       <div class='d-flex flex-wrap flex-lg-nowrap justify-content-center my-5'>
         <div class='col-lg'>
