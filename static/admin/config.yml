@@ -1,5 +1,7 @@
 backend:
-  name: test-repo
+  name: github
+  repo: Flying-Octopus-Team/fo-website-frontend
+  branch: main
 publish_mode: editorial_workflow
 
 media_folder: static/img
