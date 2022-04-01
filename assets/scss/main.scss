@@ -165,6 +165,7 @@ footer {
       .fo-member-tile {
         color: $fo-white-color;
         max-width: 20ch;
+        min-width: 20ch;
 
         img {
           border-radius: 50%;
@@ -190,6 +191,7 @@ footer {
 }
 
 .fo-subpage-container {
+  background-color: black;
   color: $fo-white-color !important;
   padding-right: 5vw;
   padding-left: 5vw;
