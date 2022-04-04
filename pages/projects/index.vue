@@ -1,8 +1,7 @@
 <template>
   <div class='fo-subpage-container fo-projects mx-4'>
     <h4 class='text-center font-weight-light my-4 d-none d-sm-block '>
-      Nasza grupa zajmuje się głównie pracą nad grami komputerowymi, jednak realizujemy też inne projekty i jesteśmy
-      otwarci na nowe pomysły. Poniżej znajdziesz spis projektów realizowanych w ramach Flying Octopus.
+      Nasza grupa zajmuje się głównie pracą nad grami komputerowymi, jednak realizujemy też inne projekty i&nbsp;jesteśmy otwarci na nowe pomysły. Poniżej znajdziesz spis projektów realizowanych w&nbsp;ramach Flying Octopus.
     </h4>
     <div v-for='(project) in projects' :id='project.title' :key='project.title'>
       <div class='fo-line-separator my-4'></div>

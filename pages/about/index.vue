@@ -2,10 +2,10 @@
   <div class='d-flex flex-column fo-subpage-container'>
     <h1 class='text-center my-5'>Więcej o nas</h1>
     <p class='text-center mx-md-5'>
-      Jesteśmy demokratycznym zespołem gamedevowym, który składa się z kilkunastu osób pragnących rozwijać swoje
-      umiejętności w zakresie tworzenia gier komputerowych oraz wspólnie pracować nad różnymi projektami. W ramach
-      Flying Octopus tworzymy wspólnotę, angażując się w projekty oraz chętnie nawiązując współpracę z innymi twórcami i
-      organizacjami.
+      Jesteśmy demokratycznym zespołem gamedevowym, który składa się z&nbsp;kilkunastu osób pragnących rozwijać swoje
+      umiejętności w&nbsp;zakresie tworzenia gier komputerowych oraz wspólnie pracować nad różnymi projektami. W&nbsp;ramach
+      Flying Octopus tworzymy wspólnotę, angażując się w&nbsp;projekty oraz chętnie nawiązując współpracę z&nbsp;innymi
+      twórcami i&nbsp;organizacjami.
     </p>
     <FOSectionTitle class='my-2 my-md-4' content='NASZE WARTOŚCI' />
     <div class='d-flex flex-row flex-wrap flex-lg-nowrap'>
