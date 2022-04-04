@@ -13,6 +13,7 @@ import { Component, Vue } from 'nuxt-property-decorator'
 import { marked } from 'marked'
 import BlogPosts from '@/components/BlogPosts.vue'
 import Blog from '~/types/Blog'
+import TextUtil from '~/services/TextUtil'
 
 @Component({ components: { BlogPosts } })
 export default class BlogPage extends Vue {
@@ -41,7 +42,7 @@ export default class BlogPage extends Vue {
       this.blogPost = blog
     }
 
-    let content = TextUtil.fixHangingConjunctions(this.blogPost.content)
+    const content = TextUtil.fixHangingConjunctions(this.blogPost.content)
     this.blogContent = marked(content)
   }
 
