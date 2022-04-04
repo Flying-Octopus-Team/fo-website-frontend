@@ -21,10 +21,15 @@
           <h4 class='font-weight-bold'>
             {{ project.title }}
           </h4>
-          <div class='fo-post-content text-justify mt-2 mb-4 mb-lg-0' v-html='renderMarkdownDescription(project.description)'></div>
-          <b-link v-if='project.link' :href='project.link' class='fo-gradient-button text-center mt-auto py-2 px-4 h4'>
+          <div class='fo-post-content text-justify mt-2 mb-auto mb-lg-auto' v-html='renderMarkdownDescription(project.description)'></div>
+          <b-link v-if='project.link' :href='project.link' class='fo-gradient-button text-center mb-4 py-2 px-4 h4'>
             ZAGRAJ
           </b-link>
+          <div class='row justify-content-end mt-4'>
+            <div v-for='(tag) in getTag(project.tags)' :key='tag.slug' class='mt-1 mx-1 fo-project-tag'>
+              {{tag.name}}
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -38,22 +43,34 @@ import { FetchReturn } from '@nuxt/content/types/query-builder'
 import { marked } from 'marked'
 
 import Project from '~/types/Project'
+import ProjectTag from '~/types/ProjectTag'
 
 
 @Component
 export default class ProjectsPage extends Vue {
 
   projects: Project[] = []
+  tags: ProjectTag[] = []
 
   async fetch() {
     this.projects = ProjectsPage.handleFetchedDataAsArray<Project>(
       await this.$content('project')
         .fetch<Project>()
     )
+
+    this.tags = ProjectsPage.handleFetchedDataAsArray<ProjectTag>(
+      await this.$content('tag')
+        .fetch<ProjectTag>()
+    )
   }
 
   public renderMarkdownDescription(description: string): string {
     return marked(description)
+  }
+
+  public getTag(slugs: string[]): ProjectTag[] {
+    return slugs.map(slug => this.tags.find(tag => tag.slug === slug))
+      .filter((tag): tag is ProjectTag => !!tag)
   }
 
   private static handleFetchedDataAsArray<T>(data: (T & FetchReturn) | (T & FetchReturn)[]): T[] {
