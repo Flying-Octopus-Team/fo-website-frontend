@@ -23,7 +23,7 @@
           </h4>
           <div class='fo-post-content text-justify mt-2 mb-auto mb-lg-auto' v-html='renderMarkdownDescription(project.description)'></div>
           <b-link v-if='project.link' :href='project.link' class='fo-gradient-button text-center mb-4 py-2 px-4 h4'>
-            ZAGRAJ
+            {{project.linkText}}
           </b-link>
           <div class='row justify-content-end mt-4'>
             <div v-for='(tag) in getTag(project.tags)' :key='tag.slug' class='mt-1 mx-1 fo-project-tag'>
