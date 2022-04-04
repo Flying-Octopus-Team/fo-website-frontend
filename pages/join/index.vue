@@ -14,38 +14,36 @@
         <li>Dowolność wyboru zadań</li>
       </ul>
       <p class='text-justify mt-2'>
-        Będąc w zespole, zyskasz możliwość tworzenia gier komputerowych i brania udziału w innych, ciekawych projektach.
-        Jeśli nie masz doświadczenia bądź dopiero zaczynasz swoją przygodę w gamedevie, z pewnością pomogą ci szkolenia
-        organizowane przez naszych mentorów. Członkowie mają realny wpływ na decyzje podejmowane w zespole oraz kierunek
-        rozwoju grupy.
+        Będąc w&nbsp;zespole, zyskasz możliwość tworzenia gier komputerowych i&nbsp;brania udziału w&nbsp;innych,
+        ciekawych projektach. Jeśli nie masz doświadczenia bądź dopiero zaczynasz swoją przygodę w&nbsp;gamedevie, z&nbsp;pewnością
+        pomogą ciszkolenia organizowane przez naszych mentorów. Członkowie mają realny wpływ na decyzje podejmowane w&nbsp;zespole
+        oraz kierunek rozwoju grupy.
       </p>
     </div>
     <div class='d-flex flex-wrap flex-lg-nowrap'>
       <div class='col-lg p-0 pr-lg-4 my-2'>
         <FOSectionTitle content='PRAKTYKANT' />
         <p>
-          Będąc w zespole, zyskasz możliwość tworzenia gier komputerowych i brania udziału w innych, ciekawych
-          projektach. Jeśli nie masz doświadczenia bądź dopiero zaczynasz swoją przygodę w gamedevie, z pewnością pomogą
-          ci szkolenia organizowane przez naszych mentorów. Członkowie mają realny wpływ na decyzje podejmowane w
-          zespole oraz kierunek rozwoju grupy. Podsumowując, jeśli szukałeś grupy do wspólnego projektowania gier –
-          jesteś we właściwym
-          miejscu.
+          Będąc w&nbsp;zespole, zyskasz możliwość tworzenia gier komputerowych i&nbsp;brania udziału w&nbsp;innych,
+          ciekawych projektach. Jeśli nie masz doświadczenia bądź dopiero zaczynasz swoją przygodę w&nbsp;gamedevie, z&nbsp;pewnością
+          pomogą ci szkolenia organizowane przez naszych mentorów. Członkowie mają realny wpływ na decyzje podejmowane w&nbsp;zespole
+          oraz kierunek rozwoju grupy. Podsumowując, jeśli szukałeś grupy do wspólnego projektowania gier – jesteś we
+          właściwym miejscu.
         </p>
       </div>
       <div class='col-lg pl-lg-4 p-0 my-2'>
         <FOSectionTitle content='PARTNER' />
         <p>
-          Będąc w zespole, zyskasz możliwość tworzenia gier komputerowych i brania udziału w innych, ciekawych
-          projektach. Jeśli nie masz doświadczenia bądź dopiero zaczynasz swoją przygodę w gamedevie, z pewnością pomogą
-          ci szkolenia organizowane przez naszych mentorów. Członkowie mają realny wpływ na decyzje podejmowane w
-          zespole oraz kierunek rozwoju grupy. Podsumowując, jeśli szukałeś grupy do wspólnego projektowania gier –
-          jesteś we właściwym
-          miejscu.
+          Będąc w&nbsp;zespole, zyskasz możliwość tworzenia gier komputerowych i&nbsp;brania udziału w&nbsp;innych,
+          ciekawych projektach. Jeśli nie masz doświadczenia bądź dopiero zaczynasz swoją przygodę w&nbsp;gamedevie, z&nbsp;pewnością
+          pomogą ci szkolenia organizowane przez naszych mentorów. Członkowie mają realny wpływ na decyzje podejmowane w&nbsp;zespole
+          oraz kierunek rozwoju grupy. Podsumowując, jeśli szukałeś grupy do wspólnego projektowania gier – jesteś we
+          właściwym miejscu.
         </p>
       </div>
     </div>
     <h3 class='font-weight-light fo-pink-text text-center'>Jeśli chcesz zostać członkiem Flying Octopus, skontaktuj się
-      z nami!</h3>
+      z&nbsp;nami!</h3>
     <div class='mx-auto'>
       <h3 class='font-weight-light mb-3'>Wystarczą trzy proste kroki:</h3>
       <ol style='line-height: 2rem'>

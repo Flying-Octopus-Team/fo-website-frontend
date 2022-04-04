@@ -41,7 +41,8 @@ export default class BlogPage extends Vue {
       this.blogPost = blog
     }
 
-    this.blogContent = marked(this.blogPost.content)
+    let content = TextUtil.fixHangingConjunctions(this.blogPost.content)
+    this.blogContent = marked(content)
   }
 
   formatDate(date: string) {
