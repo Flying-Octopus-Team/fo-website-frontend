@@ -146,6 +146,9 @@ footer {
 
         p {
           color: $fo-white-color;
+          flex-basis: 9ch;
+          max-height: 9ch;
+          overflow: hidden;
         }
       }
 
@@ -236,6 +239,10 @@ footer {
 
     p {
       color: $fo-white-color;
+      flex-basis: 9ch;
+      max-height: 9ch;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
   }
 

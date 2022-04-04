@@ -11,7 +11,7 @@
           <h6>{{ title }}</h6>
         </b-link>
         <small class='mb-1'>{{ formatDate(date) }}</small>
-        <p class='my-0'>{{ description }}</p>
+        <p class='my-0 fo-blog-post-description'>{{ description }}</p>
       </div>
     </div>
     <div class='fo-line-separator'></div>
