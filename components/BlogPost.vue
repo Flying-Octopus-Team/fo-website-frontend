@@ -11,7 +11,7 @@
           <h6>{{ title }}</h6>
         </b-link>
         <small class='mb-1'>{{ formatDate(date) }}</small>
-        <p class='my-0'>{{ description }}</p>
+        <p class='my-0 fo-blog-post-description'>{{ fixConjunctions(description) }}</p>
       </div>
     </div>
     <div class='fo-line-separator'></div>
@@ -20,6 +20,7 @@
 
 <script lang='ts'>
 import { Component, Prop, Vue } from 'nuxt-property-decorator'
+import TextUtil from '~/services/TextUtil'
 
 @Component
 export default class BlogPost extends Vue {
@@ -55,6 +56,10 @@ export default class BlogPost extends Vue {
     const day = ms.getDate().toLocaleString('en-US', formatObject)
     const year = ms.getFullYear().toLocaleString('en-US', formatObject)
     return `${day}-${month}-${year}`
+  }
+
+  fixConjunctions(text: string) {
+    return TextUtil.fixHangingConjunctions(text)
   }
 }
 </script>

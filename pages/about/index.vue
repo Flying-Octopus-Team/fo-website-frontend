@@ -2,36 +2,33 @@
   <div class='d-flex flex-column fo-subpage-container'>
     <h1 class='text-center my-5'>Więcej o nas</h1>
     <p class='text-center mx-md-5'>
-      Jesteśmy demokratycznym zespołem gamedevowym, który składa się z kilkunastu osób pragnących rozwijać swoje
-      umiejętności w zakresie tworzenia gier komputerowych oraz wspólnie pracować nad różnymi projektami. W ramach
-      Flying Octopus tworzymy wspólnotę, angażując się w projekty oraz chętnie nawiązując współpracę z innymi twórcami i
-      organizacjami.
+      Jesteśmy demokratycznym zespołem gamedevowym, który składa się z&nbsp;kilkunastu osób pragnących rozwijać swoje
+      umiejętności w&nbsp;zakresie tworzenia gier komputerowych oraz wspólnie pracować nad różnymi projektami. W&nbsp;ramach
+      Flying Octopus tworzymy wspólnotę, angażując się w&nbsp;projekty oraz chętnie nawiązując współpracę z&nbsp;innymi
+      twórcami i&nbsp;organizacjami.
     </p>
     <FOSectionTitle class='my-2 my-md-4' content='NASZE WARTOŚCI' />
     <div class='d-flex flex-row flex-wrap flex-lg-nowrap'>
       <div class='mr-lg-2'>
         <h1 class='font-weight-light fo-pink-text text-nowrap'>Samorealizacja</h1>
         <p class='text-justify'>
-          Flying Octopus pozwala kreatywnie rozwijać
-          się w wielu kierunkach. Członkowie grupy
-          chętnie dzielą się ze sobą wiedzą, organizują szkolenia, wspólnie doskonalą swoje
-          umiejętności.
+          Flying Octopus pozwala kreatywnie rozwijać się w&nbsp;wielu kierunkach. Członkowie grupy chętnie dzielą się ze
+          sobą wiedzą, organizują szkolenia, wspólnie doskonalą swoje umiejętności.
         </p>
       </div>
       <div class='mx-lg-3'>
         <h1 class='font-weight-light fo-pink-text text-nowrap'>Autonomia</h1>
         <p class='text-justify'>
-          Każdy członek indywidualnie decyduje o tym,
-          w czym bierze udział i jakie ma miejsce w grupie. Członkowie zespołu mają wpływ na rozwój projektów, w których
-          biorą udział, a także
-          rozpoczynają nowe inicjatywy.
+          Każdy członek indywidualnie decyduje o&nbsp;tym, w&nbsp;czym bierze udział i&nbsp;jakie ma miejsce w&nbsp;grupie.
+          Członkowie zespołu mają wpływ na rozwój projektów, w&nbsp;których biorą udział, a&nbsp;także rozpoczynają nowe
+          inicjatywy.
         </p>
       </div>
       <div class='ml-lg-2'>
         <h1 class='font-weight-light fo-pink-text text-nowrap'>Poczucie wspólnoty</h1>
         <p class='text-justify'>
-          Dążymy do bycia grupą, w której każdy czuje się dobrze. Pracujemy w przyjaznej atmosferze. Wspieramy się i
-          rozmawiamy ze sobą, stawiając na komunikację oraz konstruktywną, wrażliwą wymianę poglądów.
+          Dążymy do bycia grupą, w&nbsp;której każdy czuje się dobrze. Pracujemy w&nbsp;przyjaznej atmosferze. Wspieramy
+          się i&nbsp;rozmawiamy ze sobą, stawiając na komunikację oraz konstruktywną, wrażliwą wymianę poglądów.
         </p>
       </div>
     </div>
@@ -39,15 +36,15 @@
       <div class='col-md my-2 my-md-0 p-0 pr-md-2'>
         <FOSectionTitle class='mb-2' content='MISJA' />
         <p>
-          Rozwijamy swoje umiejętności w kreatywnym, zaangażowanym zespole, w którym jesteśmy równi. Nie zapominamy
-          przy tym o przyjemności płynącej z tworzenia.
+          Rozwijamy swoje umiejętności w&nbsp;kreatywnym, zaangażowanym zespole, w&nbsp;którym jesteśmy równi. Nie
+          zapominamy przy tym o&nbsp;przyjemności płynącej z&nbsp;tworzenia.
         </p>
       </div>
       <div class='col-md my-2 my-md-0 p-0 pl-md-2'>
         <FOSectionTitle class='mb-2' content='WIZJA' />
         <p>
-          Chcemy w kreatywnym i egalitarnym zespole rozwijać inspirujące projekty, które staną się dla nas źródłem
-          zarobku.
+          Chcemy w&nbsp;kreatywnym i&nbsp;egalitarnym zespole rozwijać inspirujące projekty, które staną się dla nas
+          źródłem zarobku.
         </p>
       </div>
     </div>
