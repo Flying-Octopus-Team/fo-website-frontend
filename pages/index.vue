@@ -27,7 +27,7 @@
         </div>
       </div>
       <div class='d-flex flex-column fo-main-page-content pt-3'>
-        <h4 class='fo-main-text text-center font-weight-light text-wrap'>
+        <h4 class='fo-main-text text-center font-weight-light text-wrap my-xl-5 my-lg-4 my-3'>
           Jesteśmy zespołem gamedevowym, który składa się z&nbsp;kilkunastu osób pragnących rozwijać swoje umiejętności
           w&nbsp;zakresie tworzenia gier komputerowych oraz wspólnie pracować nad kilkoma kreatywnymi projektami.
         </h4>

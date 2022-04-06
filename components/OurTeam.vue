@@ -1,10 +1,14 @@
 <template>
-  <div class='d-flex flex-wrap fo-members justify-content-center'>
-    <TeamMember
-      v-for='(member, index) in members' :key='index'
-      :name='member.name'
-      :avatar='member.avatar'
-    />
+  <div class='fo-members'>
+    <div class='d-flex flex-wrap fo-member-tiles justify-content-center'>
+      <TeamMember
+        v-for='(member, index) in members' :key='index'
+        :name='member.name'
+        :avatar='member.avatar'
+      />
+    </div>
+    <button class='fo-member-expand d-md-none'>Collapse</button>
+    <div class='fo-member-overlay d-md-none'></div>
   </div>
 </template>
 
