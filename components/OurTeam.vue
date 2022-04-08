@@ -1,5 +1,5 @@
 <template>
-  <div class='fo-members'>
+  <div :class="{ 'fo-members': !membersOverlayHidden, 'fo-members-expanded': membersOverlayHidden }">
     <div class='d-flex flex-wrap fo-member-tiles justify-content-center'>
       <TeamMember
         v-for='(member, index) in members' :key='index'
@@ -7,8 +7,10 @@
         :avatar='member.avatar'
       />
     </div>
-    <button class='fo-member-expand d-md-none'>Collapse</button>
-    <div class='fo-member-overlay d-md-none'></div>
+    <b-button class='fo-member-expand-button fo-gradient-button shadow d-md-none' @click='toggle()'>
+      {{ toggleButtonText }}
+    </b-button>
+    <div v-if='!membersOverlayHidden' class='fo-member-overlay d-md-none'></div>
   </div>
 </template>
 
@@ -21,6 +23,21 @@ export default class OurTeam extends Vue {
 
   @Prop()
   members!: Member[]
+
+  membersOverlayHidden: boolean = false
+  toggleButtonText: string = 'Rozwiń'
+
+  public toggle(): void {
+    this.membersOverlayHidden = !this.membersOverlayHidden
+    this.toggleButtonText = this.getToggleButtonText()
+  }
+
+  public getToggleButtonText(): string {
+    if (this.membersOverlayHidden) {
+      return 'Zwiń'
+    }
+    return 'Rozwiń'
+  }
 }
 </script>
 
