@@ -10,6 +10,7 @@ module.exports = {
     'prettier'
   ],
   plugins: [],
+  ignorePatterns: ["router.scrollBehavior.js"],
   // add your custom rules here
   rules: {
     'vue/multi-word-component-names': [
