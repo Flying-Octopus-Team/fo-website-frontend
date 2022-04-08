@@ -47,12 +47,12 @@
     <div class='mx-auto'>
       <h3 class='font-weight-light mb-3'>Wystarczą trzy proste kroki:</h3>
       <ol style='line-height: 2rem'>
-        <li><a href='' class='fo-pink-text'>Napisz do nas!</a></li>
+        <li><a href='https://discord.gg/Q2DuSNY' class='fo-pink-text'>Napisz do nas!</a></li>
         <li>Zrób wyznaczone <span class='fo-pink-text'>zadanie wstępne</span></li>
         <li><span class='fo-pink-text'>Twórz</span> z nami wspaniałe projekty!</li>
       </ol>
     </div>
-    <b-link href='' class='fo-gradient-button text-center mx-auto mt-3 py-2 px-4 h4'>Dołącz do nas</b-link>
+    <b-link href='https://wiki.flyingoctopus.pl/bin/view/Rekrutacja/' class='fo-gradient-button text-center mx-auto mt-3 py-2 px-4 h4'>Dołącz do nas</b-link>
   </div>
 </template>
 
