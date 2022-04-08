@@ -42,7 +42,7 @@
         </p>
       </div>
     </div>
-    <h3 class='font-weight-light fo-pink-text text-center'>Jeśli chcesz zostać członkiem Flying Octopus, skontaktuj się
+    <h3 id='contact' class='font-weight-light fo-pink-text text-center'>Jeśli chcesz zostać członkiem Flying Octopus, skontaktuj się
       z&nbsp;nami!</h3>
     <div class='mx-auto'>
       <h3 class='font-weight-light mb-3'>Wystarczą trzy proste kroki:</h3>
