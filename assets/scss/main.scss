@@ -141,14 +141,17 @@ footer {
   }
 
   .fo-main-title {
-    height: 100vh;
+    height: 70vh;
 
     .fo-title-img {
-      margin: 5% auto 10%;
+      margin: 5vh auto 10vh;
     }
 
     .fo-main-nav-btn {
-      max-width: 40%;
+      img {
+        width: 120px;
+        height: 120px;
+      }
     }
   }
 

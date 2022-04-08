@@ -1,29 +1,23 @@
 <template>
   <div>
     <div class='d-flex flex-column fo-main-container'>
-      <div class='fo-main-title mt-5 mx-5'>
+      <div class='fo-main-title mt-5 mx-3 mx-md-5'>
         <div class='text-center fo-title-img'>
-          <b-img-lazy fluid src='~/assets/img/fo-title.svg' alt='Flying Octopus'></b-img-lazy>
+          <b-img fluid src='~/assets/img/fo-title.svg' alt='Flying Octopus'></b-img>
         </div>
         <div class='d-flex flex-row flex-wrap justify-content-center align-content-center my-2'>
-          <a href='' class='m-lg-5 mx-2 my-5 fo-main-nav-btn'>
-            <img class='img-fluid' src='~/assets/img/fo-icon.svg' alt='icon'>
-          </a>
-          <a href='' class='m-lg-5 mx-2 my-5 fo-main-nav-btn'>
-            <img class='img-fluid' src='~/assets/img/fo-icon.svg' alt='icon'>
-          </a>
-          <a href='' class='m-lg-5 mx-2 my-5 fo-main-nav-btn'>
-            <img class='img-fluid' src='~/assets/img/fo-icon.svg' alt='icon'>
-          </a>
-          <a href='' class='m-lg-5 mx-2 my-5 fo-main-nav-btn'>
-            <img class='img-fluid' src='~/assets/img/fo-icon.svg' alt='icon'>
-          </a>
-          <a href='' class='m-lg-5 mx-2 my-5 fo-main-nav-btn'>
-            <img class='img-fluid' src='~/assets/img/fo-icon.svg' alt='icon'>
-          </a>
-          <a href='' class='m-lg-5 mx-2 my-5 fo-main-nav-btn'>
-            <img class='img-fluid' src='~/assets/img/fo-icon.svg' alt='icon'>
-          </a>
+          <b-link :to='{path: "/", hash: "#blog"}' class='m-lg-5 mx-2 my-2 fo-main-nav-btn'>
+            <img class='img-fluid' src='~/assets/img/icons/news.svg' alt='icon'>
+          </b-link>
+          <b-link :to='{path: "/", hash: "#projects"}' class='m-lg-5 mx-2 my-2 fo-main-nav-btn'>
+            <img class='img-fluid' src='~/assets/img/icons/projects.svg' alt='icon'>
+          </b-link>
+          <b-link :to='{path: "/", hash: "#members"}' class='m-lg-5 mx-2 my-2 fo-main-nav-btn'>
+            <img class='img-fluid' src='~/assets/img/icons/members.svg' alt='icon'>
+          </b-link>
+          <b-link :to='{path: "/", hash: "#join"}' class='m-lg-5 mx-2 my-2 fo-main-nav-btn'>
+            <img class='img-fluid' src='~/assets/img/icons/join.svg' alt='icon'>
+          </b-link>
         </div>
       </div>
       <div class='d-flex flex-column fo-main-page-content pt-3'>
@@ -31,11 +25,11 @@
           Jesteśmy zespołem gamedevowym, który składa się z&nbsp;kilkunastu osób pragnących rozwijać swoje umiejętności
           w&nbsp;zakresie tworzenia gier komputerowych oraz wspólnie pracować nad kilkoma kreatywnymi projektami.
         </h4>
-        <div class='d-flex flex-row align-items-center fo-main-blog'>
+        <div id='blog' class='d-flex flex-row align-items-center fo-main-blog'>
           <BlogPosts class='flex-grow-1 pr-lg-4' :posts='recentBlogPosts' />
           <b-img-lazy class='img-fluid d-none d-lg-block' src='~/assets/img/smolocti.png' alt='Flying Octopus Mascot' />
         </div>
-        <div class='fo-main-projects'>
+        <div id='projects' class='fo-main-projects'>
           <h1 class='text-center fo-main-text m-5'>Nasze projekty</h1>
           <div class='fo-line-separator my-4'></div>
           <ProjectsCarousel :project-images='projectImages' />
@@ -45,11 +39,11 @@
           <h1 class='text-center fo-main-text m-4'>Nasz zespół</h1>
           <OurTeam :members='activeTeamMembers' />
         </div>
-        <div class='d-flex flex-column fo-main-join my-4 pt-4'>
+        <div id='join' class='d-flex flex-column fo-main-join my-4 pt-4'>
           <b-img class='mx-auto' src='~/assets/img/fo-icon.svg' alt='Flying Octopus Logo' />
           <h3 class='text-center mt-4'>Dołącz do nas</h3>
           <h5 class='text-center fo-text-join-bottom mb-4'>Stań się częścią zespołu i twórzmy wspólnie!</h5>
-          <b-link to='/join' class='fo-gradient-button text-center my-4 py-2 px-4'>Czytaj więcej</b-link>
+          <b-link href='https://wiki.flyingoctopus.pl/bin/view/Rekrutacja/' class='fo-gradient-button text-center my-4 py-2 px-4'>Czytaj więcej</b-link>
         </div>
       </div>
     </div>
