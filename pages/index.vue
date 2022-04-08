@@ -5,7 +5,7 @@
         <div class='text-center fo-title-img pb-3 pb-md-4 pb-lg-5'>
           <b-img fluid src='~/assets/img/fo-title.svg' alt='Flying Octopus'></b-img>
         </div>
-        <div class='row fo-main-navigation justify-content-center align-self-center my-xl-5 my-lg-4 my-2'>
+        <div class='row fo-main-navigation justify-content-center align-self-center my-lg-4 my-2'>
           <div class='col-auto my-md-2 my-4'>
             <b-link :to='{path: "/", hash: "#blog"}' class='mx-md-2 mx-4'>
               <img class='img-fluid' src='~/assets/img/icons/news.svg' alt='icon'>
