@@ -1,4 +1,5 @@
 $enable-responsive-font-sizes: true;
+$enable-shadows: true;
 
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
 @import '../../node_modules/bootstrap-vue/src/index.scss';
@@ -17,6 +18,46 @@ $fo-purple-color: #9563BF;
   animation-duration: 5s;
   animation-fill-mode: forwards;
   animation-name: slideBackgroundIn;
+}
+
+@mixin fo-member-tile {
+  color: $fo-white-color;
+  max-width: 20ch;
+  min-width: 20ch;
+
+  img {
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+    max-width: 125px;
+    height: auto;
+  }
+}
+
+@mixin fo-member-expand-button($bottom) {
+  position: absolute;
+  left: 0;
+  right: 0;
+  //top: 0;
+  bottom: $bottom;
+
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+}
+
+@mixin fo-member-overlay {
+  position: absolute;
+  background: linear-gradient(0, black 0%, transparent 100%);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 100vw;
+  height: 120px;
 }
 
 @keyframes slideBackgroundIn {
@@ -182,45 +223,39 @@ footer {
         }
 
         .fo-member-tile {
-
-          color: $fo-white-color;
-          max-width: 20ch;
-          min-width: 20ch;
-
-          img {
-            border-radius: 50%;
-            aspect-ratio: 1 / 1;
-            max-width: 125px;
-            height: auto;
-          }
+          @include fo-member-tile
         }
       }
 
-      .fo-member-expand {
-        position: absolute;
-        left: 0;
-        right: 0;
-        //top: 0;
-        bottom: 70px;
-
-        margin-left: auto;
-        margin-right: auto;
-
+      .fo-member-expand-button {
+        @include fo-member-expand-button(35px)
       }
 
       .fo-member-overlay {
-        position: absolute;
-        background: linear-gradient(0, black 0%, transparent 100%);
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        margin-top: auto;
-        margin-left: auto;
-        margin-right: auto;
+        @include fo-member-overlay
+      }
 
-        width: 100vw;
-        height: 120px;
+    }
+
+    .fo-members-expanded {
+      position: relative;
+      height: auto;
+      overflow: visible;
+
+      .fo-member-tiles {
+        position: static;
+
+        .fo-member-tile {
+          @include fo-member-tile;
+        }
+      }
+
+      .fo-member-expand-button {
+        @include fo-member-expand-button(-25px)
+      }
+
+      .fo-member-overlay {
+        @include fo-member-overlay
       }
 
     }
@@ -488,6 +523,7 @@ footer {
   background: rgb(149, 99, 191);
   background: linear-gradient(90deg, $fo-purple-color 0%, $fo-pink-color 100%);
   border-radius: 0.3rem;
+  border: 0;
 }
 
 .fo-pink-text {
