@@ -1,23 +1,31 @@
 <template>
   <div>
-    <div class='d-flex flex-column fo-main-container'>
+    <div class='d-flex flex-column fo-main-container '>
       <div class='fo-main-title mt-5 mx-3 mx-md-5'>
-        <div class='text-center fo-title-img'>
+        <div class='text-center fo-title-img pb-3 pb-md-4 pb-lg-5'>
           <b-img fluid src='~/assets/img/fo-title.svg' alt='Flying Octopus'></b-img>
         </div>
-        <div class='d-flex flex-row flex-wrap justify-content-center align-content-center my-2'>
-          <b-link :to='{path: "/", hash: "#blog"}' class='m-lg-5 mx-2 my-2 fo-main-nav-btn'>
-            <img class='img-fluid' src='~/assets/img/icons/news.svg' alt='icon'>
-          </b-link>
-          <b-link :to='{path: "/", hash: "#projects"}' class='m-lg-5 mx-2 my-2 fo-main-nav-btn'>
-            <img class='img-fluid' src='~/assets/img/icons/projects.svg' alt='icon'>
-          </b-link>
-          <b-link :to='{path: "/", hash: "#members"}' class='m-lg-5 mx-2 my-2 fo-main-nav-btn'>
-            <img class='img-fluid' src='~/assets/img/icons/members.svg' alt='icon'>
-          </b-link>
-          <b-link :to='{path: "/", hash: "#join"}' class='m-lg-5 mx-2 my-2 fo-main-nav-btn'>
-            <img class='img-fluid' src='~/assets/img/icons/join.svg' alt='icon'>
-          </b-link>
+        <div class='row fo-main-navigation justify-content-center align-self-center my-lg-5 my-2'>
+          <div class='col-auto my-md-2 my-4'>
+            <b-link :to='{path: "/", hash: "#blog"}' class='mx-md-2 mx-4'>
+              <img class='img-fluid' src='~/assets/img/icons/news.svg' alt='icon'>
+            </b-link>
+          </div>
+          <div class='col-auto my-md-2 my-4'>
+            <b-link :to='{path: "/", hash: "#projects"}' class='mx-md-2 mx-4'>
+              <img class='img-fluid' src='~/assets/img/icons/projects.svg' alt='icon'>
+            </b-link>
+          </div>
+          <div class='col-auto my-md-2 my-4'>
+            <b-link :to='{path: "/", hash: "#members"}' class='mx-md-2 mx-4'>
+              <img class='img-fluid' src='~/assets/img/icons/members.svg' alt='icon'>
+            </b-link>
+          </div>
+          <div class='col-auto my-md-2 my-4'>
+            <b-link :to='{path: "/", hash: "#join"}' class='mx-md-2 mx-4'>
+              <img class='img-fluid' src='~/assets/img/icons/join.svg' alt='icon'>
+            </b-link>
+          </div>
         </div>
       </div>
       <div class='d-flex flex-column fo-main-page-content pt-3'>
@@ -43,7 +51,9 @@
           <b-img class='mx-auto' src='~/assets/img/fo-icon.svg' alt='Flying Octopus Logo' />
           <h3 class='text-center mt-4'>Dołącz do nas</h3>
           <h5 class='text-center fo-text-join-bottom mb-4'>Stań się częścią zespołu i twórzmy wspólnie!</h5>
-          <b-link href='https://wiki.flyingoctopus.pl/bin/view/Rekrutacja/' class='fo-gradient-button text-center my-4 py-2 px-4'>Czytaj więcej</b-link>
+          <b-link href='https://wiki.flyingoctopus.pl/bin/view/Rekrutacja/'
+                  class='fo-gradient-button text-center my-4 py-2 px-4'>Czytaj więcej
+          </b-link>
         </div>
       </div>
     </div>
