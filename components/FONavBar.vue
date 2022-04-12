@@ -1,27 +1,27 @@
 <template>
-  <b-navbar class='fo-navbar' toggleable='lg' type='dark' variant='info'>
+  <b-navbar sticky class='fo-navbar' toggleable='lg' type='dark' variant='info'>
     <b-navbar-brand to='/'>
       <b-img src='~/assets/img/biały sygnet 2.png' alt='logo' />
     </b-navbar-brand>
     <b-navbar-toggle target='nav-collapse'></b-navbar-toggle>
     <b-collapse id='nav-collapse' is-nav>
       <b-navbar-nav class='ml-auto'>
-        <b-nav-item to='/about'>
+        <b-nav-item exact exact-active-class='active' to='/about'>
           <div class='fo-nav-item'>o nas</div>
         </b-nav-item>
-        <b-nav-item to='/blogs'>
+        <b-nav-item exact exact-active-class='active' to='/blogs'>
           <div class='fo-nav-item'>Aktualności</div>
         </b-nav-item>
-        <b-nav-item to='/projects'>
+        <b-nav-item exact exact-active-class='active' to='/projects'>
           <div class='fo-nav-item'>Projekty</div>
         </b-nav-item>
-        <b-nav-item :to='{path: "/", hash: "#members"}'>
+        <b-nav-item exact exact-active-class='active' :to='{path: "/", hash: "#members"}'>
           <div class='fo-nav-item'>Zespół</div>
         </b-nav-item>
-        <b-nav-item to='/join'>
+        <b-nav-item exact exact-active-class='active' to='/join'>
           <div class='fo-nav-item'>Dołącz do nas</div>
         </b-nav-item>
-        <b-nav-item :to='{path: "/join", hash: "#contact"}'>
+        <b-nav-item exact exact-active-class='active' :to='{path: "/join", hash: "#contact"}'>
           <div class='fo-last-nav-item'>kontakt</div>
         </b-nav-item>
       </b-navbar-nav>
