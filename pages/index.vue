@@ -52,7 +52,7 @@
           <h3 class='text-center mt-4'>Dołącz do nas</h3>
           <h5 class='text-center fo-text-join-bottom mb-4'>Stań się częścią zespołu i twórzmy wspólnie!</h5>
           <b-link href='https://wiki.flyingoctopus.pl/bin/view/Rekrutacja/'
-                  class='fo-gradient-button text-center my-4 py-2 px-4'>Czytaj więcej
+                  class='fo-gradient-button text-center my-4 py-2 px-4 h4'>Czytaj więcej
           </b-link>
         </div>
       </div>

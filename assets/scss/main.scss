@@ -108,13 +108,19 @@ footer {
   z-index: 1;
   background: linear-gradient(270deg, #001720 0%, #110B14 100%);
 
+  .active {
+    .fo-nav-item {
+      color: $fo-pink-color !important;
+    }
+  }
+
   .fo-nav-item {
     color: $fo-white-color;
     -webkit-transition: color .3s;
     transition: color .3s;
     margin-right: .5rem;
     padding: 10px;
-    text-align: center
+    text-align: center;
   }
 
   .fo-nav-item:hover {
@@ -293,8 +299,8 @@ footer {
   padding-left: 5vw;
 
   @include media-breakpoint-up(xl) {
-    padding-right: 10vw;
-    padding-left: 10vw;
+    padding-right: 20vw;
+    padding-left: 20vw;
   }
 
   .fo-section-title {
@@ -312,7 +318,6 @@ footer {
   }
 
   .fo-blog-posts {
-
     img {
       aspect-ratio: 1 / 1;
       max-width: 138px;
