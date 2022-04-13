@@ -6,7 +6,7 @@
     </h1>
     <FOSectionTitle content='CZŁONEK' class='my-3' />
     <div class='d-flex flex-wrap flex-lg-nowrap'>
-      <ul class='h3 font-weight-light fo-checkmarks-list text-nowrap px-0 ml-2 mr-lg-4 mb-4 mb-lg-0' style='line-height: 3rem'>
+      <ul class='h5 font-weight-light fo-checkmarks-list text-nowrap px-0 ml-2 mr-lg-4 mb-4 mb-lg-0' style='line-height: 2rem'>
         <li>Udział w spotkaniach</li>
         <li>Wpływ na decyzje</li>
         <li>Udział w szkoleniach</li>
@@ -54,7 +54,7 @@
       </ol>
     </div>
     <b-link href='https://wiki.flyingoctopus.pl/bin/view/Rekrutacja/'
-            class='fo-gradient-button text-center mx-auto my-3 py-2 px-4 h4'>
+            class='fo-gradient-button text-center mx-auto my-3 py-2 px-4 h5 font-weight-normal'>
       Dołącz do nas
     </b-link>
   </div>
