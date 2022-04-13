@@ -21,7 +21,7 @@
             {{ project.title }}
           </h4>
           <div class='fo-post-content text-justify mt-2 mb-auto mb-lg-auto' v-html='renderMarkdownDescription(fixConjunctions(project.description))'></div>
-          <b-link v-if='project.link' :href='project.link' class='fo-gradient-button text-center mb-4 py-2 px-4 h4'>
+          <b-link v-if='project.link' :href='project.link' class='fo-gradient-button text-center mb-4 py-2 px-4 h5 font-weight-normal'>
             {{ project.linkText }}
           </b-link>
           <div class='row justify-content-end mt-4'>
