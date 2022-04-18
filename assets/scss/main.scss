@@ -1,4 +1,5 @@
 $enable-responsive-font-sizes: true;
+$enable-shadows: true;
 
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
 @import '../../node_modules/bootstrap-vue/src/index.scss';
@@ -17,6 +18,46 @@ $fo-purple-color: #9563BF;
   animation-duration: 5s;
   animation-fill-mode: forwards;
   animation-name: slideBackgroundIn;
+}
+
+@mixin fo-member-tile {
+  color: $fo-white-color;
+  max-width: 20ch;
+  min-width: 20ch;
+
+  img {
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+    max-width: 125px;
+    height: auto;
+  }
+}
+
+@mixin fo-member-expand-button($bottom) {
+  position: absolute;
+  left: 0;
+  right: 0;
+  //top: 0;
+  bottom: $bottom;
+
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+}
+
+@mixin fo-member-overlay {
+  position: absolute;
+  background: linear-gradient(0, black 0%, transparent 100%);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 100vw;
+  height: 120px;
 }
 
 @keyframes slideBackgroundIn {
@@ -67,13 +108,19 @@ footer {
   z-index: 1;
   background: linear-gradient(270deg, #001720 0%, #110B14 100%);
 
+  .active {
+    .fo-nav-item {
+      color: $fo-pink-color !important;
+    }
+  }
+
   .fo-nav-item {
     color: $fo-white-color;
     -webkit-transition: color .3s;
     transition: color .3s;
     margin-right: .5rem;
     padding: 10px;
-    text-align: center
+    text-align: center;
   }
 
   .fo-nav-item:hover {
@@ -100,15 +147,28 @@ footer {
   }
 
   .fo-main-title {
-    height: 100vh;
+    height: 65vh;
+    min-height: 560px;
 
     .fo-title-img {
-      margin: 5% auto 10%;
+      img {
+        max-width: 1200px;
+        width: 80vw;
+        height: auto;
+      }
     }
 
-    .fo-main-nav-btn {
-      max-width: 40%;
+    .fo-main-navigation {
+
+      img {
+        aspect-ratio: 1 / 1;
+        max-width: 125px;
+        width: 20vw;
+        height: auto;
+      }
     }
+
+
   }
 
   .fo-main-page-content {
@@ -164,19 +224,59 @@ footer {
     }
 
     .fo-members {
+      position: relative;
+      height: 320px;
+      overflow: hidden;
 
-      .fo-member-tile {
-        color: $fo-white-color;
-        max-width: 20ch;
-        min-width: 20ch;
+      @include media-breakpoint-up(md) {
+        position: static;
+        height: auto;
+        overflow: visible;
+      }
 
-        img {
-          border-radius: 50%;
-          aspect-ratio: 1 / 1;
-          max-width: 125px;
-          height: auto;
+      .fo-member-tiles {
+        position: absolute;
+
+        @include media-breakpoint-up(md) {
+          position: static;
+        }
+
+        .fo-member-tile {
+          @include fo-member-tile
         }
       }
+
+      .fo-member-expand-button {
+        @include fo-member-expand-button(35px)
+      }
+
+      .fo-member-overlay {
+        @include fo-member-overlay
+      }
+
+    }
+
+    .fo-members-expanded {
+      position: relative;
+      height: auto;
+      overflow: visible;
+
+      .fo-member-tiles {
+        position: static;
+
+        .fo-member-tile {
+          @include fo-member-tile;
+        }
+      }
+
+      .fo-member-expand-button {
+        @include fo-member-expand-button(-25px)
+      }
+
+      .fo-member-overlay {
+        @include fo-member-overlay
+      }
+
     }
 
     .fo-main-join {
@@ -200,8 +300,8 @@ footer {
   padding-left: 5vw;
 
   @include media-breakpoint-up(xl) {
-    padding-right: 10vw;
-    padding-left: 10vw;
+    padding-right: 20vw;
+    padding-left: 20vw;
   }
 
   .fo-section-title {
@@ -219,7 +319,6 @@ footer {
   }
 
   .fo-blog-posts {
-
     img {
       aspect-ratio: 1 / 1;
       max-width: 138px;
@@ -442,6 +541,7 @@ footer {
   background: rgb(149, 99, 191);
   background: linear-gradient(90deg, $fo-purple-color 0%, $fo-pink-color 100%);
   border-radius: 0.3rem;
+  border: 0;
 }
 
 .fo-pink-text {

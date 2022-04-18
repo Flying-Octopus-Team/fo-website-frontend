@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 640 512"
+   version="1.1"
+   id="svg4"
+   sodipodi:docname="discord-brands.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+  <metadata
+     id="metadata10">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs8" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="2498"
+     inkscape:window-height="1417"
+     id="namedview6"
+     showgrid="false"
+     inkscape:zoom="0.4609375"
+     inkscape:cx="-49.898305"
+     inkscape:cy="169.22034"
+     inkscape:window-x="54"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4" />
+  <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+  <path
+     d="m 417.26546,168.91881 a 0.75000009,0.75000049 0 0 0 -0.382,-0.35 242.53253,242.53266 0 0 0 -59.84301,-18.55302 0.90800011,0.90800059 0 0 0 -0.9615,0.455 168.73052,168.73061 0 0 0 -7.45,15.30001 223.92403,223.92415 0 0 0 -67.21301,0 154.77052,154.7706 0 0 0 -7.5675,-15.30001 0.94500012,0.94500061 0 0 0 -0.962,-0.455 241.84453,241.84466 0 0 0 -59.844,18.55352 0.85600011,0.85600055 0 0 0 -0.394,0.338 c -38.11451,56.91903 -48.55551,112.43857 -43.43351,167.2706 a 1.0080001,1.0080007 0 0 0 0.3825,0.6875 243.83303,243.83316 0 0 0 73.41251,37.09453 0.95000012,0.95000062 0 0 0 1.0315,-0.338 174.10002,174.10011 0 0 0 15.0185,-24.42102 0.93000012,0.9300006 0 0 0 -0.5095,-1.294 160.58652,160.5866 0 0 1 -22.934,-10.92651 0.94250012,0.94250061 0 0 1 -0.0925,-1.563 c 1.541,-1.1545 3.083,-2.3555 4.5545,-3.5685 a 0.90950011,0.90950059 0 0 1 0.95,-0.128 c 48.1145,21.95852 100.20501,21.95852 147.75002,0 a 0.90600011,0.90600059 0 0 1 0.962,0.1165 c 1.472,1.213 3.0135,2.4255 4.566,3.58 a 0.94200012,0.94200061 0 0 1 -0.081,1.563 150.70352,150.7036 0 0 1 -22.94501,10.91501 0.93750012,0.93750061 0 0 0 -0.5,1.3055 195.52752,195.52763 0 0 0 15.00701,24.40752 0.93200012,0.9320006 0 0 0 1.0315,0.35 243.02403,243.02416 0 0 0 73.53101,-37.09303 0.94100012,0.94100061 0 0 0 0.3825,-0.676 c 6.132,-63.39154 -10.26601,-118.45607 -43.46701,-167.2706 z M 266.24544,302.79089 c -14.486,0 -26.422,-13.29351 -26.422,-29.61952 0,-16.32601 11.7045,-29.62052 26.422,-29.62052 14.8325,0 26.653,13.41001 26.4215,29.61952 0,16.32701 -11.705,29.62052 -26.4215,29.62052 z m 97.69001,0 c -14.4855,0 -26.4215,-13.29351 -26.4215,-29.61952 0,-16.32601 11.7045,-29.62052 26.4215,-29.62052 14.83351,0 26.65351,13.41001 26.42201,29.61952 0,16.32701 -11.5885,29.62052 -26.42201,29.62052 z"
+     id="path2"
+     style="fill:#ffffff;fill-opacity:1;stroke-width:0.50000018"
+     inkscape:connector-curvature="0" />
+</svg>

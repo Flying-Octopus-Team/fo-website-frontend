@@ -48,7 +48,7 @@
         </p>
       </div>
     </div>
-    <b-link href='' class='fo-gradient-button text-center my-4 py-2 px-4 h4'>ZASOBY</b-link>
+    <b-link href='' class='fo-gradient-button text-center my-4 py-2 px-4 h5 font-weight-normal'>ZASOBY</b-link>
   </div>
 </template>
 
