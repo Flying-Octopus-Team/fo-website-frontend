@@ -21,6 +21,6 @@ import ProjectCarouselImage from '~/types/ProjectCarouselImage'
 export default class ProjectsCarousel extends Vue {
 
   @Prop({ default: () => [] })
-  projectImages!: Array<ProjectCarouselImage>
+  projectImages!: ProjectCarouselImage[]
 }
 </script>

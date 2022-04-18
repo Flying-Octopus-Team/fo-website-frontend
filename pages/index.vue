@@ -35,7 +35,8 @@
         </h4>
         <div id='blog' class='d-flex flex-row align-items-center fo-main-blog'>
           <BlogPosts class='flex-grow-1 pr-lg-4' :posts='recentBlogPosts' />
-          <b-img-lazy class='img-fluid d-none d-lg-block' src='~/assets/img/smolocti.png' alt='Flying Octopus Mascot' />
+          <b-img-lazy class='img-fluid d-none d-lg-block' src='~/assets/img/smolocti.png' alt='Flying Octopus Mascot'>
+          </b-img-lazy>
         </div>
         <div id='projects' class='fo-main-projects'>
           <h1 class='text-center fo-main-text m-5'>Nasze projekty</h1>
@@ -48,7 +49,8 @@
           <OurTeam :members='activeTeamMembers' />
         </div>
         <div id='join' class='d-flex flex-column fo-main-join my-4 pt-4'>
-          <b-img class='mx-auto' src='~/assets/img/fo-icon.svg' alt='Flying Octopus Logo' />
+          <b-img class='mx-auto' src='~/assets/img/fo-icon.svg' alt='Flying Octopus Logo'>
+          </b-img>
           <h3 class='text-center mt-4'>Dołącz do nas</h3>
           <h5 class='text-center fo-text-join-bottom mb-4'>Stań się częścią zespołu i twórzmy wspólnie!</h5>
           <b-link
