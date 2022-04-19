@@ -104,10 +104,11 @@ export default class MainPage extends Vue {
 
     this.activeTeamMembers = MainPage.handleFetchedDataAsArray<Member>(
       await this.$content('member')
-        .sortBy('name', 'asc')
         .where({ active: true })
         .fetch<Member>()
     )
+
+    this.activeTeamMembers = this.activeTeamMembers.sort((a, b) => a.name.localeCompare(b.name, 'pl'))
   }
 
   private static handleFetchedDataAsArray<T>(data: (T & FetchReturn) | (T & FetchReturn)[]): T[] {
