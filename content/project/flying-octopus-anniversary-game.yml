@@ -1,9 +1,16 @@
 title: Flying Octopus Anniversary Game
 images:
-  - /img/cover.png
+  - /img/anni_game.jpg
+  - /img/anni_main_j.jpg
+  - /img/anni_over_j.jpg
 tags:
   - 2d-ed7edf
   - zręcznościówka-ed7edf
 link: https://flyingoctopus.itch.io/flying-octopus-anniversary-game
 linkText: ZAGRAJ
-description: Gra przygotowana na aby uczcić naszą trzecią rocznicę. Enjoy!
+description: >-
+  Flying Octopus Anniversary Game jest klonem flappy birda. Gra przygotowana,
+  aby uczcić rocznicę zespołu Flying Octopus. Enjoy!
+
+
+  [![Github](/img/github-mark-light-32px.png)](https://github.com/Flying-Octopus-Team/anniversary-game-2022)
