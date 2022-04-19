@@ -21,7 +21,7 @@ collections:
     fields:
       - { label: 'Title', name: 'title', widget: 'string', required: true }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Thumbnail - Aspect ratio 1:1', name: 'thumbnail', widget: 'image', allow_multiple: false, comment: 'Aspect ratio should be 1:1' }
+      - { label: 'Thumbnail - Aspect ratio 1:1 - 138x138px', name: 'thumbnail', widget: 'image', allow_multiple: false, comment: 'Aspect ratio should be 1:1' }
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Author', name: 'author', widget: 'relation', collection: 'member', value_field: '{{slug}}', search_fields: [ 'name' ], display_fields: [ '{{name}}' ] }
       - { label: 'Content', name: 'content', widget: 'markdown', required: true }
@@ -36,7 +36,7 @@ collections:
       preview: false
     fields:
       - { label: 'Name', name: 'name', widget: 'string', required: true }
-      - { label: 'Avatar', name: 'avatar', widget: 'image', allow_multiple: false }
+      - { label: 'Avatar - Aspect ratio 1:1 - 320x320px', name: 'avatar', widget: 'image', allow_multiple: false }
       - { label: 'Is an active member', name: 'active', widget: 'boolean', deafult: true, required: true }
       - { label: 'Description', name: 'description', widget: 'markdown' }
   - name: 'tag'
@@ -62,7 +62,7 @@ collections:
       preview: false
     fields:
       - { label: 'Title', name: 'title', widget: 'string', required: true }
-      - { label: 'Images',
+      - { label: 'Images - Aspect ratio 16:10 - 1920x1200px',
           name: 'images',
           widget: list,
           summary: '{{fields.image}}',
