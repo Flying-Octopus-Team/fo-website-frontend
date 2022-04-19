@@ -1,30 +1,7 @@
-title: Blog filled with content
-date: 2022-03-23T17:23:11.449Z
-thumbnail: /img/henri_charles_antoine_baron_-_un_turc_fume_couché_-1844-.jpg
-description: Curabitur ac tincidunt nisi. Sed quis tellus eget libero finibus
-  iaculis ut id lorem. Morbi id malesuada nulla, sed faucibus erat. Maecenas id
-  tellus laoreet mauris dapibus ullamcorper sed ac elit. Pellentesque finibus
-  ante facilisis enim dapibus, quis eleifend felis vehicula. Aenean maximus
-  lectus id mauris pharetra faucibus ac et odio. Mauris sed metus ultricies,
-  auctor risus sit amet, sollicitudin nunc. Duis vel feugiat lectus.
+title: Nasz pierwszy wpis!
+date: 2022-04-19T20:00:26.381Z
+# Aspect ratio should be 1:1
+thumbnail: /img/octi_ptrn_2.jpg
+description: Ruszamy z flyingocotpus.pl
 author: 2021-07-10-dyedmagenta
-content: >-
-  ## Lorem ipsum dolor sit amet
-
-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam iaculis nec libero in blandit. Curabitur quis nunc nec erat feugiat eleifend quis in ligula. **Sed id nunc elit.** Curabitur a bibendum turpis, in commodo mi. Maecenas luctus viverra ipsum, eget mattis lacus molestie eget. Vestibulum at orci id sem eleifend rhoncus. Donec molestie diam sed lacus congue, non sodales lacus consectetur. Vivamus consequat libero sapien.
-
-
-  Nulla elementum pretium varius. Praesent non ipsum arcu. Proin a enim a diam pharetra faucibus vel vitae metus. Praesent faucibus vitae nisl nec tincidunt. Integer faucibus eu nulla eu tristique. Pellentesque risus urna, ullamcorper eget hendrerit ac, consectetur at libero. Mauris nisi mauris, laoreet vel semper ac, vehicula vel quam. Pellentesque dignissim velit quis diam facilisis facilisis. *Aliquam sodales suscipit tincidunt*. Suspendisse potenti. Donec aliquam purus sed ipsum varius, non pellentesque magna dignissim. Morbi sed ultricies nisi. Morbi sodales erat vel efficitur dictum. In pharetra, ipsum nec aliquam ultrices, ligula lorem aliquet dolor, at tempor ipsum leo ac lorem. Proin sit amet lacus tortor.
-
-
-  Nam blandit sapien quis lorem interdum bibendum. Nunc vel ultrices sapien. Cras at velit imperdiet, consequat ante aliquam, mollis mauris. Maecenas et ipsum vitae turpis hendrerit tempor vel sed turpis. Donec eu cursus tortor, bibendum aliqu*et ligula. Donec volutpat est* a orci ullamcorper semper. Aliquam tincidunt, ante eu lobortis mattis, turpis mauris eleifend sapien, vel scelerisque ipsum leo vitae felis. In id eros est. In dictum dictum justo ut luctus. Morbi rutrum nisi mauris, vitae sollicitudin velit tincidunt ac. Nam aliquet leo in rhoncus malesuada. Mauris mollis tristique commodo. Suspendisse lectus arcu, euismod id egestas ut, posuere id sapien. Etiam erat dolor, laoreet a semper ut, efficitur at est.
-
-
-  > Curabitur ac tincidunt nisi. Sed quis tellus eget libero finibus iaculis ut id lorem. Morbi id malesuada nulla, sed faucibus erat. Maecenas id tellus laoreet mauris dapibus ullamcorper sed ac elit. Pellentesque finibus ante facilisis enim dapibus, quis eleifend felis vehicula. Aenean maximus lectus id mauris pharetra faucibus ac et odio. Mauris sed metus ultricies, auctor risus sit amet, sollicitudin nunc. Duis vel feugiat lectus.
-
-
-  Nunc vel augue augue. Ut quam justo, molestie tincidunt maximus a, sollicitudin nec odio. Pellentesque commodo massa risus, id tempus arcu fermentum non. Curabitur aliquet lacus sem, vel tincidunt mauris varius non. Maecenas sem magna, finibus sit amet ex sed, consequat mattis ex. Quisque quis rutrum diam, at pulvinar mi. Aliquam nisi est, tincidunt viverra iaculis id, vehicula nec neque. Cras imperdiet tincidunt bibendum. Praesent in imperdiet ipsum. Vivamus risus felis, dignissim et elit eget, consequat gravida risus. Curabitur pretium felis sed arcu semper, nec tristique enim rhoncus. Donec id neque a sapien pretium bibendum. Phasellus sit amet lacus pulvinar, ultricies mi id, cursus sapien. Quisque tempor in ante non convallis.
-
-
-  `Generated 5 paragraphs, 454 words, 3043 bytes of `[`Lorem Ipsum`](https://www.lipsum.com/ "Lorem Ipsum")``
+content: Ruszamy z długo oczekiwaną stroną zespołu Flying Octopus!
