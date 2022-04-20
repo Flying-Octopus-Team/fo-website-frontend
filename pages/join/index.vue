@@ -16,7 +16,7 @@
         <li>Poczucie przynależności</li>
         <li>Dowolność wyboru zadań</li>
       </ul>
-      <p class='text-justify ml-lg-4'>
+      <p class='text-justify ml-lg-4 fo-post-content'>
         Będąc w&nbsp;zespole, zyskasz możliwość tworzenia gier komputerowych i&nbsp;brania udziału w&nbsp;innych,
         ciekawych projektach. Jeśli nie masz doświadczenia bądź dopiero zaczynasz swoją przygodę w&nbsp;gamedevie, z&nbsp;pewnością
         pomogą ciszkolenia organizowane przez naszych mentorów. Członkowie mają realny wpływ na decyzje podejmowane w&nbsp;zespole
@@ -26,7 +26,7 @@
     <div class='d-flex flex-wrap flex-lg-nowrap'>
       <div class='col-lg p-0 pr-lg-4 my-4'>
         <FOSectionTitle class='my-3' content='PRAKTYKANT' />
-        <p>
+        <p class='text-justify fo-post-content'>
           Będąc w&nbsp;zespole, zyskasz możliwość tworzenia gier komputerowych i&nbsp;brania udziału w&nbsp;innych,
           ciekawych projektach. Jeśli nie masz doświadczenia bądź dopiero zaczynasz swoją przygodę w&nbsp;gamedevie, z&nbsp;pewnością
           pomogą ci szkolenia organizowane przez naszych mentorów. Członkowie mają realny wpływ na decyzje podejmowane w&nbsp;zespole
@@ -36,7 +36,7 @@
       </div>
       <div class='col-lg pl-lg-4 p-0 my-4'>
         <FOSectionTitle class='my-3' content='PARTNER' />
-        <p>
+        <p class='text-justify fo-post-content'>
           Będąc w&nbsp;zespole, zyskasz możliwość tworzenia gier komputerowych i&nbsp;brania udziału w&nbsp;innych,
           ciekawych projektach. Jeśli nie masz doświadczenia bądź dopiero zaczynasz swoją przygodę w&nbsp;gamedevie, z&nbsp;pewnością
           pomogą ci szkolenia organizowane przez naszych mentorów. Członkowie mają realny wpływ na decyzje podejmowane w&nbsp;zespole
