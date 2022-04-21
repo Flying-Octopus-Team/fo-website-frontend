@@ -16,33 +16,21 @@
         <li>Poczucie przynależności</li>
         <li>Dowolność wyboru zadań</li>
       </ul>
-      <p class='text-justify ml-lg-4 fo-post-content'>
-        Będąc w&nbsp;zespole, zyskasz możliwość tworzenia gier komputerowych i&nbsp;brania udziału w&nbsp;innych,
-        ciekawych projektach. Jeśli nie masz doświadczenia bądź dopiero zaczynasz swoją przygodę w&nbsp;gamedevie, z&nbsp;pewnością
-        pomogą ciszkolenia organizowane przez naszych mentorów. Członkowie mają realny wpływ na decyzje podejmowane w&nbsp;zespole
-        oraz kierunek rozwoju grupy.
-      </p>
+      <div class='text-justify ml-lg-4 fo-post-content' v-html='renderMarkdownContent(memberContent)'></div>
     </div>
     <div class='d-flex flex-wrap flex-lg-nowrap'>
       <div class='col-lg p-0 pr-lg-4 my-4'>
         <FOSectionTitle class='my-3' content='PRAKTYKANT' />
-        <p class='text-justify fo-post-content'>
-          Będąc w&nbsp;zespole, zyskasz możliwość tworzenia gier komputerowych i&nbsp;brania udziału w&nbsp;innych,
-          ciekawych projektach. Jeśli nie masz doświadczenia bądź dopiero zaczynasz swoją przygodę w&nbsp;gamedevie, z&nbsp;pewnością
-          pomogą ci szkolenia organizowane przez naszych mentorów. Członkowie mają realny wpływ na decyzje podejmowane w&nbsp;zespole
-          oraz kierunek rozwoju grupy. Podsumowując, jeśli szukałeś grupy do wspólnego projektowania gier – jesteś we
-          właściwym miejscu.
-        </p>
+        <div
+          class='text-justify fo-post-content'
+          v-html='renderMarkdownContent(fixConjunctions(apprenticeContent))'
+        >
+        </div>
       </div>
       <div class='col-lg pl-lg-4 p-0 my-4'>
         <FOSectionTitle class='my-3' content='PARTNER' />
-        <p class='text-justify fo-post-content'>
-          Będąc w&nbsp;zespole, zyskasz możliwość tworzenia gier komputerowych i&nbsp;brania udziału w&nbsp;innych,
-          ciekawych projektach. Jeśli nie masz doświadczenia bądź dopiero zaczynasz swoją przygodę w&nbsp;gamedevie, z&nbsp;pewnością
-          pomogą ci szkolenia organizowane przez naszych mentorów. Członkowie mają realny wpływ na decyzje podejmowane w&nbsp;zespole
-          oraz kierunek rozwoju grupy. Podsumowując, jeśli szukałeś grupy do wspólnego projektowania gier – jesteś we
-          właściwym miejscu.
-        </p>
+        <div class='text-justify fo-post-content' v-html='renderMarkdownContent(fixConjunctions(partnerContent))'>
+        </div>
       </div>
     </div>
     <h3 id='contact' class='font-weight-light fo-pink-text text-center my-4'>
@@ -67,9 +55,47 @@
 
 <script lang='ts'>
 import { Component, Vue } from 'nuxt-property-decorator'
+import { marked } from 'marked'
+import { FetchReturn } from '@nuxt/content/types/query-builder'
 import SectionTitle from '~/components/SectionTitle.vue'
+import JoinPageContent from '~/types/JoinPageContent'
+import TextUtil from '~/services/TextUtil'
+import JoinSection from '~/types/JoinSection'
 
 @Component({ components: { FOSectionTitle: SectionTitle } })
 export default class JoinUsPage extends Vue {
+
+  contents: JoinPageContent[] = []
+  memberContent: string = '<p></p>'
+  apprenticeContent: string = '<p></p>'
+  partnerContent: string = '<p></p>'
+
+  async fetch() {
+    this.contents = JoinUsPage.handleFetchedDataAsArray<JoinPageContent>(
+      await this.$content('join-page')
+        .fetch<JoinPageContent>()
+    )
+
+    this.memberContent = this.contents.find(ctn => ctn.section === JoinSection.MEMBER)!.content
+    this.apprenticeContent = this.contents.find(ctn => ctn.section === JoinSection.APPRENTICE)!.content
+    this.partnerContent = this.contents.find(ctn => ctn.section === JoinSection.PARTNER)!.content
+  }
+
+  public renderMarkdownContent(description: string): string {
+    return marked(description)
+  }
+
+  public fixConjunctions(text: string) {
+    return TextUtil.fixHangingConjunctions(text)
+  }
+
+  private static handleFetchedDataAsArray<T>(data: (T & FetchReturn) | (T & FetchReturn)[]): T[] {
+    if (Array.isArray(data)) {
+      return data
+    } else {
+      return [data]
+    }
+  }
+
 }
 </script>

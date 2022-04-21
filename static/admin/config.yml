@@ -72,4 +72,16 @@ collections:
       - { label: 'Play game link', name: 'link', widget: 'string', required: false }
       - { label: 'Play game button text', name: 'linkText', widget: 'string', required: false, default: 'ZAGRAJ'}
       - { label: 'Description', name: 'description', widget: 'markdown' }
+  - name: 'join-page'
+    label: 'Join us page'
+    folder: 'content/join-page'
+    format: 'yml'
+    create: false
+    slug: '{{section}}'
+    identifier_field: 'section'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Section', name: 'section', widget: 'select', options: ['member', 'apprentice', 'partner'], required: true }
+      - { label: 'Content', name: 'content', widget: 'markdown' }
 
