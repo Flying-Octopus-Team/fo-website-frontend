@@ -27,7 +27,6 @@
       </b-avatar>
     </div>
     <div class='text-center my-2'>
-      <h6 class='mt-3'>Dołącz do naszego newslettera</h6>
       <p>Flying Octopus</p>
     </div>
   </footer>
