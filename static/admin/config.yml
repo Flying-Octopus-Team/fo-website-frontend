@@ -39,6 +39,19 @@ collections:
       - { label: 'Avatar - Aspect ratio 1:1 - (320 x 320px)', name: 'avatar', widget: 'image', allow_multiple: false }
       - { label: 'Is an active member', name: 'active', widget: 'boolean', deafult: true, required: true }
       - { label: 'Description', name: 'description', widget: 'markdown' }
+      - { label: 'Roles',
+          name: 'roles',
+          widget: list,
+          summary: '{{fields.rolename}}',
+          field: { label: 'Role name', name: 'rolename', widget: 'string', default: 'Odlotowa' },
+          default: [ 'Członek' ]
+      }
+      - { label: 'Links',
+          name: 'links',
+          widget: list,
+          summary: '{{fields.link}}',
+          field: { label: 'Link', name: 'link', widget: 'string' }
+      }
   - name: 'tag'
     label: 'Project tags'
     label_singular: 'Tag'
@@ -70,7 +83,7 @@ collections:
       }
       - { label: 'Tags', name: 'tags', widget: 'relation', collection: 'tag', value_field: '{{slug}}', search_fields: [ 'name' ], display_fields: [ '{{name}}' ], multiple: true }
       - { label: 'Play game link', name: 'link', widget: 'string', required: false }
-      - { label: 'Play game button text', name: 'linkText', widget: 'string', required: false, default: 'ZAGRAJ'}
+      - { label: 'Play game button text', name: 'linkText', widget: 'string', required: false, default: 'ZAGRAJ' }
       - { label: 'Description', name: 'description', widget: 'markdown' }
   - name: 'join-page'
     label: 'Join us page'
@@ -82,6 +95,6 @@ collections:
     editor:
       preview: false
     fields:
-      - { label: 'Section', name: 'section', widget: 'select', options: ['member', 'apprentice', 'partner'], required: true }
+      - { label: 'Section', name: 'section', widget: 'select', options: [ 'member', 'apprentice', 'partner' ], required: true }
       - { label: 'Content', name: 'content', widget: 'markdown' }
 

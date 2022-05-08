@@ -142,7 +142,7 @@ body {
   height: 160px;
 }
 
-footer {
+.fo-footer {
   height: 160px;
   background: linear-gradient(270deg, #001720 0%, #110B14 100%);
 
@@ -193,6 +193,27 @@ footer {
     margin-right: .5rem;
     padding: 10px;
     text-align: center
+  }
+}
+
+.fo-member-modal {
+  border-width: 2px;
+  border-color: $fo-white-color;
+  background: black;
+
+  color: $fo-white-color;
+
+  .fo-member-tile {
+    @include fo-member-tile
+  }
+
+  .modal-header {
+    border: none;
+  }
+
+  .modal-footer {
+    border: none;
+    justify-content: normal;
   }
 }
 
@@ -553,6 +574,10 @@ footer {
 
 .fo-pink-text {
   color: $fo-pink-color;
+}
+
+.fo-white-text {
+  color: $fo-white-color;
 }
 
 .fo-error {

@@ -1,5 +1,5 @@
 <template>
-  <footer class='py-2'>
+  <footer class='fo-footer py-2'>
     <div class='d-flex justify-content-center my-2'>
       <b-avatar
         href='https://www.facebook.com/FO.flyingoctopus/'
