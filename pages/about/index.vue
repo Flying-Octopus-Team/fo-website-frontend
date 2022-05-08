@@ -58,9 +58,9 @@
 
 <script lang='ts'>
 import { Component, Vue } from 'nuxt-property-decorator'
+import { FetchReturn } from '@nuxt/content/types/query-builder'
 import SectionTitle from '~/components/SectionTitle.vue'
 import Member from '~/types/Member'
-import { FetchReturn } from '@nuxt/content/types/query-builder'
 
 @Component({ components: { FOSectionTitle: SectionTitle } })
 export default class AboutUsPage extends Vue {
