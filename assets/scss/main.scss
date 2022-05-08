@@ -60,6 +60,65 @@ $fo-purple-color: #9563BF;
   height: 120px;
 }
 
+@mixin fo-members {
+
+  .fo-members {
+    position: relative;
+    height: 320px;
+    overflow: hidden;
+
+    @include media-breakpoint-up(md) {
+      position: static;
+      height: auto;
+      overflow: visible;
+    }
+
+    .fo-member-tiles {
+      position: absolute;
+
+      @include media-breakpoint-up(md) {
+        position: static;
+      }
+
+      .fo-member-tile {
+        @include fo-member-tile
+      }
+    }
+
+    .fo-member-expand-button {
+      @include fo-member-expand-button(35px)
+    }
+
+    .fo-member-overlay {
+      @include fo-member-overlay
+    }
+
+  }
+
+  .fo-members-expanded {
+    position: relative;
+    height: auto;
+    overflow: visible;
+
+    .fo-member-tiles {
+      position: static;
+
+      .fo-member-tile {
+        @include fo-member-tile;
+      }
+    }
+
+    .fo-member-expand-button {
+      @include fo-member-expand-button(-25px)
+    }
+
+    .fo-member-overlay {
+      @include fo-member-overlay
+    }
+
+  }
+}
+
 @keyframes slideBackgroundIn {
   from {
     background-color: rgba(0, 0, 0, 1);
@@ -223,61 +282,7 @@ footer {
       }
     }
 
-    .fo-members {
-      position: relative;
-      height: 320px;
-      overflow: hidden;
-
-      @include media-breakpoint-up(md) {
-        position: static;
-        height: auto;
-        overflow: visible;
-      }
-
-      .fo-member-tiles {
-        position: absolute;
-
-        @include media-breakpoint-up(md) {
-          position: static;
-        }
-
-        .fo-member-tile {
-          @include fo-member-tile
-        }
-      }
-
-      .fo-member-expand-button {
-        @include fo-member-expand-button(35px)
-      }
-
-      .fo-member-overlay {
-        @include fo-member-overlay
-      }
-
-    }
-
-    .fo-members-expanded {
-      position: relative;
-      height: auto;
-      overflow: visible;
-
-      .fo-member-tiles {
-        position: static;
-
-        .fo-member-tile {
-          @include fo-member-tile;
-        }
-      }
-
-      .fo-member-expand-button {
-        @include fo-member-expand-button(-25px)
-      }
-
-      .fo-member-overlay {
-        @include fo-member-overlay
-      }
-
-    }
+    @include fo-members;
 
     .fo-main-join {
       color: $fo-white-color;
@@ -303,6 +308,8 @@ footer {
     padding-right: 20vw;
     padding-left: 20vw;
   }
+
+  @include fo-members;
 
   .fo-section-title {
     color: $fo-pink-color;
