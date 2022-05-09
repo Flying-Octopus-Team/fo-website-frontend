@@ -2,3 +2,5 @@ name: Alicja Zawada
 avatar: /img/alicja_zawada.jpg
 active: true
 description: Pracuję nad komiksem i lubię rysować.
+roles:
+  - Grafik 2D
