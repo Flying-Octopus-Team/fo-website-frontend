@@ -49,14 +49,41 @@
       </div>
     </div>
     <b-link href='' class='fo-gradient-button text-center my-4 py-2 px-4 h5 font-weight-normal'>ZASOBY</b-link>
+    <div class='my-4'>
+      <h1 class='text-center fo-main-text m-4'>Nasz zespół</h1>
+      <OurTeam :members='activeTeamMembers' />
+    </div>
   </div>
 </template>
 
 <script lang='ts'>
 import { Component, Vue } from 'nuxt-property-decorator'
+import { FetchReturn } from '@nuxt/content/types/query-builder'
 import SectionTitle from '~/components/SectionTitle.vue'
+import Member from '~/types/Member'
 
 @Component({ components: { FOSectionTitle: SectionTitle } })
 export default class AboutUsPage extends Vue {
+
+  activeTeamMembers: Member[] = []
+
+  async fetch() {
+
+    this.activeTeamMembers = AboutUsPage.handleFetchedDataAsArray<Member>(
+      await this.$content('member')
+        .where({ active: true })
+        .fetch<Member>()
+    )
+
+    this.activeTeamMembers = this.activeTeamMembers.sort((a, b) => a.name.localeCompare(b.name, 'pl'))
+  }
+
+  private static handleFetchedDataAsArray<T>(data: (T & FetchReturn) | (T & FetchReturn)[]): T[] {
+    if (Array.isArray(data)) {
+      return data
+    } else {
+      return [data]
+    }
+  }
 }
 </script>

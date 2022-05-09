@@ -44,7 +44,7 @@
           <ProjectsCarousel :project-images='projectImages' />
           <div class='fo-line-separator my-4'></div>
         </div>
-        <div id='members' class='fo-main-members'>
+        <div id='members'>
           <h1 class='text-center fo-main-text m-4'>Nasz zespół</h1>
           <OurTeam :members='activeTeamMembers' />
         </div>

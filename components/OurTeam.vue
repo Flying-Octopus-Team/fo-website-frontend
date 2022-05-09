@@ -1,11 +1,45 @@
 <template>
   <div :class="{ 'fo-members': !membersOverlayHidden, 'fo-members-expanded': membersOverlayHidden }">
     <div class='d-flex flex-wrap fo-member-tiles justify-content-center'>
-      <TeamMember
-        v-for='(member, index) in members' :key='index'
-        :name='member.name'
-        :avatar='member.avatar'
-      />
+      <div v-for='(member, index) in members' :key='index'>
+        <TeamMember
+          v-b-modal='"modal-" + index'
+          :name='member.name'
+          :avatar='member.avatar'
+        />
+        <b-modal :id='"modal-" + index' content-class='fo-member-modal' centered hide-backdrop>
+          <template #modal-header='{ close }'>
+            <div class='fo-member-tile'>
+              <b-img-lazy class='m-2' :src='member.avatar' alt='avatar' />
+            </div>
+            <div>
+              <h3 class='pt-2'>{{ member.name }}</h3>
+              <p class='small'>{{ getMemberRoles(member) }}</p>
+            </div>
+            <b-button-close text-variant='light' @click='close()' />
+          </template>
+
+          <template #default='{ }'>
+            <div v-if='member.description'>
+              <h5 class='fo-pink-text'>O mnie:</h5>
+              <p>{{ member.description }}</p>
+            </div>
+            <div v-else>🐙</div>
+          </template>
+
+          <template #modal-footer='{}'>
+            <div v-if='member.links'>
+              <p class='fo-pink-text'>Linki:</p>
+              <ul v-for='(link, linkIndex) in member.links' :key='linkIndex' style='line-height: 1rem'>
+                <li>
+                  <b-link :href='link'>{{ link }}</b-link>
+                </li>
+              </ul>
+            </div>
+            <div v-else>🐙</div>
+          </template>
+        </b-modal>
+      </div>
     </div>
     <b-button class='fo-member-expand-button fo-gradient-button shadow d-md-none' @click='toggle()'>
       {{ toggleButtonText }}
@@ -37,6 +71,18 @@ export default class OurTeam extends Vue {
       return 'Zwiń'
     }
     return 'Rozwiń'
+  }
+
+  public getMemberRoles(member: Member): string {
+    if (!member || !member.roles) {
+      return ''
+    }
+
+    if (member.roles.length > 1) {
+      return member.roles.join(', ')
+    }
+
+    return member.roles[0]
   }
 }
 </script>

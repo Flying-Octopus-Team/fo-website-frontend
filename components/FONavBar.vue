@@ -15,9 +15,6 @@
         <b-nav-item exact exact-active-class='active' to='/projects'>
           <div class='fo-nav-item'>Projekty</div>
         </b-nav-item>
-        <b-nav-item exact exact-active-class='active' :to='{path: "/", hash: "#members"}'>
-          <div class='fo-nav-item'>Zespół</div>
-        </b-nav-item>
         <b-nav-item exact exact-active-class='active' to='/join'>
           <div class='fo-nav-item'>Dołącz do nas</div>
         </b-nav-item>
