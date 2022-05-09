@@ -2,3 +2,7 @@ name: Misuzu Faraday
 avatar: /img/profile-picture.jpg
 active: true
 description: Zajmuję się głównie tworzeniem grafik 2D i organizacją wewnątrz zespołu.
+roles:
+  - Grafik 2D
+links:
+  - https://linktr.ee/MisuzuFaraday
