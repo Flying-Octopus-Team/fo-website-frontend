@@ -1,4 +1,11 @@
 name: Kamil Sell
 avatar: /img/kamil_sell.jpg
 active: true
-description: Adorator Blendera, wiecznie zmartwiony usuwaniem default cube
+description: Zajmuję się modelowaniem 3D i environment artem. Fan sci-fi i
+  zdrowego trybu życia.
+roles:
+  - 3D Artist
+  - Environment Artist
+  - Texture Artist
+links:
+  - https://www.artstation.com/kamilsell
