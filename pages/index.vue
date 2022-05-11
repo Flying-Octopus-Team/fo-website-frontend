@@ -94,6 +94,7 @@ export default class MainPage extends Vue {
 
     this.carouselImages = MainPage.handleFetchedDataAsArray<MainCarousel>(
       await this.$content('main-carousel')
+        .sortBy('order', 'asc')
         .fetch<MainCarousel>()
     )
 
