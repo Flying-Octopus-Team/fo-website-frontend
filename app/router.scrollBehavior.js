@@ -16,7 +16,7 @@ export default async function (to, from, savedPosition) {
   if (to.hash) {
     let el = await findEl(to.hash)
     if ('scrollBehavior' in document.documentElement.style) {
-      return window.scrollTo({ top: el.offsetTop, behavior: 'smooth' })
+      return window.scrollTo({ top: el.offsetTop - 80, behavior: 'smooth' })
     } else {
       return window.scrollTo(0, el.offsetTop)
     }
