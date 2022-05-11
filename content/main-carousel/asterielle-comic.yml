@@ -2,5 +2,5 @@ name: Asterielle comic
 image: /img/comic.png
 order: 0
 project: Komiksy
-external: false
+external: true
 link: https://www.facebook.com/FO.flyingoctopus/photos/a.499261315134857/499261285134860
