@@ -97,4 +97,27 @@ collections:
     fields:
       - { label: 'Section', name: 'section', widget: 'select', options: [ 'member', 'apprentice', 'partner' ], required: true }
       - { label: 'Content', name: 'content', widget: 'markdown' }
+  - name: 'main-carousel'
+    label: 'Main page carousel'
+    folder: 'content/main-carousel'
+    format: 'yml'
+    create: true
+    slug: '{{name}}'
+    identifier_field: 'name'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Name', name: 'name', widget: 'string', required: true }
+      - { label: 'Image - (2667 x 972px)', name: 'image', widget: 'image', allow_multiple: false, required: true }
+      - { label: 'Order', name: 'order', widget: 'number', value_type: 'int', default: 0, required: true }
+      - { label: 'Linked project',
+          name: 'project',
+          widget: 'relation',
+          collection: 'project',
+          search_fields: [ 'title' ],
+          value_field: 'title',
+          required: false
+      }
+      - { label: 'Use external link', name: 'external', widget: 'boolean', deafult: false, required: false }
+      - { label: 'External link', name: 'link', widget: 'string', required: false }
 

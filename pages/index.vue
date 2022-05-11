@@ -38,10 +38,10 @@
           <b-img-lazy class='img-fluid d-none d-lg-block' src='~/assets/img/smolocti.png' alt='Flying Octopus Mascot'>
           </b-img-lazy>
         </div>
-        <div id='projects' class='fo-main-projects'>
+        <div id='projects'>
           <h1 class='text-center fo-main-text m-5'>Nasze projekty</h1>
           <div class='fo-line-separator my-4'></div>
-          <ProjectsCarousel :project-images='projectImages' />
+          <MainPageCarousel :carousel-images='carouselImages' />
           <div class='fo-line-separator my-4'></div>
         </div>
         <div id='members'>
@@ -70,19 +70,18 @@ import { Component, Vue } from 'nuxt-property-decorator'
 import { FetchReturn } from '@nuxt/content/types/query-builder'
 
 import BlogPosts from '@/components/BlogPosts.vue'
-import ProjectsCarousel from '@/components/ProjectsCarousel.vue'
+import MainPageCarousel from '@/components/MainPageCarousel.vue'
 
 import Blog from '~/types/Blog'
-import Project from '~/types/Project'
 import OurTeam from '~/components/OurTeam.vue'
 import Member from '~/types/Member'
-import ProjectCarouselImage from '~/types/ProjectCarouselImage'
+import MainCarousel from '~/types/MainCarousel'
 
-@Component({ components: { BlogPosts, ProjectsCarousel, OurTeam } })
+@Component({ components: { BlogPosts, MainPageCarousel, OurTeam } })
 export default class MainPage extends Vue {
 
   recentBlogPosts: Blog[] = []
-  projectImages: ProjectCarouselImage[] = []
+  carouselImages: MainCarousel[] = []
   activeTeamMembers: Member[] = []
 
   async fetch() {
@@ -93,14 +92,11 @@ export default class MainPage extends Vue {
         .fetch<Blog>()
     )
 
-    const images = MainPage.handleFetchedDataAsArray<Project>(
-      await this.$content('project')
-        .only(['images', 'title'])
-        .fetch<Project>()
+    this.carouselImages = MainPage.handleFetchedDataAsArray<MainCarousel>(
+      await this.$content('main-carousel')
+        .sortBy('order', 'asc')
+        .fetch<MainCarousel>()
     )
-    images.forEach((project) => {
-      this.projectImages.push(new ProjectCarouselImage(project.images[0], project.title))
-    })
 
     this.activeTeamMembers = MainPage.handleFetchedDataAsArray<Member>(
       await this.$content('member')
