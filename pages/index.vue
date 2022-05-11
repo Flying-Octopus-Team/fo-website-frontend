@@ -38,7 +38,7 @@
           <b-img-lazy class='img-fluid d-none d-lg-block' src='~/assets/img/smolocti.png' alt='Flying Octopus Mascot'>
           </b-img-lazy>
         </div>
-        <div id='projects' class='fo-main-projects'>
+        <div id='projects'>
           <h1 class='text-center fo-main-text m-5'>Nasze projekty</h1>
           <div class='fo-line-separator my-4'></div>
           <MainPageCarousel :carousel-images='carouselImages' />
