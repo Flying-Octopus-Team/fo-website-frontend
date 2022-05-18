@@ -26,7 +26,7 @@ export default {
       },
       {
         hid: 'og-image', property: 'og:image',
-        content: 'https://flyingoctopus.pl/img/fo-title.svg'
+        content: 'https://flyingoctopus.pl/img/FO.png'
       },
       { hid: 'og-url', property: 'og:url', content: 'https://flyingoctopus.pl' }
     ],
