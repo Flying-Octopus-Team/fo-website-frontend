@@ -4,18 +4,38 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'fo-website',
+    title: 'Flying Octopus',
     htmlAttrs: {
       lang: 'pl'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1, shrink-to-fit=no' },
-      { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' }
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Jesteśmy zespołem gamedevowym, który składa się z kilkunastu osób pragnących rozwijać swoje umiejętności w zakresie tworzenia gier komputerowych oraz wspólnie pracować nad kilkoma kreatywnymi projektami.'
+      },
+      { name: 'format-detection', content: 'telephone=no' },
+      { hid: 'og-type', property: 'og:type', content: 'website' },
+      { hid: 'og-title', property: 'og:title', content: 'Flying Octopus' },
+      {
+        hid: 'og-desc',
+        property: 'og:description',
+        content: 'Jesteśmy zespołem gamedevowym, który składa się z kilkunastu osób pragnących rozwijać swoje umiejętności w zakresie tworzenia gier komputerowych oraz wspólnie pracować nad kilkoma kreatywnymi projektami.'
+      },
+      {
+        hid: 'og-image', property: 'og:image',
+        content: 'https://flyingoctopus.pl/img/fo-title.svg'
+      },
+      { hid: 'og-url', property: 'og:url', content: 'https://flyingoctopus.pl' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' },
+      { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' },
+      { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },
+      { rel: 'manifest', href: '/site.webmanifest' }
     ],
     script: []
   },
