@@ -1,4 +1,6 @@
 name: Przemysław Frankiewicz
 avatar: /img/przemyslaw_frankiewicz.jpg
 active: true
-description: Programista
+description: Jestem programistą i nie mam czasu. Rodzic Octi, ale zaręczony z logo.
+roles:
+  - Programista
