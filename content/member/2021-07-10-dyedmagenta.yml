@@ -1,11 +1,13 @@
 name: Piotr Frankiewicz
 avatar: /img/piotr_dyedmagenta_frankiewicz.jpg
 active: true
-description: Organizuję i wspieram cały zespół ile mogę. Jak starczy czasu to
+description: Organizuję i wspieram cały zespół, ile mogę. Jak starczy czasu to
   programuję i projektuję gry.
 roles:
   - Game developer
-  - Odlotowa
+  - Programista
+  - DevOps
+  - Game Designer
 links:
   - http://dyedmagenta.moe/
   - https://www.linkedin.com/in/piotr-frankiewicz-1b4961142
