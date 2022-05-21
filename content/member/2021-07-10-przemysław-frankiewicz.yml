@@ -1,4 +1,9 @@
 name: Przemysław Frankiewicz
 avatar: /img/przemyslaw_frankiewicz.jpg
 active: true
-description: Programista
+description: Mawiają, że zajmuję się programowaniem, ale na nic nie mam czasu.
+  Jestem również Władcą i Panem naszego serwera na Discordzie.
+roles:
+  - Programista
+links:
+  - https://github.com/SLASHLogin
