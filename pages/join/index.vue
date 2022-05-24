@@ -40,8 +40,8 @@
       <h3 class='font-weight-light my-2'>Wystarczą trzy proste kroki:</h3>
       <ol class='my-4' style='line-height: 2rem'>
         <li><a href='https://discord.gg/Q2DuSNY' class='fo-pink-text'>Napisz do nas!</a></li>
-        <li>Zrób wyznaczone <span class='fo-pink-text'>zadanie wstępne</span></li>
-        <li><span class='fo-pink-text'>Twórz</span> z nami wspaniałe projekty!</li>
+        <li>Wypełnij <a href='https://wiki.flyingoctopus.pl/Rekrutacja' class='fo-pink-text'>formularz rekrutacyjny</a></li>
+        <li>Wykonaj zadanie wstępne i twórz z nami wspaniałe projekty!</li>
       </ol>
     </div>
     <b-link
