@@ -40,12 +40,12 @@
       <h3 class='font-weight-light my-2'>Wystarczą trzy proste kroki:</h3>
       <ol class='my-4' style='line-height: 2rem'>
         <li><a href='https://discord.gg/Q2DuSNY' class='fo-pink-text'>Napisz do nas!</a></li>
-        <li>Wypełnij <a href='https://wiki.flyingoctopus.pl/Rekrutacja' class='fo-pink-text'>formularz rekrutacyjny</a></li>
+        <li>Wypełnij <a href='https://docs.google.com/forms/d/e/1FAIpQLSdCbqpjqa2xINzz_1GIeX1Zu1hVjgeRA-sNOgOqUG-W5DBjJA/viewform' class='fo-pink-text'>formularz rekrutacyjny</a></li>
         <li>Wykonaj zadanie wstępne i twórz z nami wspaniałe projekty!</li>
       </ol>
     </div>
     <b-link
-      href='https://wiki.flyingoctopus.pl/bin/view/Rekrutacja/'
+      href='https://wiki.flyingoctopus.pl/pl/Rekrutacja'
       class='fo-gradient-button text-center mx-auto my-3 py-2 px-4 h5 font-weight-normal'
     >
       Dołącz do nas
