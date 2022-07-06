@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class='d-flex flex-column fo-main-container '>
+    <div class='d-flex flex-column fo-main-container'>
       <div class='fo-main-title mt-5 mx-3 mx-md-5'>
         <div class='text-center fo-title-img pb-3 pb-md-4 pb-lg-5'>
           <b-img fluid src='~/assets/img/fo-title.svg' alt='Flying Octopus'></b-img>
