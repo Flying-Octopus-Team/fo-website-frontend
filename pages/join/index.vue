@@ -1,6 +1,6 @@
 <template>
   <div class='d-flex flex-column fo-subpage-container mx-3 my-5'>
-    <b-img-lazy fluid class='mx-auto mb-3' src='~/assets/img/fo-icon.svg' alt='Flying Octopus' />
+    <b-img-lazy fluid class='mx-auto mb-3 fo-icon' src='~/assets/img/fo-icon.svg' alt='Flying Octopus' />
     <h1 class='text-center mb-5'>
       Co zyskujesz będąc w zespole?
     </h1>
@@ -39,8 +39,8 @@
     <div class='mx-auto'>
       <h3 class='font-weight-light my-2'>Wystarczą trzy proste kroki:</h3>
       <ol class='my-4' style='line-height: 2rem'>
-        <li><a href='https://discord.gg/Q2DuSNY' class='fo-pink-text'>Napisz do nas!</a></li>
-        <li>Wypełnij <a href='https://docs.google.com/forms/d/e/1FAIpQLSdCbqpjqa2xINzz_1GIeX1Zu1hVjgeRA-sNOgOqUG-W5DBjJA/viewform' class='fo-pink-text'>formularz rekrutacyjny</a></li>
+        <li>Wypełnij <a href='https://docs.google.com/forms/d/e/1FAIpQLSdCbqpjqa2xINzz_1GIeX1Zu1hVjgeRA-sNOgOqUG-W5DBjJA/closedform' class='fo-pink-text'>formularz rekrutacyjny!</a></li>
+        <li>Dołącz na nasz serwer <a href='https://discord.gg/Q2DuSNY' class='fo-pink-text'>Discord</a></li>
         <li>Wykonaj zadanie wstępne i twórz z nami wspaniałe projekty!</li>
       </ol>
     </div>

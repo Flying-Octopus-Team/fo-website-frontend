@@ -49,7 +49,7 @@
           <OurTeam :members='activeTeamMembers' />
         </div>
         <div id='join' class='d-flex flex-column fo-main-join my-4 pt-4'>
-          <b-img class='mx-auto' src='~/assets/img/fo-icon.svg' alt='Flying Octopus Logo'>
+          <b-img class='mx-auto fo-icon' src='~/assets/img/fo-icon.svg' alt='Flying Octopus Logo'>
           </b-img>
           <h3 class='text-center mt-4'>Dołącz do nas</h3>
           <h5 class='text-center fo-text-join-bottom mb-4'>Stań się częścią zespołu i twórzmy wspólnie!</h5>
