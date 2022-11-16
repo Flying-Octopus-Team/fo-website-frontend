@@ -314,7 +314,7 @@ body {
       color: $fo-white-color;
 
       img {
-        max-width: 512px;
+        max-width: 192px;
       }
 
       .fo-text-join-bottom {
@@ -556,6 +556,10 @@ body {
       background: $fo-purple-color;
     }
   }
+
+  .fo-icon {
+    max-width: 192px;
+  }
 }
 
 .fo-line-separator {
@@ -599,6 +603,3 @@ body {
     color: $fo-white-color;
   }
 }
-
-
-
