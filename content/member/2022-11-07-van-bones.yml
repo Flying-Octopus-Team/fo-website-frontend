@@ -1,6 +1,6 @@
 name: Van Bones
 avatar: /img/van_bones.png
-active: true
+active: false
 description: W zespole zajmuje się koncept artem postaci i wyglądu gier.
 roles:
   - Grafik 2D
