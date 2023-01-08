@@ -7,27 +7,44 @@
         </div>
         <div class='row fo-main-navigation justify-content-center align-self-center my-lg-4 my-2'>
           <div class='col-auto my-md-2 my-4'>
-            <b-link :to='{path: "/", hash: "#blog"}' class='mx-md-2 mx-4'>
-              <img class='img-fluid' src='~/assets/img/icons/news.svg' alt='icon'>
+            <b-link
+              :to='{path: "/", hash: "#blog"}' class='mx-md-2 mx-4'
+              @mouseover="hover='Aktualności';showHoverText=true" @mouseleave="hover='';showHoverText=false">
+              <img class='img-fluid' src='~/assets/img/icons/blog-icon.svg' alt='icon'>
             </b-link>
           </div>
           <div class='col-auto my-md-2 my-4'>
-            <b-link :to='{path: "/", hash: "#projects"}' class='mx-md-2 mx-4'>
-              <img class='img-fluid' src='~/assets/img/icons/projects.svg' alt='icon'>
+            <b-link
+              :to='{path: "/", hash: "#projects"}' class='mx-md-2 mx-4'
+              @mouseover="hover='Projekty';showHoverText=true" @mouseleave="hover='';showHoverText=false">
+              <img class='img-fluid' src='~/assets/img/icons/project-icon.svg' alt='icon'>
             </b-link>
           </div>
           <div class='col-auto my-md-2 my-4'>
-            <b-link :to='{path: "/", hash: "#members"}' class='mx-md-2 mx-4'>
-              <img class='img-fluid' src='~/assets/img/icons/members.svg' alt='icon'>
+            <b-link
+              :to='{path: "/", hash: "#members"}' class='mx-md-2 mx-4'
+              @mouseover="hover='Nasz zespół';showHoverText=true" @mouseleave="hover='';showHoverText=false">
+              <img class='img-fluid' src='~/assets/img/icons/team-icon.svg' alt='icon'>
             </b-link>
           </div>
           <div class='col-auto my-md-2 my-4'>
-            <b-link :to='{path: "/", hash: "#join"}' class='mx-md-2 mx-4'>
-              <img class='img-fluid' src='~/assets/img/icons/join.svg' alt='icon'>
+            <b-link
+              :to='{path: "/", hash: "#join"}' class='mx-md-2 mx-4'
+              @mouseover="hover='Dołącz do nas';showHoverText=true" @mouseleave="hover='';showHoverText=false">
+              <img class='img-fluid' src='~/assets/img/icons/join-icon.svg' alt='icon'>
             </b-link>
           </div>
         </div>
+        <div class='row'>
+          <div class='col mx-auto h1 fo-white-text text-center text-wrap my-xl-5 my-lg-4 my-3'>
+            <Transition name='fade'>
+              <span v-if='showHoverText'>{{ hover }}</span>
+            </Transition>
+          </div>
+        </div>
       </div>
+
+
       <div class='d-flex flex-column fo-main-page-content pt-3'>
         <h4 class='fo-main-text text-center font-weight-light text-wrap my-xl-5 my-lg-4 my-3'>
           Jesteśmy zespołem gamedevowym, który składa się z&nbsp;kilkunastu osób pragnących rozwijać swoje umiejętności
@@ -83,6 +100,8 @@ export default class MainPage extends Vue {
   recentBlogPosts: Blog[] = []
   carouselImages: MainCarousel[] = []
   activeTeamMembers: Member[] = []
+  hover: String = ''
+  showHoverText: boolean = false
 
   async fetch() {
     this.recentBlogPosts = MainPage.handleFetchedDataAsArray<Blog>(
