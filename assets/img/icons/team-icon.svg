@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 540 530" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g transform="matrix(1,0,0,1,-1400,-100)">
+        <g id="team-icon" transform="matrix(1,0,0,1,1270,-1.03729)">
+            <g transform="matrix(1.25581,0,0,1.10417,-108.605,-42.5044)">
+                <path d="M620,167.737C620,146.909 605.132,130 586.82,130L223.18,130C204.868,130 190,146.909 190,167.737L190,572.263C190,593.091 204.868,610 223.18,610L586.82,610C605.132,610 620,593.091 620,572.263L620,167.737Z" style="fill:rgb(191,191,191);fill-opacity:0.51;"/>
+            </g>
+            <g transform="matrix(0.736499,0,0,0.736499,-14.5994,108.761)">
+                <g transform="matrix(2.54701,0,0,1.92431,-556.239,-419.745)">
+                    <path d="M422.55,425.993C422.55,408.785 404.142,389.439 391.141,389.439L359.731,389.439C346.73,389.439 328.322,408.785 328.322,425.993L328.322,516.349L422.55,516.349L422.55,425.993Z" style="fill:white;stroke:black;stroke-width:6.02px;"/>
+                </g>
+                <g transform="matrix(1.15574,0,0,1.15574,-61.8519,-46.2872)">
+                    <circle cx="399.74" cy="255.367" r="84.633" style="fill:white;stroke:black;stroke-width:11.75px;"/>
+                </g>
+            </g>
+            <g transform="matrix(0.736499,0,0,0.736499,225.401,108.761)">
+                <g transform="matrix(2.54701,0,0,1.92431,-556.239,-419.745)">
+                    <path d="M422.55,425.993C422.55,408.785 404.142,389.439 391.141,389.439L359.731,389.439C346.73,389.439 328.322,408.785 328.322,425.993L328.322,516.349L422.55,516.349L422.55,425.993Z" style="fill:white;stroke:black;stroke-width:6.02px;"/>
+                </g>
+                <g transform="matrix(1.15574,0,0,1.15574,-61.8519,-46.2872)">
+                    <circle cx="399.74" cy="255.367" r="84.633" style="fill:white;stroke:black;stroke-width:11.75px;"/>
+                </g>
+            </g>
+            <g>
+                <g transform="matrix(2.54701,0,0,1.92431,-556.239,-419.745)">
+                    <path d="M422.55,425.993C422.55,408.785 404.142,389.439 391.141,389.439L359.731,389.439C346.73,389.439 328.322,408.785 328.322,425.993L328.322,516.349L422.55,516.349L422.55,425.993Z"/>
+                </g>
+                <g transform="matrix(1.15574,0,0,1.15574,-61.8519,-46.2872)">
+                    <circle cx="399.74" cy="255.367" r="84.633"/>
+                </g>
+            </g>
+            <g transform="matrix(1,0,0,1,-25.2807,-8.04387)">
+                <ellipse cx="390.072" cy="234.425" rx="10.072" ry="14.425" style="fill:white;stroke:black;stroke-width:5px;"/>
+            </g>
+            <g transform="matrix(1,0,0,1,44.8158,-8.04387)">
+                <ellipse cx="390.072" cy="234.425" rx="10.072" ry="14.425" style="fill:white;stroke:black;stroke-width:5px;"/>
+            </g>
+            <g>
+                <path d="M419.506,270C419.506,281.038 411.038,290 400,290C388.962,290 381,281.038 381,270C381,260.857 390,264.529 390,270C390,275.519 394.481,280 400,280C405.519,280 410,275.519 410,270C410,264.481 419.506,261.084 419.506,270Z" style="fill:white;"/>
+                <g transform="matrix(0.9,0,0,1.2,39,-48)">
+                    <path d="M390,263.75C390,261.68 387.76,260 385,260C382.24,260 380,261.68 380,263.75L380,266.25C380,268.32 382.24,270 385,270C387.76,270 390,268.32 390,266.25L390,263.75Z" style="fill:white;"/>
+                </g>
+                <g transform="matrix(0.950646,0,0,1.2,48.7547,-48)">
+                    <path d="M390,263.961C390,261.775 387.76,260 385,260C382.24,260 380,261.775 380,263.961L380,266.039C380,268.225 382.24,270 385,270C387.76,270 390,268.225 390,266.039L390,263.961Z" style="fill:white;"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
