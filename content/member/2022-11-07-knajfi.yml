@@ -1,6 +1,6 @@
 name: KnajFi
 avatar: /img/knajfi.png
-active: true
+active: false
 description: Zapalony artysta 3D zajmujący się modelowaniem i tworzeniem środowisk.
 roles:
   - Environment artist
